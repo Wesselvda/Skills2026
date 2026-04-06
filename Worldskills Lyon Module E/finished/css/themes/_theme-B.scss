@@ -1,0 +1,24 @@
+.slideshow.theme-b {
+    .slideshow-image {
+        transform: translateX(0);
+    }
+
+    .slideshow-slide.is-entering .slideshow-image {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    .slideshow-slide.is-active .slideshow-image {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .slideshow-slide.is-exiting .slideshow-image {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    .slideshow-caption {
+        transition-delay: .3s;
+    }
+}

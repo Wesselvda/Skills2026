@@ -1,0 +1,27 @@
+.slideshow.theme-e {
+    perspective: 1200px;
+
+    .slideshow-image {
+        transform-origin: center;
+        transform: scale(1) rotateY(0deg);
+    }
+
+    .slideshow-slide {
+        transform-style: preserve-3d;
+    }
+
+    .slideshow-slide.is-entering .slideshow-image {
+        transform: scale(.95) rotateY(90deg);
+        opacity: 0;
+    }
+
+    .slideshow-slide.is-active .slideshow-image {
+        transform: scale(1) rotateY(0deg);
+        opacity: 1;
+    }
+
+    .slideshow-slide.is-exiting .slideshow-image {
+        transform: scale(.95) rotateY(-90deg);
+        opacity: 0;
+    }
+}

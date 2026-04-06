@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo slideshow</title>
+    <link rel="stylesheet" href="css/general.css">
+    <script src="js/slideshow.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="configuration-bar">
+            <form>
+                <fieldset>
+                    <legend>Operating mode:</legend>
+                    <div class="operating-mode-wrapper">
+                        <label>
+                            <input type="radio" name="mode" id="mode-manual" checked>
+                            Manual
+                        </label>
+                        <label>
+                            <input type="radio" name="mode" id="mode-auto">
+                            Auto-play
+                        </label>
+                        <label>
+                            <input type="radio" name="mode" id="mode-random">
+                            Random
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Theme:</legend>
+                    <div class="theme-wrapper">
+                        <label>
+                            <input type="radio" name="theme" id="theme-a" checked>
+                            A
+                        </label>
+                        <label>
+                            <input type="radio" name="theme" id="theme-b">
+                            B
+                        </label>
+                        <label>
+                            <input type="radio" name="theme" id="theme-c">
+                            C
+                        </label>
+                        <label>
+                            <input type="radio" name="theme" id="theme-d">
+                            D
+                        </label>
+                        <label>
+                            <input type="radio" name="theme" id="theme-e">
+                            E
+                        </label>
+                        <label>
+                            <input type="radio" name="theme" id="theme-f">
+                            F
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset class="order-field">
+                    <legend>Order</legend>
+                    <div class="order-wrapper">
+                        <div id="image-order">
+
+                        </div>
+                        <div class="extra-options">
+                            <label>
+                                <input type="file" name="image-drop" id="image-drop">
+                                Drop images here or click here to upload images.
+                            </label>
+                            <button type="button" id="add-sample-images">Add sample images</button>
+                            <button type="button" id="fullscreen-toggle">Enter fullscreen</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="slideshow">
+    
+        </div>
+    </div>
+    <div class="command-bar">
+        <div class="command-bar-dialog">
+            <input id="command-bar-input" type="text" autocomplete="off" placeholder="Type a command...">
+            <ul id="command-bar-options"></ul>
+        </div>
+    </div>
+</body>
+</html>

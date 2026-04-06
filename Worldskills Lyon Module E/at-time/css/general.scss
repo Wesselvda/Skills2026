@@ -1,0 +1,255 @@
+@use './themes/_theme-A.scss';
+@use './themes/_theme-B.scss';
+@use './themes/_theme-C.scss';
+@use './themes/_theme-D.scss';
+@use './themes/_theme-E.scss';
+@use './themes/_theme-F.scss';
+
+$hue: 0;
+$saturation: 50%;
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: hsl($hue, $saturation, 100%);
+    color: #000;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.configuration-bar {
+    padding: 1.5rem;
+
+    form {
+        display: flex;
+
+        fieldset {
+            padding: 1rem;
+        }
+
+        .operating-mode-wrapper {
+            display: flex;
+            gap: .5rem;
+
+            label {
+                transition: background-color .3s;
+                background-color: hsl($hue, $saturation, 80%);
+                padding: .5rem 1rem;
+                cursor: pointer;
+
+                input {
+                    display: none;
+                }
+
+                &:hover, &:has(input:checked) {
+                    background-color: hsl($hue, $saturation, 70%);
+                }
+            }
+        }
+
+        .theme-wrapper {
+            display: flex;
+            gap: .5rem;
+
+            label {
+                transition: background-color .3s;
+                background-color: hsl($hue, $saturation, 80%);
+                padding: .5rem 1rem;
+                cursor: pointer;
+
+                input {
+                    display: none;
+                }
+
+                &:hover, &:has(input:checked) {
+                    background-color: hsl($hue, $saturation, 70%);
+                }
+            }
+        }
+
+        .order-field {
+            flex-grow: 1;
+        }
+
+        .order-wrapper {
+            display: flex;
+            gap: .5rem;
+
+            #image-order {
+                flex-grow: 1;
+                display: flex;
+                flex-wrap: wrap;
+                gap: .5rem;
+                align-content: flex-start;
+
+                .image-order-empty {
+                    margin: 0;
+                    width: 100%;
+                }
+
+                .order-item {
+                    display: block;
+                    width: 120px;
+                    aspect-ratio: 4 / 3;
+                    padding: 0;
+                    overflow: hidden;
+                    border: 1px solid hsl($hue, $saturation, 80%);
+                    background: hsl($hue, $saturation, 100%);
+                    cursor: grab;
+                    transition: transform .2s, border-color .2s, box-shadow .2s;
+
+                    &.is-active {
+                        border-color: hsl($hue, $saturation, 45%);
+                        transform: translateY(-2px);
+                        box-shadow: 0 6px 12px rgba(0, 0, 0, .2);
+                    }
+
+                    .order-item-image {
+                        width: 100%;
+                        height: 100%;
+                        display: block;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .extra-options {
+                display: flex;
+                gap: .5rem;
+                flex-direction: column;
+
+                label {
+                    transition: border-color .3s;
+                    width: 200px;
+                    text-align: center;
+                    border: dashed hsl($hue, $saturation, 80%) 3px;
+                    padding: .5rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        border-color: hsl($hue, $saturation, 70%);
+                    }
+
+                    input {
+                        display: none;
+                    }
+                }
+
+                button {
+                    border: none;
+                    font: inherit;
+                    transition: background-color .3s;
+                    background-color: hsl($hue, $saturation, 80%);
+                    padding: .5rem 1rem;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: hsl($hue, $saturation, 70%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.slideshow {
+    flex-grow: 1;
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+
+    .slideshow-empty {
+        color: #fff;
+        padding: 1rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .slideshow-stage {
+        position: absolute;
+        inset: 0;
+    }
+
+    .slideshow-slide {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: transform .7s ease, opacity .7s ease;
+        transform: translate3d(0, 0, 0);
+        will-change: transform, opacity;
+    }
+
+    .slideshow-slide.is-active,
+    .slideshow-slide.is-entering,
+    .slideshow-slide.is-exiting {
+        visibility: visible;
+    }
+
+    .slideshow-slide.is-entering,
+    .slideshow-slide.is-exiting {
+        opacity: 1;
+    }
+
+    .slideshow-slide.is-active {
+        opacity: 1;
+        z-index: 2;
+        pointer-events: auto;
+    }
+
+    .slideshow-slide.is-entering {
+        z-index: 3;
+    }
+
+    .slideshow-slide.is-exiting {
+        z-index: 1;
+    }
+
+    .slideshow-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform .7s ease, opacity .7s ease;
+        will-change: transform, opacity;
+    }
+
+    .slideshow-caption {
+        color: #000;
+        text-align: left;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: #fff;
+        padding: .5rem .75rem;
+        border-top-right-radius: 5px;
+        text-transform: capitalize;
+    }
+
+    .slideshow-caption-word {
+        text-transform: capitalize;
+    }
+
+    &.theme-e {
+        .slideshow-caption {
+            display: none;
+        }
+    }
+}
