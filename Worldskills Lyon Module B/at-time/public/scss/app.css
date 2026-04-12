@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #eee;
+  color: #222;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.menu {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.menu a {
+  color: #1f3c88;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: #eee;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.inline {
+  display: inline;
+}
+
+.flash {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #8797c6;
+  background: #e9f2ff;
+}
+
+.errors {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #d98787;
+  background: #fff0f0;
+}
+
+.preview-image,
+.public-image {
+  max-width: 240px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.all-valid {
+  color: #187a25;
+  font-weight: bold;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+}
+
+.pagination {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 0.75rem;
+  }
+}/*# sourceMappingURL=app.css.map */
