@@ -1,0 +1,1 @@
+Do "?cell_size=10" in the url to change the cell size

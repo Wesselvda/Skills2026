@@ -1,0 +1,6 @@
+*
+!.gitignore
+!import_data
+!imported_media_images
+!import_data/*
+!imported_media_images/*

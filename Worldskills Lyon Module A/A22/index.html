@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .wrapper {
+            width: 50vmin;
+            height: 50vmin;
+            padding: 10vmin;
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            border: solid 1px #000;
+        }
+
+        .bar {
+            height: 0;
+            width: 20%;
+            transition: height 500ms ease;
+        }
+
+        .wrapper:hover .bar {
+            height: var(--bar-height);
+        }
+
+        .bar-1 {
+            --bar-height: 90%;
+            background-color: #fe5c5d;
+        }
+
+        .bar-2 {
+            --bar-height: 50%;
+            background-color: #83ff5a;
+            transition-delay: 150ms;
+        }
+
+        .bar-3 {
+            --bar-height: 70%;
+            background-color: #7690fe;
+            transition-delay: 300ms;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bar bar-1"></div>
+        <div class="bar bar-2"></div>
+        <div class="bar bar-3"></div>
+    </div>
+</body>
+</html>
