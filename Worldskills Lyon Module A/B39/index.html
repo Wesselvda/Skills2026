@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        button {
+            transition: background-color .3s, color .3s;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            color: #fff;
+            background-color: var(--btn-bg-color);
+            border: 2px solid var(--btn-bg-color);
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        #add-button {
+            --btn-bg-color: #57da9a;
+            color: #000;
+        }
+
+        .decrease-button {
+            --btn-bg-color: #588cdc;
+        }
+
+        .increase-button {
+            --btn-bg-color: #db5758;
+        }
+
+        #wrapper {
+            display: flex;
+            gap: .5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .counter-wrapper {
+            padding: 1rem;
+            border: 2px solid #000;
+            border-radius: 5px;
+        }
+
+        .button-wrapper {
+            display: flex;
+            gap: .5rem;
+        }
+
+        .number {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button id="add-button">Add a counter</button>
+    <div id="wrapper">
+        
+    </div>
+    <script>
+        const wrapperElement = document.getElementById("wrapper");
+        const addButtonElement = document.getElementById("add-button");
+
+        function createCounter() {
+            let value = 0;
+
+            let counterWrapper = document.createElement("div");
+            counterWrapper.className = "counter-wrapper";
+            let numberElement = document.createElement("p");
+            numberElement.className = "number";
+            let buttonWrapperElement = document.createElement("div");
+            buttonWrapperElement.className = "button-wrapper";
+            let decreaseButtonElement = document.createElement("button");
+            decreaseButtonElement.className = "decrease-button"
+            decreaseButtonElement.innerText = "decrease";
+            let increaseButtonElement = document.createElement("button");
+            increaseButtonElement.className = "increase-button"
+            increaseButtonElement.innerText = "increase";
+            buttonWrapperElement.replaceChildren(decreaseButtonElement, increaseButtonElement);
+            counterWrapper.replaceChildren(numberElement, buttonWrapperElement);
+            wrapperElement.appendChild(counterWrapper);
+
+            function setCounterValue(newValue) {
+                numberElement.innerText = newValue.toString();
+                value = newValue;
+            }
+
+            increaseButtonElement.addEventListener("click", () => {
+                setCounterValue(value + 1);
+            })
+
+            decreaseButtonElement.addEventListener("click", () => {
+                setCounterValue(value - 1);
+            })
+
+            setCounterValue(0);
+        }
+
+        addButtonElement.addEventListener("click", () => {
+            createCounter();
+        })
+
+        createCounter();
+    </script>
+</body>
+</html>
