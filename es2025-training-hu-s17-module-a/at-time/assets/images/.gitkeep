@@ -1,0 +1,39 @@
+# Image Assets Directory
+
+This directory contains placeholder references for the following images:
+
+## Hero Section
+- hero-learning.jpg - Professional learning environment image
+
+## Course Images
+- course-web-dev.jpg - Full Stack Web Development course thumbnail
+- course-data-science.jpg - Data Science Fundamentals course thumbnail
+- course-digital-marketing.jpg - Digital Marketing Strategy course thumbnail
+- course-react.jpg - React Development Masterclass thumbnail
+- course-python-ai.jpg - Python for AI and Machine Learning thumbnail
+- course-ux-design.jpg - UX/UI Design Principles thumbnail
+- course-project-management.jpg - Agile Project Management thumbnail
+- course-cybersecurity.jpg - Cybersecurity Fundamentals thumbnail
+
+## Mentor Images
+- mentor-sarah.jpg - Sarah Johnson profile photo
+- mentor-michael.jpg - Dr. Michael Chen profile photo
+- mentor-emma.jpg - Emma Rodriguez profile photo
+- mentor-alex.jpg - Alex Thompson profile photo
+- mentor-maria.jpg - Maria Garcia profile photo
+- mentor-david.jpg - David Kim profile photo
+- mentor-jennifer.jpg - Jennifer Liu profile photo
+- mentor-robert.jpg - Robert Singh profile photo
+
+## About Page Images
+- about-mission.jpg - Team collaboration and learning image
+- team-ceo.jpg - John Anderson CEO photo
+- team-cpo.jpg - Lisa Chen CPO photo
+- team-cto.jpg - Michael Rodriguez CTO photo
+- team-head-education.jpg - Dr. Sarah Williams Head of Education photo
+
+## Notes
+- All images should be optimized for web (WebP format recommended)
+- Recommended dimensions: 400x300px for course/mentor cards, 1200x600px for hero images
+- Include alt text descriptions for accessibility
+- Use appropriate aspect ratios for responsive design

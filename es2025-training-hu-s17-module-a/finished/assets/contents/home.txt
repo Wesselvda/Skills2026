@@ -1,0 +1,162 @@
+===============================
+    Home Page - index.html 
+===============================
+
+--- Site Header & Navigation ---
+Home
+Courses
+Mentors
+About
+
+--- Hero Section ---
+Free Education for Everyone Through Community Learning
+
+Join our inclusive community where you earn credits by completing course chapters and use them to access personalized mentorship from volunteer experts. Making quality education accessible through our credit-based learning ecosystem.
+
+Start Earning Credits (Primary Button)
+Use Credits for Mentorship (Secondary Button)
+
+Professional learning environment (image alternate text)
+
+
+--- Platform Benefits Section ---
+What Makes Our Community Special
+
+Benefit card 1: 
+Earn Credits Through Learning
+Complete free courses and skill assessments to earn credits. These credits unlock access to personalized mentorship sessions with industry experts.
+
+Benefit card 2: 
+Credit-Based Mentorship
+Use earned credits to book one-on-one sessions with volunteer mentors who provide personalized guidance tailored to your learning goals and progress.
+
+Benefit card 3: 
+100% Free Education
+All courses and skill assessments are completely free. Earn credits through engagement to access premium mentorship sessions at no cost.
+
+Benefit card 4:
+Inclusive Community
+Join a welcoming, diverse community where learners and volunteers from all backgrounds support each other's growth and success.
+
+Benefit card 5:
+Accessible Learning
+Study at your own pace with 24/7 access to materials designed for accessibility, including screen reader support and multiple languages.
+
+Benefit card 6:
+Community Impact
+95% of learners who earn credits and access mentorship report increased confidence and skills, with many becoming volunteer mentors themselves.
+
+
+--- Community Impact Stats ---
+Our Community Impact
+
+25,000+
+Learners empowered through free education
+
+1,200+
+Volunteer Mentors
+
+300+
+Free Courses
+
+85+
+Countries Reached
+
+180,000+
+Credits Earned
+
+15,000+
+Mentorship Sessions
+
+12,000+
+Credits Redeemed
+
+
+--- Featured Courses Section ---
+Featured Free Courses
+
+Discover our most popular courses and earn credits to unlock mentorship
+
+Course Card 1:
+Full Stack Web Development
+by Sarah Johnson (Volunteer)
+4.9
+12 weeks
+Earn 45 Credits (Earning Badge)
+
+Course Card 2:
+Data Science Fundamentals
+by Michael Chen (Volunteer)
+4.8
+10 weeks
+Earn 45 Credits (Earning Badge)
+
+Course Card 3:
+Digital Marketing Strategy
+by Emma Rodriguez (Volunteer)
+4.7
+8 weeks
+Earn 45 Credits (Earning Badge)
+
+View All Courses & Credits (Outline Button)
+
+
+--- Testimonials Section ---
+Community Success Stories
+
+Hear from learners and volunteer mentors in our community
+
+Card 1:
+"I earned 180 credits completing three data science courses, then used them for mentorship sessions. The transition from marketing to data science was seamless with this credit-based system!"
+Alex Thompson
+Data Scientist at TechCorp
+
+Card 2:
+"Earned 200 credits from web development courses, used 120 for expert mentorship. Built an amazing portfolio and landed my dream job. Now I'm a volunteer mentor helping others with their credits!"
+Maria Garcia
+Full Stack Developer
+
+Card 3:
+"The credit system is perfect for working professionals. I earn credits chapter by chapter, then book mentorship when I need guidance. No upfront costs, just learn and earn!"
+David Kim
+Product Manager
+
+
+--- Call to Action Section ---
+Ready to Start Earning Credits?
+Join thousands of learners who earn credits through course completion and use them for personalized mentor sessions
+
+Start Earning Credits (Primary Button)
+Become a Mentor (Secondary Button)
+
+
+--- Footer ---
+SkillShare Academy
+Building an inclusive learning community through free education and volunteer mentorship.
+
+Social Media Icons:
+Facebook
+Twitter
+LinkedIn
+Instagram
+
+Footer Links:
+Learn:
+Browse Courses
+Find Mentors
+Learning Paths
+Certifications
+
+Support:
+Help Center
+Contact Us
+Community Forum
+Student Resources
+
+Company:
+About Us
+Careers
+Press
+Privacy Policy
+
+2025 SkillShare Academy. All rights reserved.

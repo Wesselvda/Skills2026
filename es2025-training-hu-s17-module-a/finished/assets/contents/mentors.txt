@@ -1,0 +1,154 @@
+===================================
+    Mentors Page - mentors.html
+===================================
+
+--- Page Hero ---
+Connect with Expert Mentors
+
+Access personalized guidance from 500+ expert mentors using our flexible credit system. Credits range from 5-15 per hour based on expertise level and specialization
+
+
+--- Mentor Filters ---
+Search:
+Search mentors by name or expertise... (placeholder)
+
+Filter Controls:
+Expertise:
+All Fields
+Web Development
+Data Science
+Digital Marketing
+UI/UX Design
+Business
+
+Experience:
+All Levels
+3-5 years
+5-10 years
+10+ years
+
+Rating:
+All Ratings
+5 Stars
+4+ Stars
+3+ Stars
+
+
+--- Featured Expert Mentors ---
+Featured Expert Mentors
+
+Premium Mentor  (Special Badge with star icon)
+Sarah Johnson
+Senior Full Stack Developer
+Tech Innovation Labs
+5.0 (127 reviews)
+React, Node.js, MongoDB (Skill Tags)
+Expert mentor with 10+ years experience building scalable web applications. Passionate about helping others learn modern JavaScript frameworks and cloud architecture at 12 credits/hour.
+89 Students
+8 years teaching
+12 Credits/Hour
+Book with Credits (Primary Button)
+
+PhD Expert  (Special Badge with graduate-hat-white icon)
+Dr. Michael Chen
+Senior Data Scientist
+DataTech Solutions
+4.9 (203 reviews)
+Python, Machine Learning, TensorFlow    (Skill Tags)
+Expert mentor with PhD in Computer Science and 12+ years in AI/ML. Specializes in advanced machine learning concepts and research methodologies at 15 credits/hour.
+156 Students
+6 years teaching
+15 Credits/Hour
+Book with Credits (Primary Button)
+
+
+--- All Expert Mentors ---
+All Expert Mentors
+
+Emma Rodriguez
+Digital Marketing Director
+Growth Marketing Pro
+4.8 (95 reviews)
+SEO, Google Ads, Analytics  (Skill Tags)
+Expert mentor with 7+ years driving growth for startups and Fortune 500 companies. Specializes in data-driven marketing strategies and campaign optimization at 10 credits/hour.
+73 Students
+4 years teaching
+10 Credits/Hour
+Book with Credits (Outline Button)
+
+Alex Thompson
+Senior UX Designer
+Design Studios Inc
+4.9 (142 reviews)
+Figma, User Research, Prototyping   (Skill Tags)
+Expert mentor and award-winning designer with 9+ years creating user-centered experiences. Specializes in design systems and user research methodologies at 11 credits/hour.
+98 Students
+5 years teaching
+11 Credits/Hour
+Book with Credits (Outline Button)
+
+
+Maria Garcia
+Senior Project Manager
+AgileWorks Consulting
+4.7 (67 reviews)
+Scrum, Kanban, Leadership   (Skill Tags)
+Expert mentor and certified PMP with 11+ years managing complex projects. Specializes in agile methodologies and team leadership at 9 credits/hour.
+54 Students
+3 years teaching
+9 Credits/Hour
+Book with Credits (Outline Button)
+
+David Kim
+Cybersecurity Consultant
+SecureNet Solutions
+4.8 (88 reviews)
+Penetration Testing, Network Security, CISSP    (Skill Tags)
+Expert mentor with 15+ years protecting organizations from cyber threats. CISSP certified, specializes in penetration testing and security audits at 13 credits/hour.
+76 Students
+7 years teaching
+13 Credits/Hour
+Book with Credits (Outline Button)
+
+Jennifer Liu
+Senior Product Manager
+TechStartup Hub
+4.9 (112 reviews)
+Product Strategy, User Analytics, A/B Testing   (Skill Tags)
+Expert mentor with 8+ years launching successful products at scale. Specializes in product strategy and user analytics at 10 credits/hour.
+91 Students
+4 years teaching
+10 Credits/Hour
+Book with Credits (Outline Button)
+
+Robert Singh
+DevOps Architect
+CloudOps Enterprise
+4.6 (56 reviews)
+AWS, Docker, Kubernetes (Skill Tags)
+Expert mentor with 12+ years building scalable infrastructure and CI/CD pipelines. Specializes in AWS architecture and Kubernetes deployment at 8 credits/hour.
+43 Students
+3 years teaching
+8 Credits/Hour
+Book with Credits (Outline Button)
+
+Load More Expert Mentors (Outline Button)
+
+
+--- Mentor Call to Action ---
+Ready to Accelerate Your Learning?
+Connect with expert mentors using our flexible credit system and get personalized guidance from top industry professionals
+
+Find Your Expert Mentor (Primary Button)
+Buy Credits (Secondary Button)
+
+
+--- Footer (updated text) ---
+Empowering professionals through expert mentorship and flexible credit-based learning.
+
+Updated Footer Links:
+Learn:
+Free Courses
+Find Expert Mentors
+Learning Paths
+Certifications
