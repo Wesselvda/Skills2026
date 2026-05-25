@@ -1,90 +1,350 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Complete chapters to earn credits that unlock exclusive mentorship opportunities. Choose from over 200 free courses created by volunteer educators."
+    />
     <title>Courses - SkillShare Academy</title>
-    <link rel="stylesheet" href="assets/style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/style/style.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="main-header">
-        <a href="index.html" class="logo-wrapper">
-            <img src="assets/logos/skillshare-academy-logo-vertical-purple.svg" alt="Logo of SkillShare Academy">
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="courses.html" class="active">Courses</a>
-            <a href="mentors.html">Mentors</a>
-            <a href="about.html">About</a>
-        </nav>
-        <div class="hamburger-menu">
-            <input type="checkbox" name="hamburger-menu" id="hamburger-menu">
-            <label for="hamburger-menu">
-                <img src="assets/icons/bootstrap-icons/list.svg" alt="Mobile menu icon">
-            </label>
-        </div>
+      <a href="index.html" class="logo-wrapper">
+        <img
+          src="assets/logos/skillshare-academy-logo-vertical-purple.svg"
+          alt="Logo of SkillShare Academy"
+        />
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="courses.html" class="active" aria-current="page">Courses</a>
+        <a href="mentors.html">Mentors</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="hamburger-menu">
+        <input type="checkbox" name="hamburger-menu" id="hamburger-menu" />
+        <label for="hamburger-menu">
+          <img
+            src="assets/icons/bootstrap-icons/list.svg"
+            alt="Mobile menu icon"
+          />
+        </label>
+      </div>
     </header>
-    <main class="main-content coursespage">
-        <h1>Courses</h1>
+    <main class="main-content subpage coursespage" id="main-content">
+      <section class="page-hero">
+        <h1>Earn Credits While Learning - For Free</h1>
+        <p>
+          Complete chapters to earn credits that unlock exclusive mentorship
+          opportunities. Choose from over 200 free courses created by volunteer
+          educators.
+        </p>
+        <div class="credit-note">
+          <img src="assets/icons/diamond-purple.svg" alt="Diamond icon" />
+          <span
+            >How Credits Work: Earn 3-5 credits per chapter completed " Use 50+
+            credits to unlock 1-on-1 mentorship sessions</span
+          >
+        </div>
+      </section>
+      <section class="filters course-filters">
+        <h2 class="visually-hidden">Course Filters</h2>
+        <div class="filter-tabs">
+          <button class="btn primary" type="button">All Free Courses</button>
+          <button class="btn outline" type="button">Development</button>
+          <button class="btn outline" type="button">Data Science</button>
+          <button class="btn outline" type="button">Marketing</button>
+          <button class="btn outline" type="button">Design</button>
+          <button class="btn outline" type="button">Business</button>
+        </div>
+        <form class="search-form" role="search">
+          <input
+            type="search"
+            placeholder="Search courses..."
+            aria-label="Search courses"
+          />
+          <button class="btn primary" type="submit" aria-label="Search">
+            <img src="assets/icons/search.svg" alt="" />
+          </button>
+        </form>
+      </section>
+      <section class="catalog">
+        <h2>All Courses</h2>
+        <div class="course-grid">
+          <article class="course-card">
+            <img
+              class="thumbnail"
+              src="assets/images/course-web-dev.jpg"
+              alt="Full Stack Web Development"
+            />
+            <div class="inner">
+              <h3>Full Stack Web Development</h3>
+              <p class="caption">by Sarah Johnson (Volunteer)</p>
+              <div class="meta-row">
+                <span class="rating"
+                  ><img src="assets/icons/star.svg" alt="" /> 4.9 (3,205)</span
+                >
+                <span>12 weeks</span>
+                <span>Beginner</span>
+              </div>
+              <span class="credit-badge"
+                ><img src="assets/icons/diamond.svg" alt="" />45 Credits</span
+              >
+              <p>
+                Learn HTML, CSS, JavaScript, Node.js, and MongoDB from scratch.
+                Earn credits with every completed chapter and build projects to
+                accelerate your learning.
+              </p>
+              <div class="card-actions">
+                <strong>FREE</strong>
+                <button class="btn outline" type="button">
+                  Start Earning Credits
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="course-card">
+            <img
+              class="thumbnail"
+              src="assets/images/course-data-science.jpg"
+              alt="Data Science Fundamentals"
+            />
+            <div class="inner">
+              <h3>Data Science Fundamentals</h3>
+              <p class="caption">by Michael Chen (Volunteer)</p>
+              <div class="meta-row">
+                <span class="rating"
+                  ><img src="assets/icons/star.svg" alt="" /> 4.8 (2,891)</span
+                >
+                <span>10 weeks</span>
+                <span>Beginner</span>
+              </div>
+              <span class="credit-badge"
+                ><img src="assets/icons/diamond.svg" alt="" />40 Credits</span
+              >
+              <p>
+                Master Python, pandas, and statistical analysis for data
+                science. Complete interactive coding exercises to earn credits
+                and unlock mentorship opportunities.
+              </p>
+              <div class="card-actions">
+                <strong>FREE</strong>
+                <button class="btn outline" type="button">
+                  Start Earning Credits
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="course-card">
+            <img
+              class="thumbnail"
+              src="assets/images/course-digital-marketing.jpg"
+              alt="Digital Marketing Strategy"
+            />
+            <div class="inner">
+              <h3>Digital Marketing Strategy</h3>
+              <p class="caption">by Emma Rodriguez (Volunteer)</p>
+              <div class="meta-row">
+                <span class="rating"
+                  ><img src="assets/icons/star.svg" alt="" /> 4.7 (1,543)</span
+                >
+                <span>8 weeks</span>
+                <span>Intermediate</span>
+              </div>
+              <span class="credit-badge"
+                ><img src="assets/icons/diamond.svg" alt="" />32 Credits</span
+              >
+              <p>
+                Build effective marketing campaigns across digital channels.
+                Earn credits by completing case studies and creating real
+                marketing strategies chapter by chapter.
+              </p>
+              <div class="card-actions">
+                <strong>FREE</strong>
+                <button class="btn outline" type="button">
+                  Start Earning Credits
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="course-card">
+            <img
+              class="thumbnail"
+              src="assets/images/course-ux-design.jpg"
+              alt="UX/UI Design Principles"
+            />
+            <div class="inner">
+              <h3>UX/UI Design Principles</h3>
+              <p class="caption">by Alex Thompson (Volunteer)</p>
+              <div class="meta-row">
+                <span class="rating"
+                  ><img src="assets/icons/star.svg" alt="" /> 4.9 (2,067)</span
+                >
+                <span>10 weeks</span>
+                <span>Beginner</span>
+              </div>
+              <span class="credit-badge"
+                ><img src="assets/icons/diamond.svg" alt="" />35 Credits</span
+              >
+              <p>
+                Design user-centered interfaces using Figma and design thinking.
+                Create portfolio projects and earn credits for each completed
+                design challenge and prototype.
+              </p>
+              <div class="card-actions">
+                <strong>FREE</strong>
+                <button class="btn outline" type="button">
+                  Start Earning Credits
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="course-card">
+            <img
+              class="thumbnail"
+              src="assets/images/course-project-management.jpg"
+              alt="Agile Project Management"
+            />
+            <div class="inner">
+              <h3>Agile Project Management</h3>
+              <p class="caption">by Maria Garcia (Volunteer)</p>
+              <div class="meta-row">
+                <span class="rating"
+                  ><img src="assets/icons/star.svg" alt="" /> 4.6 (987)</span
+                >
+                <span>6 weeks</span>
+                <span>Intermediate</span>
+              </div>
+              <span class="credit-badge"
+                ><img src="assets/icons/diamond.svg" alt="" />25 Credits</span
+              >
+              <p>
+                Master Scrum, Kanban, and agile methodologies for project
+                success. Practice with real scenarios and earn credits for
+                successfully managing simulated projects.
+              </p>
+              <div class="card-actions">
+                <strong>FREE</strong>
+                <button class="btn outline" type="button">
+                  Start Earning Credits
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="course-card">
+            <img
+              class="thumbnail"
+              src="assets/images/course-cybersecurity.jpg"
+              alt="Cybersecurity Fundamentals"
+            />
+            <div class="inner">
+              <h3>Cybersecurity Fundamentals</h3>
+              <p class="caption">by David Kim (Volunteer)</p>
+              <div class="meta-row">
+                <span class="rating"
+                  ><img src="assets/icons/star.svg" alt="" /> 4.8 (1,234)</span
+                >
+                <span>12 weeks</span>
+                <span>Beginner</span>
+              </div>
+              <span class="credit-badge"
+                ><img src="assets/icons/diamond.svg" alt="" />50 Credits</span
+              >
+              <p>
+                Learn network security, ethical hacking, and risk management.
+                Complete security labs and earn credits for identifying
+                vulnerabilities and implementing solutions.
+              </p>
+              <div class="card-actions">
+                <strong>FREE</strong>
+                <button class="btn outline" type="button">
+                  Start Earning Credits
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <button class="btn outline load-more" type="button">
+          Load More Courses
+        </button>
+      </section>
     </main>
     <footer class="main-footer">
-        <div class="inner">
-            <div>
-                <h2>SkillShare Academy</h2>
-                <p>Empowering professionals through free, community-driven learning and volunteer mentorship.</p>
-            </div>
-            <div class="links-grid">
-                <div class="col">
-                    <h2>Socials</h2>
-                    <div class="links">
-                        <a href="#">
-                            <img src="assets/icons/facebook.svg" alt="Icon for Facebook">
-                            Facebook
-                        </a>
-                        <a href="#">
-                            <img src="assets/icons/twitter-white.svg" alt="Icon for Twitter">
-                            Twitter
-                        </a>
-                        <a href="#">
-                            <img src="assets/icons/linkedin-white.svg" alt="Icon for LinkedIn">
-                            LinkedIn
-                        </a>
-                        <a href="#">
-                            <img src="assets/icons/instagram.svg" alt="Icon for Instagram">
-                            Instagram
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <h2>Learn</h2>
-                    <div class="links">
-                        <a href="courses.html">Browse Free Courses</a>
-                        <a href="mentors.html">Find Mentors</a>
-                        <a href="learn.html">Learning Paths</a>
-                        <a href="certs.html">Certifications</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <h2>Support</h2>
-                    <div class="links">
-                        <a href="help-center.html">Help Center</a>
-                        <a href="contact.html">Contact Us</a>
-                        <a href="forum.html">Community Forum</a>
-                        <a href="student.html">Student Resources</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <h2>Company</h2>
-                    <div class="links">
-                        <a href="about.html">About Us</a>
-                        <a href="careers.html">Careers</a>
-                        <a href="press.html">Press</a>
-                        <a href="privacy.html">Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright caption">2025 SkillShare Academy. All rights reserved.</div>
+      <div class="inner">
+        <div>
+          <h2>SkillShare Academy</h2>
+          <p>
+            Empowering professionals through free, community-driven learning and
+            volunteer mentorship.
+          </p>
         </div>
+        <div class="links-grid">
+          <div class="col">
+            <h2>Socials</h2>
+            <div class="links">
+              <a href="#">
+                <img src="assets/icons/facebook.svg" alt="Icon for Facebook" />
+                Facebook
+              </a>
+              <a href="#">
+                <img
+                  src="assets/icons/twitter-white.svg"
+                  alt="Icon for Twitter"
+                />
+                Twitter
+              </a>
+              <a href="#">
+                <img
+                  src="assets/icons/linkedin-white.svg"
+                  alt="Icon for LinkedIn"
+                />
+                LinkedIn
+              </a>
+              <a href="#">
+                <img
+                  src="assets/icons/instagram.svg"
+                  alt="Icon for Instagram"
+                />
+                Instagram
+              </a>
+            </div>
+          </div>
+          <div class="col">
+            <h2>Learn</h2>
+            <div class="links">
+              <a href="courses.html">Browse Free Courses</a>
+              <a href="mentors.html">Find Mentors</a>
+              <a href="learn.html">Learning Paths</a>
+              <a href="certs.html">Certifications</a>
+            </div>
+          </div>
+          <div class="col">
+            <h2>Support</h2>
+            <div class="links">
+              <a href="help-center.html">Help Center</a>
+              <a href="contact.html">Contact Us</a>
+              <a href="forum.html">Community Forum</a>
+              <a href="student.html">Student Resources</a>
+            </div>
+          </div>
+          <div class="col">
+            <h2>Company</h2>
+            <div class="links">
+              <a href="about.html">About Us</a>
+              <a href="careers.html">Careers</a>
+              <a href="press.html">Press</a>
+              <a href="privacy.html">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright caption">
+          2025 SkillShare Academy. All rights reserved.
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
