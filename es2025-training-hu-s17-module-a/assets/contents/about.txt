@@ -1,0 +1,126 @@
+===============================
+    About Page - about.html
+===============================
+
+--- Page Hero ---
+Building a Community Where Learning is Free for Everyone
+Discover how SkillShare Academy connects learners worldwide through our innovative credit-based mentorship system and accessible education
+
+
+--- Mission & Vision ---
+Our Mission
+To provide completely free, high-quality education for everyone through our innovative credit-based mentorship system and accessible learning resources. Learners earn credits by completing courses and skill assessments, then use these credits to access personalized mentorship sessions. We believe that financial barriers should never prevent anyone from learning new skills, advancing their career, or pursuing their passions.
+
+Our Vision
+To create an inclusive global learning community where knowledge flows freely through our credit-based system, volunteer mentors share their expertise with dedicated learners who have demonstrated commitment through earned credits, and everyone has access to skill assessment tools that help them grow - regardless of their economic situation, background, or location.
+
+Team collaboration and learning (image alternate text)
+
+
+--- Team Section ---
+Meet Our Community Leaders
+
+Volunteer leaders who manage our credit-based mentorship system and inclusive learning community
+
+Team member card 1:
+Maria Santos
+Community Director & Founder
+Former educator who designed our credit-based mentorship system. Volunteers full-time to ensure quality mentorship remains accessible through earned credits.
+LinkedIn
+Twitter
+
+Team member card 2:
+Ahmed Hassan
+Accessibility & Credit System Coordinator
+Ensures our credit-earning system and mentorship platform are accessible to learners with diverse needs. Manages equitable credit distribution policies.
+LinkedIn
+Twitter
+
+Team member card 3:
+Priya Patel
+Credit System Technology Lead
+Software engineer who built and maintains our credit-tracking system and mentor matching algorithms. Ensures the platform runs smoothly for all users.
+LinkedIn
+GitHub
+
+Team member card 4:
+Dr. Sarah Williams
+Mentorship Quality & Research Lead
+PhD in Educational Psychology, researches mentorship effectiveness and optimizes our credit-based system to maximize learning outcomes and mentor-learner matches.
+LinkedIn
+GitHub
+
+
+--- Community Story ---
+Our Community Story
+
+Founded in 2019 by volunteers who believed education should be free for everyone, SkillShare Academy emerged from a simple observation: financial barriers were preventing millions from accessing quality mentorship and personalized learning opportunities.
+
+Our founding volunteers, having witnessed talented individuals unable to afford professional mentorship, developed an innovative credit-based system where learners earn credits through engagement and redeem them for valuable mentorship sessions.
+
+Today, we're proud to serve over 25,000 learners across 85 countries through our credit-based mentorship system, with learners having earned over 180,000 credits and completed 15,000+ personalized mentorship sessions.
+
+Community Recognition
+
+(cup icon)  "Outstanding Community Impact" - Free Education Alliance 2024             
+(stars icon)  "Excellence in Volunteer Mentorship" - Global Learning Initiative 2023    
+(lightbulb icon)  "Accessibility Champion" - Inclusive Education Network 2023               
+(graduate-hat-black icon) "Free Learning Innovation Award" - Community Education Foundation 2022    
+
+--- Timeline ---
+2019: Credit System Launched - Introduced credit-based mentorship with 5 courses and 10 mentors
+
+2020: Credit System Expansion - Reached 40 countries with 50,000+ credits earned by learners
+
+2022: Enhanced Credit Earning - Added skill assessments as credit-earning activities with personalized mentor matching
+
+2024: Credit System Success - 25,000+ learners, 180,000+ credits earned, 15,000+ mentorship sessions completed
+
+
+--- Contact Section ---
+Get in Touch
+
+Contact Information:
+Email: community@skillshareacademy.com
+Phone: +1 (555) 123-4567
+Address: 123 Learning Street, Innovation District, San Francisco, CA 94107
+Community Support: 24/7 community forum support, Volunteer mentor availability varies by timezone
+
+Contact Form:
+Send us a Message
+
+Name: (required field)
+Email: (required field)
+Subject: Select a topic
+  - General Inquiry
+  - Free Course Information
+  - Credit-Based Mentorship Program
+  - Become a Volunteer
+  - Accessibility Support
+  - Technical Support
+Message: (required textarea)
+Send Message (submit button)
+
+--- Footer (updated text) ---
+Building an inclusive community where learning is free and accessible through our credit-based mentorship system supported by volunteer mentors worldwide.
+
+Updated Footer Links:
+Learn:
+Free Courses
+Credit-Based Mentors
+Skill Assessment
+Learning Paths
+
+Support:
+Community Help
+Contact Us
+Community Forum
+Accessibility Resources
+
+Company:
+About Our Community
+Volunteer Opportunities
+Community News
+Privacy Policy
+
+2025 SkillShare Academy. All rights reserved.

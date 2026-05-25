@@ -1,0 +1,105 @@
+===================================
+    Courses Page - courses.html
+===================================
+
+--- Page Hero ---
+Earn Credits While Learning - For Free
+
+Complete chapters to earn credits that unlock exclusive mentorship opportunities. Choose from over 200 free courses created by volunteer educators.
+
+How Credits Work: Earn 3-5 credits per chapter completed " Use 50+ credits to unlock 1-on-1 mentorship sessions
+
+--- Course Filters ---
+Filter Tabs:
+All Free Courses (active)
+Development
+Data Science
+Marketing
+Design
+Business
+
+Search:
+Search courses... (placeholder)
+
+
+--- All Courses Section ---
+All Courses
+
+Course 1:
+Full Stack Web Development
+by Sarah Johnson (Volunteer)
+4.9 (3,205)
+12 weeks
+Beginner
+45 Credits  (Earning Badge)
+Learn HTML, CSS, JavaScript, Node.js, and MongoDB from scratch. Earn credits with every completed chapter and build projects to accelerate your learning.
+FREE
+Start Earning Credits (Outline Button)
+
+Course 2:
+Data Science Fundamentals
+by Michael Chen (Volunteer)
+4.8 (2,891)
+10 weeks
+Beginner
+40 Credits  (Earning Badge)
+Master Python, pandas, and statistical analysis for data science. Complete interactive coding exercises to earn credits and unlock mentorship opportunities.
+FREE
+Start Earning Credits (Outline Button)
+
+Course 3:
+Digital Marketing Strategy
+by Emma Rodriguez (Volunteer)
+4.7 (1,543)
+8 weeks
+Intermediate
+32 Credits  (Earning Badge)
+Build effective marketing campaigns across digital channels. Earn credits by completing case studies and creating real marketing strategies chapter by chapter.
+FREE
+Start Earning Credits (Outline Button)
+
+Course 4:
+UX/UI Design Principles
+by Alex Thompson (Volunteer)
+4.9 (2,067)
+10 weeks
+Beginner
+35 Credits  (Earning Badge)
+Design user-centered interfaces using Figma and design thinking. Create portfolio projects and earn credits for each completed design challenge and prototype.
+FREE
+Start Earning Credits (Outline Button)
+
+Course 5:
+Agile Project Management
+by Maria Garcia (Volunteer)
+4.6 (987)
+6 weeks
+Intermediate
+25 Credits  (Earning Badge)
+Master Scrum, Kanban, and agile methodologies for project success. Practice with real scenarios and earn credits for successfully managing simulated projects.
+FREE
+Start Earning Credits (Outline Button)
+
+Course 6:
+Cybersecurity Fundamentals
+by David Kim (Volunteer)
+4.8 (1,234)
+12 weeks
+Beginner
+50 Credits  (Earning Badge)
+Learn network security, ethical hacking, and risk management. Complete security labs and earn credits for identifying vulnerabilities and implementing solutions.
+FREE
+Start Earning Credits (Outline Button)
+
+Load More Courses (Outline Button)
+
+
+--- Footer (updated text) ---
+Empowering professionals through free, community-driven learning and volunteer mentorship.
+
+Updated Footer Links:
+Learn:
+Browse Free Courses
+Find Mentors
+Learning Paths
+Certifications
