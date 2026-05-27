@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+use App\Models\Audit;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
@@ -53,6 +55,18 @@ class CourseController extends Controller
             'created_date' => now(),
         ]);
 
+        try {
+            Audit::create([
+                'admin_user_id' => Auth::id(),
+                'action' => 'create_course',
+                'target_type' => 'course',
+                'target_id' => null,
+                'description' => 'Created course: ' . ($data['title'] ?? ''),
+            ]);
+        } catch (\Throwable $e) {
+            // do nothing
+        }
+
         return redirect()->route('courses.index')->with('status', 'Course created.');
     }
 
@@ -81,12 +95,36 @@ class CourseController extends Controller
             'status' => $request->input('action') === 'archive' ? 'archived' : $course->status,
         ]);
 
+        try {
+            Audit::create([
+                'admin_user_id' => Auth::id(),
+                'action' => 'update_course',
+                'target_type' => 'course',
+                'target_id' => $course->id,
+                'description' => 'Updated course: ' . $course->title,
+            ]);
+        } catch (\Throwable $e) {
+            // do nothing
+        }
+
         return redirect()->route('courses.index')->with('status', $request->input('action') === 'archive' ? 'Course deactivated.' : 'Course updated.');
     }
 
     public function destroy(Course $course)
     {
         $course->delete();
+
+        try {
+            Audit::create([
+                'admin_user_id' => Auth::id(),
+                'action' => 'delete_course',
+                'target_type' => 'course',
+                'target_id' => $course->id,
+                'description' => 'Deleted course: ' . $course->title,
+            ]);
+        } catch (\Throwable $e) {
+            // do nothing
+        }
 
         return redirect()->route('courses.index')->with('status', 'Course deleted.');
     }

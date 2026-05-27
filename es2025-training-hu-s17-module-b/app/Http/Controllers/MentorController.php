@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Mentor;
+use App\Models\Audit;
+use Illuminate\Support\Facades\Auth;
 
 class MentorController extends Controller
 {
@@ -31,6 +33,19 @@ class MentorController extends Controller
             $mentor->user->update([
                 'status' => 'active',
             ]);
+        }
+
+        // Audit log
+        try {
+            Audit::create([
+                'admin_user_id' => Auth::id(),
+                'action' => 'approve_mentor',
+                'target_type' => 'mentor',
+                'target_id' => $mentor->id,
+                'description' => 'Approved mentor: ' . ($mentor->user?->name ?? $mentor->id),
+            ]);
+        } catch (\Throwable $e) {
+            // do nothing
         }
 
         return back()->with('status', 'Mentor approved.');

@@ -27,21 +27,21 @@ class DatabaseSeeder extends Seeder
 
         $json = file_get_contents($jsonPath);
 
-        $data = json_decode($json);
+        $data = json_decode($json, true);
 
         DB::transaction(function () use ($data) {
             $usersByEmail = [];
             $coursesByTitle = [];
 
-            $this->seedCoreUsers($data['users'] ?? [], $usersByEmail);
+            $this->seedCoreUsers(array_values((array) ($data['users'] ?? [])), $usersByEmail);
             $this->seedAdminUsers();
-            $this->seedMentors($data['mentors'] ?? [], $usersByEmail);
-            $coursesByTitle = $this->seedCourses($data['courses'] ?? []);
-            $this->seedChapterCompletions($data['chapterCompleted'] ?? [], $coursesByTitle, $usersByEmail);
+            $this->seedMentors(array_values((array) ($data['mentors'] ?? [])), $usersByEmail);
+            $coursesByTitle = $this->seedCourses(array_values((array) ($data['courses'] ?? [])));
+            $this->seedChapterCompletions(array_values((array) ($data['chapterCompleted'] ?? [])), $coursesByTitle, $usersByEmail);
         });
     }
 
-    private function seedCoreUsers(array $users, array $usersByEmail)
+    private function seedCoreUsers(array $users, array &$usersByEmail)
     {
         foreach ($users as $userData) {
             $firstName = (string) ($userData['firstName'] ?? '');
@@ -99,7 +99,7 @@ class DatabaseSeeder extends Seeder
         );
     }
 
-    private function seedMentors(array $mentors, array $usersByEmail)
+    private function seedMentors(array $mentors, array &$usersByEmail)
     {
         foreach ($mentors as $index => $mentorData) {
             $mentorName = (string) ($mentorData['mentorName'] ?? '');

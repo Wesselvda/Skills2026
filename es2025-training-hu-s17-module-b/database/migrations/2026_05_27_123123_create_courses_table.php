@@ -23,9 +23,9 @@ return new class extends Migration
             $table->dateTime('created_date')->nullable();
             $table->string('instructor_name', 100)->nullable();
 
-            $table->index('status');
-            $table->index('category');
-            $table->index('difficulty_level');
+            $table->index('status', 'courses_status_idx');
+            $table->index('category', 'courses_category_idx');
+            $table->index('difficulty_level', 'courses_difficulty_idx');
         });
     }
 

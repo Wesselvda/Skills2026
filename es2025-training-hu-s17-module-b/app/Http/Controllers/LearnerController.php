@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Audit;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class LearnerController extends Controller
@@ -53,6 +55,18 @@ class LearnerController extends Controller
             'status' => 'suspended',
         ]);
 
+        try {
+            Audit::create([
+                'admin_user_id' => Auth::id(),
+                'action' => 'suspend_user',
+                'target_type' => 'user',
+                'target_id' => $user->id,
+                'description' => 'Suspended user: ' . ($user->name ?? $user->email),
+            ]);
+        } catch (\Throwable $e) {
+            // do nothing
+        }
+
         return back()->with('status', 'Learner suspended.');
     }
 
@@ -65,6 +79,18 @@ class LearnerController extends Controller
         $user->update([
             'status' => 'active',
         ]);
+
+        try {
+            Audit::create([
+                'admin_user_id' => Auth::id(),
+                'action' => 'enable_user',
+                'target_type' => 'user',
+                'target_id' => $user->id,
+                'description' => 'Enabled user: ' . ($user->name ?? $user->email),
+            ]);
+        } catch (\Throwable $e) {
+            // do nothing
+        }
 
         return back()->with('status', 'Learner enabled.');
     }

@@ -24,9 +24,9 @@ return new class extends Migration
             $table->integer('total_sessions_completed')->default(0);
             $table->decimal('average_rating', 3, 2)->nullable();
 
-            $table->index('user_id');
-            $table->index('approval_status');
-            $table->index('availability_status');
+            $table->index('user_id', 'mentors_user_id_idx');
+            $table->index('approval_status', 'mentors_approval_status_idx');
+            $table->index('availability_status', 'mentors_availability_idx');
         });
     }
 
