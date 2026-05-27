@@ -1,6 +1,6 @@
 -- Data for table `users`
 INSERT INTO
-  `users`
+  `users` (id, name, email, password, role, first_name, last_name, registration_date, last_login, status, credit_balance)
 VALUES
   (
     1,

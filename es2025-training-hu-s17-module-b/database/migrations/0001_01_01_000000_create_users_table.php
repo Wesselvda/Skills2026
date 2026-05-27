@@ -23,6 +23,8 @@ return new class extends Migration
             $table->dateTime('last_login')->nullable();
             $table->enum('status', ['active', 'suspended', 'deleted'])->default('active');
             $table->integer('credit_balance')->default(0);
+            $table->rememberToken();
+            $table->timestamps();
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
