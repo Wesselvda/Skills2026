@@ -22,10 +22,16 @@ Route::middleware(['auth', 'admin'])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::get('/learners', [LearnerController::class, 'index'])->name('learners.index');
+    Route::post('/learners/{user}/suspend', [LearnerController::class, 'suspend'])->name('learners.suspend');
+    Route::post('/learners/{user}/enable', [LearnerController::class, 'enable'])->name('learners.enable');
 
     Route::get('/courses', [CourseController::class, 'index'])->name('courses.index');
     Route::get('/courses/create', [CourseController::class, 'create'])->name('courses.create');
+    Route::post('/courses', [CourseController::class, 'store'])->name('courses.store');
     Route::get('/courses/{course}/edit', [CourseController::class, 'edit'])->name('courses.edit');
+    Route::patch('/courses/{course}', [CourseController::class, 'update'])->name('courses.update');
+    Route::delete('/courses/{course}', [CourseController::class, 'destroy'])->name('courses.destroy');
 
     Route::get('/mentors', [MentorController::class, 'index'])->name('mentors.index');
+    Route::post('/mentors/{mentor}/approve', [MentorController::class, 'approve'])->name('mentors.approve');
 });

@@ -30,7 +30,7 @@
                 Remember me
             </label>
 
-            <button type="submit" class="btn btn--primary btn--block">Log In</button>
+            <button type="submit" class="btn btn-primary btn-block">Log In</button>
         </form>
     </section>
 @endsection
