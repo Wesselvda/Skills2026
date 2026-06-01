@@ -1,0 +1,63 @@
+# Local content service stack for Module C.
+# Start: docker compose -f assets/content-service/content-service.yaml up -d
+# API:   http://localhost:5000 
+# PMA:   http://localhost:8081
+
+name: content-service
+
+services:
+  db:
+    image: mariadb:11
+    container_name: content-service-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-skill17}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-content-service}
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./db/content-service.sql:/docker-entrypoint-initdb.d/01-schema-and-data.sql:ro
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 40s
+    networks:
+      - content-service
+
+  content-services:
+    image: ghcr.io/marketable-it-skills/s17-es2025-training-hu-module_c-rest-api-content-service:latest
+    container_name: content-services
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: mysql://root:${MYSQL_ROOT_PASSWORD:-skill17}@db:3306/${MYSQL_DATABASE:-content-service}
+    ports:
+      - "5000:5000"
+    networks:
+      - content-service
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: content-service-phpmyadmin
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: ${MYSQL_ROOT_PASSWORD:-skill17}
+    ports:
+      - "8081:80"
+    networks:
+      - content-service
+
+networks:
+  content-service:
+    name: content-service
+
+volumes:
+  db-data:
