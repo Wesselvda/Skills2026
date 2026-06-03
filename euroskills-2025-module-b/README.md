@@ -1,0 +1,1 @@
+# To seed the application, run `php artisan migrate:fresh --seed`

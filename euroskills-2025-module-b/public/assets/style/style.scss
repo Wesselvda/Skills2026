@@ -1,0 +1,524 @@
+$background-color: #f0f0f0;
+$text-color: #333;
+$text-color-inverted: #fff;
+$primary-color: #007bff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    transition: filter 0.3s;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: underline;
+        filter: brightness(0.8);
+    }
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 4px;
+    color: $text-color-inverted;
+    cursor: pointer;
+    font: inherit;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+.main-header {
+    // background-color: $primary-color;
+    // color: $text-color-inverted;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        &:hover {
+            text-decoration: none;
+            filter: none;
+        }
+    }
+
+    .inner-wrapper {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        a {
+            &.active {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.main-footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem;
+
+    .footer-inner {
+        max-width: 1000px;
+        padding: 0 1.5rem;
+        margin: 0 auto;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.main-content {
+    section {
+        max-width: 1000px;
+        margin: 2rem auto;
+        margin-bottom: 3rem;
+        padding: 0 1.5rem;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 4rem;
+            padding: 0;
+        }
+    }
+
+    .home-hero {
+        margin: 0;
+        margin-bottom: 2rem;
+        max-width: 100%;
+        position: relative;
+        z-index: 0;
+        padding: 0;
+
+        @media screen and (min-width: 768px) {
+            margin-top: -60px;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        .overlay {
+            width: 100%;
+            text-align: center;
+            margin-top: 1rem;
+            padding: 0 1.5rem;
+
+            h1 {
+                font-weight: normal;
+                font-size: 1rem;
+            }
+
+            @media screen and (min-width: 768px) {
+                h1 {
+                    font-size: 2rem;
+                }
+
+                max-width: 600px;
+                color: $text-color-inverted;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                margin-top: 0;
+            }
+
+            @media screen and (min-width: 1200px) {
+                top: 45%;
+                max-width: 800px;
+
+                h1 {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+.section-half-image {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    > div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+
+        &.map-pin {
+            position: absolute;
+            width: 30px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -100%);
+
+            &.top {
+                left: 40%;
+                transform: translate(-50%, -100%);
+            }
+        }
+    }
+}
+
+.key-facts {
+    h2 {
+        text-align: center;
+    }
+
+    .fact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .fact {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+
+            .label {
+                font-size: 1.2rem;
+                font-weight: bold;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 1.5rem;
+                }
+            }
+
+            .value {
+                @media screen and (min-width: 768px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+.sponsors {
+    .sponsor-logos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+.main-content .text-centered {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+// Investors page
+
+.investor-form {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+
+    .investor-type-fieldset {
+        display: flex;
+        gap: 0.5rem;
+
+        label {
+            display: block;
+            padding: 0.5rem 1rem;
+            background-color: $primary-color;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            color: $text-color-inverted;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+
+        input:checked + label {
+            background-color: #228b22;
+
+            &:hover {
+                background-color: darken(#228b22, 10%);
+            }
+        }
+
+        input {
+            display: none;
+        }
+    }
+
+    fieldset {
+        border: none;
+        margin-bottom: 1rem;
+    }
+
+    legend {
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .input-wrapper {
+        content: "test1";
+
+        &:has(> :first-child[type="radio"]) {
+            .option-details {
+                display: none;
+            }
+        }
+
+        &:has(> :first-child[type="radio"]:checked) {
+            .option-details {
+                display: block;
+            }
+        }
+    }
+
+    // // Hide the opther options if one is checked (not working yet)
+    
+    // .investment-options-fieldset:has([type="checkbox"]:checked) {
+    //     .input-wrapper {
+    //         &:not(:has([type="checkbox"]:checked)) {
+    //             display: none;
+    //         }
+    //     }
+    // } 
+
+    .option-details {
+        margin-top: 1rem;
+    }
+
+    .input-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font: inherit;
+        }
+    }
+}
+
+// Visitor tours
+
+.main-content .whattoexpect {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+
+    ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.main-content .tours {
+    .tour-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .item {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+
+            img {
+                border-radius: 8px;
+                width: 100%;
+                aspect-ratio: 16 / 9;
+                object-fit: cover;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+.turbine-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .turbine-item {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            object-fit: contain;
+        }
+    }
+}
+
+.error {
+    color: red;
+}
+
+.sponsors-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sponsor-item {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            object-fit: contain;
+        }
+    }
+}
+
+.investments-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+        object-fit: contain;
+    }
+
+    .investment-item {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+}
