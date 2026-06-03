@@ -49,11 +49,20 @@ class AuthController extends Controller
             ->where('login_code', $validated['login_code'])
             ->first();
 
+        $user->login_code = null;
+        $user->save();
+
         if ($user) {
             $request->session()->put('user_id', $user->id);
             return redirect('/');
         }
 
         return back()->withErrors(['Invalid login code.']);
+    }
+
+    public function logout(Request $request)
+    {
+        $request->session()->forget('user_id');
+        return redirect('/login');
     }
 }

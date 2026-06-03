@@ -294,10 +294,10 @@ button:hover {
 .investor-form .input-wrapper {
   content: "test1";
 }
-.investor-form .input-wrapper:has(> :first-child[type=checkbox]) .option-details {
+.investor-form .input-wrapper:has(> :first-child[type=radio]) .option-details {
   display: none;
 }
-.investor-form .input-wrapper:has(> :first-child[type=checkbox]:checked) .option-details {
+.investor-form .input-wrapper:has(> :first-child[type=radio]:checked) .option-details {
   display: block;
 }
 .investor-form .option-details {
@@ -360,4 +360,101 @@ button:hover {
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 1rem;
+}
+
+.turbine-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .turbine-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .turbine-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.turbine-grid .turbine-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.turbine-grid .turbine-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.error {
+  color: red;
+}
+
+.sponsors-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .sponsors-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sponsors-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.sponsors-section .sponsor-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+.sponsors-section .sponsor-item img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.investments-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .investments-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .investments-section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.investments-section img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.investments-section .investment-item {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */

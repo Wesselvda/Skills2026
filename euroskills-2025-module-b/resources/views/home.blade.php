@@ -81,13 +81,4 @@
             <p>Location of the offshore wind farm: 30 km off the West coast</p>
         </div>
     </section>
-    <section class="sponsors">
-        <h2>Our sponsors</h2>
-        <div class="sponsor-logos">
-            <img src="/assets/sponsors/lumen-flux.png" alt="Lumen Flux logo">
-            <img src="/assets/sponsors/nova-power.png" alt="Nova Power logo">
-            <img src="/assets/sponsors/terravolt.png" alt="Terravolt logo">
-            <img src="/assets/sponsors/veridian-spark.png" alt="Veridian Spark logo">
-        </div>
-    </section>
 @endsection

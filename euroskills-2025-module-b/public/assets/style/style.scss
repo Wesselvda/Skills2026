@@ -335,18 +335,28 @@ button {
     .input-wrapper {
         content: "test1";
 
-        &:has(> :first-child[type="checkbox"]) {
+        &:has(> :first-child[type="radio"]) {
             .option-details {
                 display: none;
             }
         }
 
-        &:has(> :first-child[type="checkbox"]:checked) {
+        &:has(> :first-child[type="radio"]:checked) {
             .option-details {
                 display: block;
             }
         }
     }
+
+    // // Hide the opther options if one is checked (not working yet)
+    
+    // .investment-options-fieldset:has([type="checkbox"]:checked) {
+    //     .input-wrapper {
+    //         &:not(:has([type="checkbox"]:checked)) {
+    //             display: none;
+    //         }
+    //     }
+    // } 
 
     .option-details {
         margin-top: 1rem;
@@ -417,5 +427,98 @@ button {
                 margin-bottom: 1rem;
             }
         }
+    }
+}
+
+.turbine-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .turbine-item {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            object-fit: contain;
+        }
+    }
+}
+
+.error {
+    color: red;
+}
+
+.sponsors-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sponsor-item {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            object-fit: contain;
+        }
+    }
+}
+
+.investments-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+        object-fit: contain;
+    }
+
+    .investment-item {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 8px;
     }
 }

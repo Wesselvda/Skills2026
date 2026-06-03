@@ -13,7 +13,7 @@ class InvestmentRequest extends Model
         'investor_email',
         'investor_address',
         'investor_phone',
-        'investent_type',
+        'investment_type',
     ];
 
     public function supports() : HasOne
