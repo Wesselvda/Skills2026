@@ -1,2 +1,7 @@
 *
 !.gitignore
+!sponsorImages
+!sponsorImages/lumen-flux.png
+!sponsorImages/nova-power.png
+!sponsorImages/terravolt.png
+!sponsorImages/veridian-spark.png
