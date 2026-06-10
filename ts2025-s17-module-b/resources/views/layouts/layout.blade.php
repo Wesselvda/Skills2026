@@ -16,6 +16,7 @@
                 @auth
                     <a href="{{ route('categories.index') }}">Categories</a>
                     <a href="{{ route('history.index') }}">History</a>
+                    <a href="{{ route('applications.index') }}">Applications</a>
                     <a href="{{ route('logout') }}">Logout</a>
                 @else
                     <a href="{{ route('login') }}">Login</a>

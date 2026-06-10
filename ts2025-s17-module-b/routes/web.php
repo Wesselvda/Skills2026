@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ApplicationController;
 use App\Http\Controllers\BicycleController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HistoryController;
@@ -40,6 +41,11 @@ Route::group(['middleware' => 'auth'], function () {
     // History
     Route::get('/history', [HistoryController::class, 'index'])->name('history.index');
     Route::get('/history/export', [HistoryController::class, 'export'])->name('history.export');
+
+    // Applications
+    Route::get('/applications', [ApplicationController::class, 'index'])->name('applications.index');
+    Route::patch('/applications/{application}/approve', [ApplicationController::class, 'approve'])->name('applications.approve');
+    Route::patch('/applications/{application}/reject', [ApplicationController::class, 'reject'])->name('applications.reject');
 
     // Logout
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');

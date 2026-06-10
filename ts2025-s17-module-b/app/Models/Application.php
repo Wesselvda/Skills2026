@@ -11,6 +11,7 @@ class Application extends Model
         'application_key',
         'category_ref',
         'user_ref',
+        'status',
     ];
 
     public function category(): BelongsTo
