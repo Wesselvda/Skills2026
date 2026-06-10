@@ -31,7 +31,9 @@
                     <tbody>
                         @foreach ($categories as $category)
                             <tr>
-                                <td>{{ $category->name }}</td>
+                                <td>
+                                    <a class="table-link" href="{{ route('bicycles.index', $category) }}">{{ $category->name }}</a>
+                                </td>
                                 <td>{{ $category->bicycles_count }}</td>
                                 <td class="actions">
                                     <a class="btn small" href="{{ route('categories.edit', $category) }}">Edit</a>

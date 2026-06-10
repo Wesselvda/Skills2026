@@ -13,6 +13,8 @@ class Bicycle extends Model
         'name',
         'slug',
         'description',
+        'wear',
+        'status',
         'locationX',
         'locationY',
         'pathToImage',
@@ -24,6 +26,7 @@ class Bicycle extends Model
         return [
             'locationX' => 'decimal:2',
             'locationY' => 'decimal:2',
+            'wear' => 'integer',
         ];
     }
 
