@@ -36,6 +36,7 @@
                                 </td>
                                 <td>{{ $category->bicycles_count }}</td>
                                 <td class="actions">
+                                    <a class="btn small" href="{{ route('tariffs.index', $category) }}">Tariffs</a>
                                     <a class="btn small" href="{{ route('categories.edit', $category) }}">Edit</a>
                                     <form method="POST" action="{{ route('categories.destroy', $category) }}">
                                         @csrf

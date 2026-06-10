@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BicycleController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\TariffController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
@@ -26,6 +27,14 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('/bicycles/{bicycle}', [BicycleController::class, 'update'])->name('bicycles.update');
     Route::patch('/bicycles/{bicycle}/status', [BicycleController::class, 'status'])->name('bicycles.status');
     Route::delete('/bicycles/{bicycle}', [BicycleController::class, 'destroy'])->name('bicycles.destroy');
+
+    // Tariffs
+    Route::get('/categories/{category}/tariffs', [TariffController::class, 'index'])->name('tariffs.index');
+    Route::get('/categories/{category}/tariffs/create', [TariffController::class, 'create'])->name('tariffs.create');
+    Route::post('/categories/{category}/tariffs', [TariffController::class, 'store'])->name('tariffs.store');
+    Route::get('/tariffs/{tariff}/edit', [TariffController::class, 'edit'])->name('tariffs.edit');
+    Route::put('/tariffs/{tariff}', [TariffController::class, 'update'])->name('tariffs.update');
+    Route::patch('/tariffs/{tariff}/archive', [TariffController::class, 'archive'])->name('tariffs.archive');
 
     // Logout
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');

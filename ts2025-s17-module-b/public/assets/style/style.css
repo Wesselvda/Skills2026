@@ -148,6 +148,11 @@ table tr:last-child td {
   font-weight: bold;
 }
 
+.archived-row {
+  color: #777;
+  background-color: #f7f7f7;
+}
+
 .actions {
   display: flex;
   gap: 0.5rem;

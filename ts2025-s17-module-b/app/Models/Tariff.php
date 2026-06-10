@@ -16,6 +16,7 @@ class Tariff extends Model
         'minPrice',
         'maxPrice',
         'category_ref',
+        'archived',
     ];
 
     protected function casts()
@@ -24,6 +25,7 @@ class Tariff extends Model
             'basePrice' => 'integer',
             'minPrice' => 'integer',
             'maxPrice' => 'integer',
+            'archived' => 'boolean',
         ];
     }
 
