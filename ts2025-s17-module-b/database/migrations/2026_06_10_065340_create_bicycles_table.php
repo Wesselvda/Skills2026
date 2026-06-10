@@ -16,10 +16,12 @@ return new class extends Migration
             $table->string('bicycle_key')->unique();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->text('description');
+            $table->text('description')->nullable();
+            $table->unsignedTinyInteger('wear')->default(0);
+            $table->string('status')->default('available');
             $table->decimal('locationX', 8, 2);
             $table->decimal('locationY', 8, 2);
-            $table->string('pathToImage');
+            $table->string('pathToImage')->nullable();
             $table->string('category_ref');
             $table->timestamps();
         });
