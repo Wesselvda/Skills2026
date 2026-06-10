@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BicycleController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\TariffController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,6 +36,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/tariffs/{tariff}/edit', [TariffController::class, 'edit'])->name('tariffs.edit');
     Route::put('/tariffs/{tariff}', [TariffController::class, 'update'])->name('tariffs.update');
     Route::patch('/tariffs/{tariff}/archive', [TariffController::class, 'archive'])->name('tariffs.archive');
+
+    // History
+    Route::get('/history', [HistoryController::class, 'index'])->name('history.index');
+    Route::get('/history/export', [HistoryController::class, 'export'])->name('history.export');
 
     // Logout
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');

@@ -65,6 +65,12 @@ a {
         font-size: 1.25rem;
         padding: 1rem;
     }
+
+    nav {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
 }
 
 .main-content {
@@ -165,6 +171,46 @@ table {
     display: flex;
     gap: .5rem;
     align-items: center;
+}
+
+.filter-form {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.photo-list {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.pagination {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+
+    a, span {
+        padding: .35rem .75rem;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+
+    a {
+        color: #1e90ff;
+    }
+
+    .active {
+        background-color: #1e90ff;
+        color: #fff;
+    }
 }
 
 .btn.secondary, button.secondary {
