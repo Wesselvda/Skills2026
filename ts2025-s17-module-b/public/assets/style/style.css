@@ -74,6 +74,14 @@ a:hover {
   padding: 1rem;
 }
 
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 .main-content:has(.centered-container) {
   display: flex;
   justify-content: center;
@@ -96,6 +104,75 @@ a:hover {
   max-width: 400px;
   margin: 0 auto;
   min-width: 20vw;
+}
+
+.message {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  background-color: #e6f6e6;
+  color: #1d6b1d;
+  margin-bottom: 1rem;
+}
+
+.box-error {
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  background-color: #ffecec;
+  margin-bottom: 1rem;
+}
+
+.table-box {
+  overflow-x: auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th, table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+table th {
+  background-color: #fafafa;
+}
+table tr:last-child td {
+  border-bottom: none;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.btn.secondary {
+  background-color: #666;
+}
+.btn.secondary:hover {
+  background-color: #555;
+}
+
+.btn.small, button.small {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+button.danger {
+  background-color: #dc143c;
+}
+button.danger:hover {
+  background-color: #b51031;
+}
+
+.empty-box {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 form {

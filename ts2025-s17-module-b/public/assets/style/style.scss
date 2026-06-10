@@ -80,6 +80,14 @@ a {
     padding: 1rem;
 }
 
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
 .main-content:has(.centered-container) {
     display: flex;
     justify-content: center;
@@ -101,6 +109,80 @@ a {
         margin: 0 auto;
         min-width: 20vw;
     }
+}
+
+.message {
+    padding: .75rem 1rem;
+    border-radius: 4px;
+    background-color: #e6f6e6;
+    color: #1d6b1d;
+    margin-bottom: 1rem;
+}
+
+.box-error {
+    padding: .75rem 1rem;
+    border-radius: 4px;
+    background-color: #ffecec;
+    margin-bottom: 1rem;
+}
+
+.table-box {
+    overflow-x: auto;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        padding: .75rem;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+
+    th {
+        background-color: #fafafa;
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+}
+
+.actions {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.btn.secondary {
+    background-color: #666;
+
+    &:hover {
+        background-color: #555;
+    }
+}
+
+.btn.small, button.small {
+    padding: .35rem .75rem;
+    font-size: .9rem;
+}
+
+button.danger {
+    background-color: #dc143c;
+
+    &:hover {
+        background-color: #b51031;
+    }
+}
+
+.empty-box {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 form {
