@@ -7,13 +7,13 @@ services:
       MYSQL_DATABASE: ts2025
     volumes:
       - data:/var/lib/mysql
-    ports:
-      - "3306:3306"
-  phpmyadmin:
-    image: phpmyadmin:latest
-    restart: always
-    ports:
-      - "8080:80"
+  #   ports:
+  #     - "3306:3306"
+  # phpmyadmin:
+  #   image: phpmyadmin:latest
+  #   restart: always
+  #   ports:
+  #     - "8080:80"
   solution:
     build: ./solution
     ports:
