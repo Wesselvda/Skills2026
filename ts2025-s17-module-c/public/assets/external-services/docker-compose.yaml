@@ -1,0 +1,28 @@
+version: "3"
+services:
+  db:
+    image: mariadb:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ts2025
+    volumes:
+      - data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+  phpmyadmin:
+    image: phpmyadmin:latest
+    restart: always
+    ports:
+      - "8080:80"
+  solution:
+    build: ./solution
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+  oauth:
+    build: ./oauth
+    ports:
+      - "7000:7000"
+volumes:
+  data:

@@ -1,0 +1,183 @@
+generator client {
+  provider      = "prisma-client-js"
+  output        = "../generated/prisma"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum BicycleStatus {
+  AVAILABLE
+  UNAVAILABLE
+}
+
+enum ApplicationStatus {
+  PENDING
+  APPROVED
+  CANCELED
+}
+
+enum TariffType {
+  STATIC
+  DYNAMIC
+}
+
+enum HistoryType {
+  REPLENISHMENT
+  WITHDRAWAL
+  RENTAL
+  MODERATION_REWARD
+}
+
+model User {
+  id       String @id @default(uuid()) /*@db.Uuid*/
+  name     String
+  email    String @unique
+  phone    String
+  balance  Int    @default(0)
+  password String
+
+  categories   Category[]
+  applications Application[]
+  bookings     Booking[]
+  histories    BalanceHistory[]
+  tokens       UserToken[]
+
+  @@map("users")
+}
+
+model UserToken {
+  id    String @id @default(uuid())
+  value String @db.Text
+  hash  String @unique
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String @map("user_id")
+
+  @@map("user_tokens")
+}
+
+model BalanceHistory {
+  id    String      @id @default(uuid()) /*@db.Uuid*/
+  type  HistoryType
+  value Int
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String @map("user_id") /*@db.Uuid*/
+
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("balance_histories")
+}
+
+model Category {
+  id             String @id @default(uuid()) /*@db.Uuid*/
+  name           String
+  rentConditions Json?  @map("rent_conditions")
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String @map("user_id") /*@db.Uuid*/
+
+  bicycles     Bicycle[]
+  promoCodes   PromoCode[]
+  applications Application[]
+  tariffs      Tariff[]
+
+  @@map("categories")
+}
+
+model Bicycle {
+  id               String        @id @default(uuid()) /*@db.Uuid*/
+  name             String
+  slug             String        @unique
+  description      String?
+  percentageOfWear Int           @default(0) @map("percentage_of_wear")
+  locationX        String        @map("location_x")
+  locationY        String        @map("location_y")
+  status           BicycleStatus @default(AVAILABLE)
+  pathToImage      String        @map("path_to_image")
+
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId String   @map("category_id") /*@db.Uuid*/
+
+  bookings Booking[]
+
+  @@map("bicycles")
+}
+
+model PromoCode {
+  id              String   @id @default(uuid()) /*@db.Uuid*/
+  code            String   @unique
+  discountPercent Int?     @map("discount_percent")
+  freeMinutes     Int?     @map("free_minutes")
+  expiresAt       DateTime @map("expires_at")
+
+  category   Category  @relation(fields: [categoryId], references: [id])
+  categoryId String    @map("category_id") /*@db.Uuid*/
+  bookings   Booking[]
+
+  @@map("promo_codes")
+}
+
+model Application {
+  id     String            @id @default(uuid()) /*@db.Uuid*/
+  status ApplicationStatus @default(PENDING)
+
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId String   @map("category_id") /*@db.Uuid*/
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String @unique @map("user_id") /*@db.Uuid*/
+
+  @@map("applications")
+}
+
+model Tariff {
+  id   String     @id @default(uuid()) /*@db.Uuid*/
+  name String
+  type TariffType @default(STATIC)
+
+  basePrice Int  @map("base_price")
+  minPrice  Int? @map("min_price")
+  maxPrice  Int? @map("max_price")
+
+  bookings Booking[]
+
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  categoryId String   @map("category_id") /*@db.Uuid*/
+
+  deletedAt DateTime? @map("deleted_at")
+
+  @@map("tariffs")
+}
+
+model Booking {
+  id               String @id @default(uuid()) /*@db.Uuid*/
+  pricePerMin      Int    @map("price_per_min")
+  fullPrice        Int?   @map("full_price")
+  rating           Int?   @db.SmallInt
+  userRating       Int?   @db.SmallInt
+  percentageOfWear Int?   @map("percentage_of_wear")
+
+  startedAt DateTime  @default(now()) @map("started_at")
+  endedAt   DateTime? @map("ended_at")
+
+  bicycle   Bicycle @relation(fields: [bicycleId], references: [id], onDelete: Cascade)
+  bicycleId String  @map("bicycle_id") /*@db.Uuid*/
+
+  tariff   Tariff @relation(fields: [tariffId], references: [id])
+  tariffId String @map("tariff_id") /*@db.Uuid*/
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String @map("user_id") /*@db.Uuid*/
+
+  promoCode   PromoCode? @relation(fields: [promoCodeId], references: [id])
+  promoCodeId String?    @map("promo_code_id") /*@db.Uuid*/
+
+  photos Json?
+
+  @@map("bookings")
+}
