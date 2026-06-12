@@ -17,6 +17,8 @@ class User extends Authenticatable
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
 
+    protected $table = 'laravel_users';
+
     /**
      * Get the attributes that should be cast.
      *
