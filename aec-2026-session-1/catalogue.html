@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catalogue">
+    <title>Catalogue - Neubrandenbook</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip the navigation links</a>
+    <header class="main-header">
+        <div class="container-inner">
+            <a class="brand" href="index.html" aria-label="Neubrandenbook">
+                <img src="assets/logo/logo_black.png" alt="Neubrandenbook" class="logo light-only">
+                <img src="assets/logo/logo_white.png" alt="Neubrandenbook" class="logo dark-only">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a class="active" href="catalogue.html">Catalogue</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content" id="main">
+        <section class="section container-inner catalogue-page">
+            <h1>Catalogue</h1>
+
+            <div class="catalogue-filter">
+                <input type="radio" name="tag" id="tag-literary">
+                <label for="tag-literary">Literary Novel</label>
+
+                <input type="radio" name="tag" id="tag-worldskills">
+                <label for="tag-worldskills">WorldSkills</label>
+
+                <input type="radio" name="tag" id="tag-international">
+                <label for="tag-international">International</label>
+
+                <input type="radio" name="tag" id="tag-thriller">
+                <label for="tag-thriller">Thriller</label>
+
+                <input type="radio" name="tag" id="tag-mystical">
+                <label for="tag-mystical">Mystical</label>
+
+                <input type="radio" name="tag" id="tag-historical">
+                <label for="tag-historical">Historical</label>
+
+                <div class="catalogue-grid">
+                    <article class="catalogue-card tag-literary tag-worldskills tag-international">
+                        <img src="assets/catalogue/book-diallo-skills-of-gold.png" alt="Cover image">
+                        <div>
+                            <h2>Skills of Gold</h2>
+                            <p>by Amara Diallo</p>
+                            <p class="tags">Literary Novel, WorldSkills, International</p>
+                        </div>
+                    </article>
+
+                    <article class="catalogue-card tag-thriller tag-literary tag-worldskills tag-international">
+                        <img src="assets/catalogue/book-diallo-the-voltage-between-us.png" alt="Cover image">
+                        <div>
+                            <h2>The Voltage Between Us</h2>
+                            <p>by Amara Diallo</p>
+                            <p class="tags">Thriller, Literary Novel, WorldSkills, International</p>
+                        </div>
+                    </article>
+
+                    <article class="catalogue-card tag-literary tag-mystical">
+                        <img src="assets/catalogue/book-mclintock-the-tide-warden.png" alt="Cover image">
+                        <div>
+                            <h2>The Tide Warden</h2>
+                            <p>by Sarah McLintock</p>
+                            <p class="tags">Literary Novel, Mystical</p>
+                        </div>
+                    </article>
+
+                    <article class="catalogue-card tag-literary tag-historical">
+                        <img src="assets/catalogue/book-mclintock-the-ferrymans-daughter.png" alt="Cover image">
+                        <div>
+                            <h2>The Ferryman's Daughter</h2>
+                            <p>by Sarah McLintock</p>
+                            <p class="tags">Literary Novel, Historical</p>
+                        </div>
+                    </article>
+
+                    <article class="catalogue-card tag-mystical">
+                        <img src="assets/catalogue/book-schiller-untergang.png" alt="Cover image">
+                        <div>
+                            <h2>Der Schatz der Welten: Untergang</h2>
+                            <p>by Joachim Schiller</p>
+                            <p class="tags">Mystical</p>
+                        </div>
+                    </article>
+
+                    <article class="catalogue-card tag-thriller tag-worldskills">
+                        <img src="assets/catalogue/book-steinbeck-geheimcode-worldskills.png" alt="Cover image">
+                        <div>
+                            <h2>Geheimcode WorldSkills</h2>
+                            <p>by Paul Steinbeck</p>
+                            <p class="tags">Thriller, WorldSkills</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container-inner">&copy; 2026 Neubrandenbook</div>
+    </footer>
+</body>
+</html>
