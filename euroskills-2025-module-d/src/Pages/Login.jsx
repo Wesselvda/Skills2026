@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { apiCall } from "../Helpers/ApiHelper";
-import { useNavigate } from "react-router";
+import { useLocation } from "react-router";
 
 const Login = () => {
     const [formData, setFormData] = useState({
@@ -10,7 +10,8 @@ const Login = () => {
 
     const [errorMessage, setErrorMessage] = useState("");
 
-    const navigate = useNavigate();
+    const location = useLocation();
+    const redirectTo = location.state?.from?.pathname || "/";
 
     function onSubmit(e) {
         e.preventDefault();
@@ -36,7 +37,7 @@ const Login = () => {
                 role: data.role
             }));
 
-            window.location.href = "/";
+            window.location.href = redirectTo;
         })
         .catch((error) => {
             setErrorMessage(error.message);

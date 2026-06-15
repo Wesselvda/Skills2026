@@ -12,6 +12,7 @@ const Layout = () => {
     }
 
     const { user, token } = useContext(AppContext);
+    const canOperate = token && ["operator", "admin"].includes(user?.role);
 
     return (
         <>
@@ -22,7 +23,7 @@ const Layout = () => {
                     </Link>
                     <nav>
                         <NavLink to="/">Map</NavLink>
-                        <NavLink to="/alerts">Alerts</NavLink>
+                        {canOperate && <NavLink to="/alerts">Alerts</NavLink>}
                         { token ? <>
                         
                             <button onClick={logout}>Logout</button>

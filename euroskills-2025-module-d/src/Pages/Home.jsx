@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { apiCall } from "../Helpers/ApiHelper";
 import { Link, useNavigate, useParams } from "react-router";
+import AppContext from "../Helpers/AppContext";
 
 const Home = () => {
     const [selectedTurbine, setSelectedTurbine] = useState();
@@ -9,6 +10,8 @@ const Home = () => {
     const [powerHistory, setPowerHistory] = useState([]);
     const navigate = useNavigate();
     const { turbineId } = useParams();
+    const { token, user } = useContext(AppContext);
+    const canOperate = token && ["operator", "admin"].includes(user?.role);
 
     function getTurbines() {
         apiCall("/turbines", {
@@ -265,12 +268,14 @@ const Home = () => {
                                             >
                                                 View Actions
                                             </Link>
-                                            <Link
-                                                to={`/turbines/${selectedTurbine.id}/logs`}
-                                                className="btn"
-                                            >
-                                                View Logs
-                                            </Link>
+                                            {canOperate && (
+                                                <Link
+                                                    to={`/turbines/${selectedTurbine.id}/logs`}
+                                                    className="btn"
+                                                >
+                                                    View Logs
+                                                </Link>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
