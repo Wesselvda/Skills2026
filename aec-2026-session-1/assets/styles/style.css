@@ -1,0 +1,146 @@
+:root {
+    --background-color: light-dark(#f0f0f0, #0f0f0f);
+    --text-color: light-dark(#333, #ddd);
+    --primary: #007bff;
+    --header-bg: light-dark(#fff, #000);
+    --footer-bg: light-dark(#333, #000);
+    --footer-color: #ddd;
+
+    color-scheme: light dark;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.dark-only {
+    display: none;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    .light-only {
+        display: none;
+    }
+
+    .dark-only {
+        display: block;
+    }
+}
+
+body.light {
+    color-scheme: light;
+}
+
+body.light .light-only {
+    display: block;
+}
+
+body.light .dark-only {
+    display: none;
+}
+
+body.dark {
+    color-scheme: dark;
+}
+
+body.dark .dark-only {
+    display: block;
+}
+
+body.dark .light-only {
+    display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.active {
+    font-weight: bold;
+}
+
+button, .btn {
+    transition: filter .3s;
+    font: inherit;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    filter: brightness(.8);
+}
+
+header.main-header {
+    padding: 1rem;
+    background-color: var(--header-bg);
+}
+
+header.main-header .container-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.main-header .logo {
+    height: 40px;
+}
+
+header.main-header nav {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.25rem;
+}
+
+main.main-content {
+    flex-grow: 1;
+}
+
+.main-footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-color);
+    padding: .5rem;
+}
+
+.container-inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80vw;
+}
+
+@media screen and (max-width: 550px) {
+    .container-inner {
+        max-width: calc(100vw - 2rem);
+    }
+}
+
+/* Page specific styles */
+
+/* Home */
+
