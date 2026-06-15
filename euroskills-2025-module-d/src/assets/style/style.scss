@@ -135,6 +135,64 @@ form {
     }
 }
 
+.page-section {
+    h1 {
+        margin-bottom: 1rem;
+    }
+}
+
+.page-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    h1 {
+        margin-bottom: 0;
+    }
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background-color: #fff;
+    border: 1px solid #d9dee8;
+    border-radius: 5px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .95rem;
+
+    th,
+    td {
+        padding: .65rem .75rem;
+        border-bottom: 1px solid #d9dee8;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        color: #58616f;
+        background-color: #f8fafc;
+        font-size: .75rem;
+        text-transform: uppercase;
+    }
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+
+    tbody tr:hover {
+        background-color: #f8fafc;
+    }
+}
+
+.log-message {
+    white-space: pre-wrap;
+}
+
 
 
 // Homepage

@@ -119,6 +119,57 @@ form .form-group input, form .form-group select {
   min-width: 250px;
 }
 
+.page-section h1 {
+  margin-bottom: 1rem;
+}
+
+.page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.page-heading h1 {
+  margin-bottom: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  background-color: #fff;
+  border: 1px solid #d9dee8;
+  border-radius: 5px;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.data-table th,
+.data-table td {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid #d9dee8;
+  text-align: left;
+  vertical-align: top;
+}
+.data-table th {
+  color: #58616f;
+  background-color: #f8fafc;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.data-table tr:last-child td {
+  border-bottom: none;
+}
+.data-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.log-message {
+  white-space: pre-wrap;
+}
+
 .home-layout {
   display: grid;
   grid-template-columns: calc(2rem + 850px) 1fr;
