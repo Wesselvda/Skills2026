@@ -745,3 +745,91 @@ nav a.active {
         padding-top: 4rem;
     }
 }
+
+/* Catalogue */
+
+.catalogue-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+
+.catalogue-filter input {
+    position: absolute;
+    opacity: 0;
+}
+
+.catalogue-filter label {
+    border: 1px solid var(--line-color);
+    cursor: pointer;
+    padding: .5rem .75rem;
+}
+
+.catalogue-filter label:hover,
+.catalogue-filter input:focus-visible + label,
+.catalogue-filter input:checked + label {
+    background: var(--primary);
+    color: var(--primary-text);
+}
+
+.catalogue-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .catalogue-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .catalogue-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .catalogue-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.catalogue-card {
+    background: var(--panel-bg);
+    border: 1px solid var(--line-color);
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.catalogue-card img {
+    aspect-ratio: 3 / 4;
+    border-bottom: 1px solid var(--line-color);
+    object-fit: cover;
+    width: 100%;
+}
+
+.catalogue-card div {
+    padding: 1rem;
+}
+
+.catalogue-card h2 {
+    font-size: 1.35rem;
+}
+
+.tags {
+    color: var(--muted-color);
+    margin-bottom: 0;
+}
+
+.catalogue-filter:has(#tag-literary:checked) .catalogue-card:not(.tag-literary),
+.catalogue-filter:has(#tag-worldskills:checked) .catalogue-card:not(.tag-worldskills),
+.catalogue-filter:has(#tag-international:checked) .catalogue-card:not(.tag-international),
+.catalogue-filter:has(#tag-thriller:checked) .catalogue-card:not(.tag-thriller),
+.catalogue-filter:has(#tag-mystical:checked) .catalogue-card:not(.tag-mystical),
+.catalogue-filter:has(#tag-historical:checked) .catalogue-card:not(.tag-historical) {
+    display: none;
+}
