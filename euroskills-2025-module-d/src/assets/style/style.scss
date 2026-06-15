@@ -403,6 +403,74 @@ form {
             height: 100%;
         }
 
+        .control-wrapper {
+            margin-bottom: .65rem;
+            padding: .5rem;
+            border: 1px solid #d9dee8;
+            border-radius: 5px;
+            background-color: #f8fafc;
+
+            h2 {
+                margin-bottom: .5rem;
+                font-size: .9rem;
+            }
+
+            .error,
+            .success-message {
+                margin-top: .5rem;
+                margin-bottom: 0;
+                font-size: .8rem;
+            }
+        }
+
+        .control-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            gap: .4rem;
+            align-items: end;
+
+            .form-group {
+                margin-bottom: 0;
+            }
+
+            label {
+                font-size: .7rem;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            input {
+                width: 100%;
+                min-width: 0;
+                padding: .35rem;
+            }
+
+            button {
+                padding: .4rem .6rem;
+            }
+        }
+
+        .state-actions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: .4rem;
+            margin-top: .5rem;
+
+            button {
+                padding: .4rem .35rem;
+                font-size: .8rem;
+            }
+        }
+
+        button:disabled {
+            opacity: .5;
+            cursor: not-allowed;
+        }
+
+        .success-message {
+            color: #1f7a1f;
+        }
+
         .action-wrapper {
             display: grid;
             gap: .5rem;

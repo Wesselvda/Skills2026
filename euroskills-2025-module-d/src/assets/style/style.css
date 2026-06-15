@@ -347,6 +347,62 @@ form .form-group input, form .form-group select {
   width: 100%;
   height: 100%;
 }
+.turbine-details .bottom-wrapper .control-wrapper {
+  margin-bottom: 0.65rem;
+  padding: 0.5rem;
+  border: 1px solid #d9dee8;
+  border-radius: 5px;
+  background-color: #f8fafc;
+}
+.turbine-details .bottom-wrapper .control-wrapper h2 {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.turbine-details .bottom-wrapper .control-wrapper .error,
+.turbine-details .bottom-wrapper .control-wrapper .success-message {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+}
+.turbine-details .bottom-wrapper .control-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 0.4rem;
+  align-items: end;
+}
+.turbine-details .bottom-wrapper .control-form .form-group {
+  margin-bottom: 0;
+}
+.turbine-details .bottom-wrapper .control-form label {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.turbine-details .bottom-wrapper .control-form input {
+  width: 100%;
+  min-width: 0;
+  padding: 0.35rem;
+}
+.turbine-details .bottom-wrapper .control-form button {
+  padding: 0.4rem 0.6rem;
+}
+.turbine-details .bottom-wrapper .state-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+.turbine-details .bottom-wrapper .state-actions button {
+  padding: 0.4rem 0.35rem;
+  font-size: 0.8rem;
+}
+.turbine-details .bottom-wrapper button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.turbine-details .bottom-wrapper .success-message {
+  color: #1f7a1f;
+}
 .turbine-details .bottom-wrapper .action-wrapper {
   display: grid;
   gap: 0.5rem;

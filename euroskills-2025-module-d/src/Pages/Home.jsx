@@ -8,6 +8,11 @@ const Home = () => {
     const [turbines, setTurbines] = useState([]);
     const [selectedTurbineStatus, setSelectedTurbineStatus] = useState();
     const [powerHistory, setPowerHistory] = useState([]);
+    const [controlForm, setControlForm] = useState({ yaw: "", pitch: "" });
+    const [controlError, setControlError] = useState("");
+    const [controlMessage, setControlMessage] = useState("");
+    const [controlLoading, setControlLoading] = useState(false);
+    const initializedControlTurbineRef = useRef(null);
     const navigate = useNavigate();
     const { turbineId } = useParams();
     const { token, user } = useContext(AppContext);
@@ -75,9 +80,107 @@ const Home = () => {
             });
     }
 
+    function refreshSelectedTurbine() {
+        if (!selectedTurbine) {
+            return Promise.resolve();
+        }
+
+        return getTurbineStatus(selectedTurbine.id);
+    }
+
+    function validateControlForm() {
+        const yaw = Number(controlForm.yaw);
+        const pitch = Number(controlForm.pitch);
+        const errors = [];
+
+        if (!Number.isInteger(yaw) || yaw < 0 || yaw > 360) {
+            errors.push("Yaw must be an integer between 0 and 360.");
+        }
+
+        if (!Number.isInteger(pitch) || pitch < -90 || pitch > 90) {
+            errors.push("Pitch must be an integer between -90 and 90.");
+        }
+
+        return { errors, yaw, pitch };
+    }
+
+    function submitControl(e) {
+        e.preventDefault();
+        setControlError("");
+        setControlMessage("");
+
+        const { errors, yaw, pitch } = validateControlForm();
+
+        if (errors.length > 0) {
+            setControlError(errors.join(" "));
+            return;
+        }
+
+        setControlLoading(true);
+
+        apiCall(`/turbines/${selectedTurbine.id}/control`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+            },
+            body: JSON.stringify({ yaw, pitch }),
+        })
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Failed to update turbine control");
+                }
+
+                return response.json();
+            })
+            .then(() => {
+                setControlMessage("Control updated.");
+                return refreshSelectedTurbine();
+            })
+            .catch((error) => {
+                setControlError(error.message);
+            })
+            .finally(() => {
+                setControlLoading(false);
+            });
+    }
+
+    function submitStateTransition(action) {
+        setControlError("");
+        setControlMessage("");
+        setControlLoading(true);
+
+        apiCall(`/turbines/${selectedTurbine.id}/${action}`, {
+            method: "POST",
+            headers: {
+                Accept: "application/json",
+            },
+        })
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Failed to update turbine state");
+                }
+
+                return response.json();
+            })
+            .then(() => {
+                setControlMessage("State updated.");
+                return refreshSelectedTurbine();
+            })
+            .catch((error) => {
+                setControlError(error.message);
+            })
+            .finally(() => {
+                setControlLoading(false);
+            });
+    }
+
     useEffect(() => {
         setSelectedTurbineStatus("loading");
         setPowerHistory([]);
+        setControlError("");
+        setControlMessage("");
+        initializedControlTurbineRef.current = null;
 
         if (selectedTurbine) {
             getTurbineStatus(selectedTurbine.id);
@@ -93,6 +196,25 @@ const Home = () => {
     useEffect(() => {
         getTurbines();
     }, []);
+
+    useEffect(() => {
+        if (
+            !selectedTurbineStatus ||
+            selectedTurbineStatus === "loading"
+        ) {
+            return;
+        }
+
+        if (initializedControlTurbineRef.current === selectedTurbineStatus.id) {
+            return;
+        }
+
+        initializedControlTurbineRef.current = selectedTurbineStatus.id;
+        setControlForm({
+            yaw: selectedTurbineStatus.yaw?.value ?? "",
+            pitch: selectedTurbineStatus.pitch?.value ?? "",
+        });
+    }, [selectedTurbineStatus]);
 
     useEffect(() => {
         if (!turbineId) {
@@ -261,6 +383,31 @@ const Home = () => {
                                                 history={powerHistory}
                                             />
                                         </div>
+                                        {canOperate && (
+                                            <TurbineControl
+                                                controlError={controlError}
+                                                controlForm={controlForm}
+                                                controlLoading={
+                                                    controlLoading
+                                                }
+                                                controlMessage={
+                                                    controlMessage
+                                                }
+                                                currentStatus={
+                                                    selectedTurbineStatus
+                                                        .status?.value
+                                                }
+                                                onControlSubmit={
+                                                    submitControl
+                                                }
+                                                onFormChange={
+                                                    setControlForm
+                                                }
+                                                onStateTransition={
+                                                    submitStateTransition
+                                                }
+                                            />
+                                        )}
                                         <div className="action-wrapper">
                                             <Link
                                                 to={`/turbines/${selectedTurbine.id}/actions`}
@@ -498,6 +645,94 @@ const PowerGraph = ({ history }) => {
                 className="power-line-chart"
                 ref={canvasRef}
             />
+        </div>
+    );
+};
+
+const TurbineControl = ({
+    controlError,
+    controlForm,
+    controlLoading,
+    controlMessage,
+    currentStatus,
+    onControlSubmit,
+    onFormChange,
+    onStateTransition,
+}) => {
+    const canStart = currentStatus === "shutdown";
+    const canShutdown = currentStatus === "started";
+    const canSetMaintenance = currentStatus === "shutdown";
+
+    return (
+        <div className="control-wrapper">
+            <form className="control-form" onSubmit={onControlSubmit}>
+                <div className="form-group">
+                    <label htmlFor="yaw">Yaw</label>
+                    <input
+                        id="yaw"
+                        name="yaw"
+                        type="number"
+                        min="0"
+                        max="360"
+                        step="1"
+                        value={controlForm.yaw}
+                        onChange={(e) =>
+                            onFormChange({
+                                ...controlForm,
+                                yaw: e.target.value,
+                            })
+                        }
+                    />
+                </div>
+                <div className="form-group">
+                    <label htmlFor="pitch">Pitch</label>
+                    <input
+                        id="pitch"
+                        name="pitch"
+                        type="number"
+                        min="-90"
+                        max="90"
+                        step="1"
+                        value={controlForm.pitch}
+                        onChange={(e) =>
+                            onFormChange({
+                                ...controlForm,
+                                pitch: e.target.value,
+                            })
+                        }
+                    />
+                </div>
+                <button type="submit" disabled={controlLoading}>
+                    Apply
+                </button>
+            </form>
+            <div className="state-actions">
+                <button
+                    type="button"
+                    disabled={controlLoading || !canStart}
+                    onClick={() => onStateTransition("start")}
+                >
+                    Start
+                </button>
+                <button
+                    type="button"
+                    disabled={controlLoading || !canShutdown}
+                    onClick={() => onStateTransition("shutdown")}
+                >
+                    Shutdown
+                </button>
+                <button
+                    type="button"
+                    disabled={controlLoading || !canSetMaintenance}
+                    onClick={() => onStateTransition("maintenance")}
+                >
+                    Maintenance
+                </button>
+            </div>
+            {controlError && <div className="error">{controlError}</div>}
+            {controlMessage && (
+                <div className="success-message">{controlMessage}</div>
+            )}
         </div>
     );
 };
