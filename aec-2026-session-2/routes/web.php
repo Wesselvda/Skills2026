@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\GeneralController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SubmissionController;
 use App\Http\Middleware\is_authenticated;
 use Illuminate\Support\Facades\Route;
@@ -22,4 +23,9 @@ Route::group(['middleware' => is_authenticated::class], function () {
     Route::get('/submissions/{submission}/edit', [SubmissionController::class, 'edit'])->name('submissions.edit');
     Route::put('/submissions/{submission}', [SubmissionController::class, 'update'])->name('submissions.update');
     Route::post('/submissions/{submission}/publisher', [SubmissionController::class, 'submitPublisher'])->name('submissions.publisher');
+    Route::get('/reviews', [ReviewController::class, 'index'])->name('reviews.index');
+    Route::get('/reviews/history', [ReviewController::class, 'history'])->name('reviews.history');
+    Route::get('/reviews/{submission}', [ReviewController::class, 'create'])->name('reviews.create');
+    Route::post('/reviews/{submission}', [ReviewController::class, 'store'])->name('reviews.store');
+    Route::get('/reviews/{submission}/file', [ReviewController::class, 'file'])->name('reviews.file');
 });

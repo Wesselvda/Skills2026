@@ -991,3 +991,43 @@ nav a.active {
         grid-template-columns: 1fr;
     }
 }
+
+.review-layout {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 3fr 2fr;
+}
+
+.pdf-frame {
+    border: 1px solid var(--line-color);
+    height: 620px;
+    width: 100%;
+}
+
+.radio-group {
+    border: 1px solid var(--line-color);
+    display: grid;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.radio-group legend {
+    font-weight: 700;
+    padding: 0 .25rem;
+}
+
+.radio-group label {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+}
+
+@media (max-width: 900px) {
+    .review-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .pdf-frame {
+        height: 480px;
+    }
+}

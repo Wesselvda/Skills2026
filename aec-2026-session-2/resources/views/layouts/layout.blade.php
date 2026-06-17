@@ -19,6 +19,7 @@
                 <a {{ request()->routeIs('home') ? 'class="active"' : '' }} href="{{ route('home') }}">Home</a>
                 @if(session()->has('user_id'))
                     <a {{ request()->routeIs('submissions.*') ? 'class="active"' : '' }} href="{{ route('submissions.index') }}">Submissions</a>
+                    <a {{ request()->routeIs('reviews.*') ? 'class="active"' : '' }} href="{{ route('reviews.index') }}">Reviews</a>
                     <form class="logout-form" method="POST" action="{{ route('logout') }}">
                         @csrf
                         <button type="submit">Logout</button>
@@ -38,9 +39,9 @@
             </div>
         @endif
 
-        @if($errors->has('submission') || $errors->has('credits'))
+        @if($errors->has('submission') || $errors->has('credits') || $errors->has('review'))
             <div class="error-box">
-                {{ $errors->first('submission') ?: $errors->first('credits') }}
+                {{ $errors->first('submission') ?: $errors->first('credits') ?: $errors->first('review') }}
             </div>
         @endif
 
