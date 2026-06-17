@@ -1,0 +1,36 @@
+name: aec2026-skill17-session3
+
+volumes:
+  redis_data:
+
+services:
+  framework:
+    build: ./automated-testing
+    restart: always
+    depends_on:
+      redis:
+        condition: service_started
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "80:3000"
+    environment:
+      OVERRIDE_IP: "host.docker.internal"
+      OVERRIDE_API: "http://host.docker.internal:3000"
+      REDIS_URL: "redis://redis:6379"
+      COMPETITORS: |
+        [{ "seat": 1, "name": "Competitor", "ipAddress": "host.docker.internal" }]
+
+  redis:
+    image: redis:8.4-alpine
+    restart: always
+    volumes:
+      - redis_data:/data
+
+  external-api:
+    build: ./external-api
+    restart: always
+    ports:
+      - "3000:80"
+    environment:
+      APP_URL: "http://localhost:3000"

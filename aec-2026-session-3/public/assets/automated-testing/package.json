@@ -1,0 +1,25 @@
+{
+  "name": "framework",
+  "scripts": {
+    "dev": "vite build && tsx watch src/index.tsx",
+    "build:client": "vite build",
+    "start": "tsx src/index.tsx"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.0.2",
+    "date-fns": "^4.1.0",
+    "eventsource": "^4.1.0",
+    "hono": "^4.12.16",
+    "lodash": "^4.18.1",
+    "redis": "^5.12.1",
+    "undici": "^8.3.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/deep-equal": "^1.0.4",
+    "@types/lodash": "^4.17.24",
+    "@types/node": "22",
+    "tsx": "^4.22.0",
+    "vite": "^8.0.10"
+  }
+}

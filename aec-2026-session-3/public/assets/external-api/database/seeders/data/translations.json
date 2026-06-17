@@ -1,0 +1,1482 @@
+[
+  {
+    "message_key": "7e7b34d4-b80d-4af6-9239-ebae66cef737",
+    "language": "de",
+    "message": "Neubrandenburg, Mecklenburg-Vorpommern, Deutschland"
+  },
+  {
+    "message_key": "7e7b34d4-b80d-4af6-9239-ebae66cef737",
+    "language": "en",
+    "message": "Neubrandenburg, Mecklenburg-Vorpommern, Germany"
+  },
+  {
+    "message_key": "7e7b34d4-b80d-4af6-9239-ebae66cef737",
+    "language": "hu",
+    "message": "Neubrandenburg, Mecklenburg-Elő-Pomeránia, Németország"
+  },
+  {
+    "message_key": "7e7b34d4-b80d-4af6-9239-ebae66cef737",
+    "language": "nl",
+    "message": "Neubrandenburg, Mecklenburg-Vorpommern, Duitsland"
+  },
+  {
+    "message_key": "43b61a60-6bb3-4c83-8a08-dd1256f1d0f0",
+    "language": "de",
+    "message": "Kirchheim unter Teck, Baden-Württemberg, Deutschland"
+  },
+  {
+    "message_key": "43b61a60-6bb3-4c83-8a08-dd1256f1d0f0",
+    "language": "en",
+    "message": "Kirchheim unter Teck, Baden-Württemberg, Germany"
+  },
+  {
+    "message_key": "43b61a60-6bb3-4c83-8a08-dd1256f1d0f0",
+    "language": "hu",
+    "message": "Kirchheim unter Teck, Baden-Württemberg, Németország"
+  },
+  {
+    "message_key": "43b61a60-6bb3-4c83-8a08-dd1256f1d0f0",
+    "language": "nl",
+    "message": "Kirchheim unter Teck, Baden-Württemberg, Duitsland"
+  },
+  {
+    "message_key": "27b5434a-e85c-4a6a-95eb-780047590f77",
+    "language": "de",
+    "message": "Budapest, Ungarn"
+  },
+  {
+    "message_key": "27b5434a-e85c-4a6a-95eb-780047590f77",
+    "language": "en",
+    "message": "Budapest, Hungary"
+  },
+  {
+    "message_key": "27b5434a-e85c-4a6a-95eb-780047590f77",
+    "language": "hu",
+    "message": "Budapest, Magyarország"
+  },
+  {
+    "message_key": "27b5434a-e85c-4a6a-95eb-780047590f77",
+    "language": "nl",
+    "message": "Boedapest, Hongarije"
+  },
+  {
+    "message_key": "4f412ade-9f9b-45e2-a679-433361fddb33",
+    "language": "de",
+    "message": "Amsterdam, Nordholland, Niederlande"
+  },
+  {
+    "message_key": "4f412ade-9f9b-45e2-a679-433361fddb33",
+    "language": "en",
+    "message": "Amsterdam, North Holland, Netherlands"
+  },
+  {
+    "message_key": "4f412ade-9f9b-45e2-a679-433361fddb33",
+    "language": "hu",
+    "message": "Amszterdam, Észak-Holland, Hollandia"
+  },
+  {
+    "message_key": "4f412ade-9f9b-45e2-a679-433361fddb33",
+    "language": "nl",
+    "message": "Amsterdam, Noord-Holland, Nederland"
+  },
+  {
+    "message_key": "88c507e3-4724-4001-85a7-4e9b42724ff6",
+    "language": "de",
+    "message": "Edinburgh, Schottland, Vereinigtes Königreich"
+  },
+  {
+    "message_key": "88c507e3-4724-4001-85a7-4e9b42724ff6",
+    "language": "en",
+    "message": "Edinburgh, Scotland, United Kingdom"
+  },
+  {
+    "message_key": "88c507e3-4724-4001-85a7-4e9b42724ff6",
+    "language": "hu",
+    "message": "Edinburgh, Skócia, Egyesült Királyság"
+  },
+  {
+    "message_key": "88c507e3-4724-4001-85a7-4e9b42724ff6",
+    "language": "nl",
+    "message": "Edinburgh, Schotland, Verenigd Koninkrijk"
+  },
+  {
+    "message_key": "49c5153b-c929-4b26-bd2a-185c031c677e",
+    "language": "de",
+    "message": "Leipzig, Sachsen, Deutschland"
+  },
+  {
+    "message_key": "49c5153b-c929-4b26-bd2a-185c031c677e",
+    "language": "en",
+    "message": "Leipzig, Saxony, Germany"
+  },
+  {
+    "message_key": "49c5153b-c929-4b26-bd2a-185c031c677e",
+    "language": "hu",
+    "message": "Lipcse, Szászország, Németország"
+  },
+  {
+    "message_key": "49c5153b-c929-4b26-bd2a-185c031c677e",
+    "language": "nl",
+    "message": "Leipzig, Saksen, Duitsland"
+  },
+  {
+    "message_key": "9b1df16b-c998-4141-a1c1-687c9fb345a2",
+    "language": "de",
+    "message": "London, England, Vereinigtes Königreich"
+  },
+  {
+    "message_key": "9b1df16b-c998-4141-a1c1-687c9fb345a2",
+    "language": "en",
+    "message": "London, England, United Kingdom"
+  },
+  {
+    "message_key": "9b1df16b-c998-4141-a1c1-687c9fb345a2",
+    "language": "hu",
+    "message": "London, Anglia, Egyesült Királyság"
+  },
+  {
+    "message_key": "9b1df16b-c998-4141-a1c1-687c9fb345a2",
+    "language": "nl",
+    "message": "Londen, Engeland, Verenigd Koninkrijk"
+  },
+  {
+    "message_key": "f738e154-eac1-42b5-b0aa-882813e8b467",
+    "language": "de",
+    "message": "Joachim Schiller, Jahrgang 2001, begann im Alter von 14 Jahren mit dem Schreiben kurzer Texte, die sich allmählich zu einer durchgehenden Geschichte verbanden. Getrieben von einer wachsenden Leidenschaft für das Schreiben – und ermutigt durch Freunde, die seine Begeisterung teilten – entwickelte sich diese Idee-Sammlung schnell zu einem Buchprojekt, das im Laufe der Zeit immer konkretere Formen annahm. Sein Ziel ist doppelt: Er möchte eine möglichst fesselnde Geschichte erzählen und gleichzeitig zum Nachdenken anregen. Die Erzählung soll die Leser dazu anregen, in der weitläufigen Welt um die Figuren herum nach Lösungen zu suchen und die verschiedenen Perspektiven der Charaktere besser zu verstehen."
+  },
+  {
+    "message_key": "f738e154-eac1-42b5-b0aa-882813e8b467",
+    "language": "en",
+    "message": "Joachim Schiller, born in 2001, started writing short pieces at 14, which gradually wove together into a single narrative. Driven by a deepening passion for writing—and encouraged by friends who shared his enthusiasm—this collection of ideas quickly blossomed into a book project that steadily took shape. His goal is twofold: to craft a captivating story while simultaneously sparking reflection. The narrative invites readers to seek solutions within the expansive world surrounding the characters and to better understand their diverse perspectives."
+  },
+  {
+    "message_key": "f738e154-eac1-42b5-b0aa-882813e8b467",
+    "language": "hu",
+    "message": "Joachim Schiller, 2001-ben született, 14 éves korában kezdett el rövid szövegeket írni, amelyek fokozatosan egy egységes történetté álltak össze. A íráshoz fűződő növekvő szenvedély – és a lelkesedésében megosztó barátok bátorítása – hatására ez az ötletgyűjtemény hamarosan könyvprojekté alakult, amely idővel egyre konkrétabb formát öltött. Célja kettős: minél ragyogóbb történetet mesélni el, miközben egyben elgondolkodtatni az olvasót. A narratíva arra ösztönzi az olvasókat, hogy a karakterek körül elterülő tágas világban keressenek megoldásokat, és megértsék a szereplők különböző nézőpontjait."
+  },
+  {
+    "message_key": "f738e154-eac1-42b5-b0aa-882813e8b467",
+    "language": "nl",
+    "message": "Joachim Schiller, geboren in 2001, begon op zijn veertiende met het schrijven van korte stukken die geleidelijk aan samensmolten tot één verhaal. Gedreven door een groeiende passie voor het schrijven – en aangemoedigd door vrienden die zijn enthousiasme deelden – ontwikkelde deze verzameling ideeën zich snel tot een boekproject dat in de loop der tijd steeds concreter vorm kreeg. Zijn doel is tweeledig: hij wil een zo meeslepend mogelijk verhaal vertellen, maar ook tot nadenken stemmen. De vertelling nodigt lezers uit om binnen de uitgestrekte wereld rondom de personages naar oplossingen te zoeken en de verschillende perspectieven van de karakters beter te begrijpen."
+  },
+  {
+    "message_key": "70748e38-20e7-4ceb-a9cd-bd739a9e2ff7",
+    "language": "de",
+    "message": "Steinbeck betrachtet literarisches Schreiben als Kunstform. Der Maßstab für Erfolg ist dabei nicht die verkaufte Auflage, sondern wie gut ein Werk die Kernaussage seiner Erzählung trifft und wie tief es emotional beim Zielpublikum ankommt. Daher müssen Rechtschreib-, Grammatik- und Wortbildungsregeln innerhalb vernünftiger Grenzen der künstlerischen Intention untergeordnet sein; diese dient als leitendes Prinzip. Für Steinbeck tragen Autoren eine gesellschaftliche Verantwortung: Ihre Werke sollen der Gesellschaft einen Spiegel vorhalten und zur Selbstreflexion anregen. Sie müssen Themen aufgreifen, die im Alltag der Leser verankert sind, um Reflexions- und Veränderungsprozesse anzuregen – alles vermittelt in einem fesselnden und unterhaltsamen Erzählstil. Steinbeck ist Mitglied im Deutschen Journalistenverband und im Selfpublisher-Verband."
+  },
+  {
+    "message_key": "70748e38-20e7-4ceb-a9cd-bd739a9e2ff7",
+    "language": "en",
+    "message": "Steinbeck views literary writing as an art form. Success, in his eyes, isn’t measured by sales figures but by how effectively a work conveys its core message and resonates emotionally with its audience. Within reasonable bounds, he believes spelling, grammar, and word formation should yield to artistic vision, which serves as the guiding principle. For Steinbeck, writers carry a social responsibility: their work should hold a mirror to society, prompting readers to reflect on their own lives. By tackling themes that matter across all aspects of daily life, authors can inspire reflection and change—all delivered through an engaging and entertaining narrative. Steinbeck is a member of the German Journalists’ Association and the Self-Publishers’ Association."
+  },
+  {
+    "message_key": "70748e38-20e7-4ceb-a9cd-bd739a9e2ff7",
+    "language": "hu",
+    "message": "Steinbeck szerint az irodalmi írás művészet. A siker mércéje nem az eladott példányszám, hanem az, hogy egy mű mennyire tudja kifejezni narratívája lényegét, és mennyire hat meg érzelmi szinten a célközönséget. Ezért a helyesírási, nyelvtani és szóalkotási szabályokat észszerű keretek között alá kell rendelni a művészi megközelítésnek; a művészi szándék szolgál alapvető irányelvül. Steinbeck számára az írók társadalmi küldetéssel bírnak: műveik tükörként szolgálnak a társadalom előtt, önmegfigyelésre ösztönözve. Műveiknek olyan témákat kell felölelniük, amelyek az olvasók mindennapi életének minden területén relevánsak, ezáltal reflexiós és változási folyamatokat indítva el – mindezt egy magával ragadó és szórakoztató elbeszélési stílusban. Steinbeck tagja a Német Újságírók Szövetségének és a Selfpublisher-Verbandnak."
+  },
+  {
+    "message_key": "70748e38-20e7-4ceb-a9cd-bd739a9e2ff7",
+    "language": "nl",
+    "message": "Steinbeck beschouwt literair schrijven als een kunstvorm. Succes meet hij niet aan het aantal verkochte exemplaren, maar aan de mate waarin een werk de kernboodschap van zijn verhaal weet over te brengen en hoe diep het emotioneel raakt bij het doelpubliek. Binnen redelijke grenzen moeten spelling-, grammatica- en woordvormingsregels ondergeschikt zijn aan de artistieke aanpak; de artistieke intentie fungeert als leidend principe. Voor Steinbeck dragen schrijvers een maatschappelijke verantwoordelijkheid: hun werk moet de maatschappij een spiegel voorhouden en tot zelfreflectie uitnodigen. Hun werken moeten thema’s aanroeren die relevant zijn voor lezers in alle facetten van hun dagelijks leven, waardoor reflectie en verandering worden gestimuleerd – allemaal overgebracht in een boeiende en vermakelijke vertelstijl. Steinbeck is lid van de Duitse Journalistenbond en de Selfpublisher-Verband."
+  },
+  {
+    "message_key": "29556cf6-c525-4aea-b254-7eae57f9e281",
+    "language": "de",
+    "message": "Eléna Vásárhelyi wurde in Budapest geboren und studierte Vergleichende Literaturwissenschaft an der ELTE Universität. Nach einem Jahrzehnt als Literaturübersetzerin zwischen Ungarisch, Deutsch und Englisch wandte sie sich dem Schreiben eigener fiktionaler Werke zu. Ihre Romane verbinden mitteleuropäische Geschichte mit psychologischem Spannungsbogen und spielen häufig in Grenzstädten, die zwei Kulturen verbinden. Sie stand dreimal auf der Shortlist des ungarischen Buches des Jahres und ihre Werke sind in ganz Europa weit verbreitet."
+  },
+  {
+    "message_key": "29556cf6-c525-4aea-b254-7eae57f9e281",
+    "language": "en",
+    "message": "Eléna Vásárhelyi was born in Budapest and studied comparative literature at ELTE University. After spending ten years as a literary translator bridging Hungarian, German, and English, she turned to crafting her own fiction. Her novels weave Central European history with psychological suspense, often set in border cities that straddle two cultures. A three-time nominee for the Hungarian Book of the Year, her work has been widely translated and celebrated across Europe."
+  },
+  {
+    "message_key": "29556cf6-c525-4aea-b254-7eae57f9e281",
+    "language": "hu",
+    "message": "Vásárhelyi Eléna Budapesten született, és az ELTE Egyetemen összehasonlító irodalomtudományt tanult. Tíz évnyi irodalmi fordítói munka (magyar–német–angol) után saját fikciós művek írására adta a fejét. Regényei a közép-európai történelmet pszichológiai feszültséggel ötvözik, gyakran olyan határvárosokban játszva, amelyek két kultúra között helyezkednek el. Háromszor is szerepelt az Év Magyar Könyve díj rövidlistáján, és műveit széles körben lefordították Európában."
+  },
+  {
+    "message_key": "29556cf6-c525-4aea-b254-7eae57f9e281",
+    "language": "nl",
+    "message": "Eléna Vásárhelyi werd geboren in Boedapest en studeerde vergelijkende literatuurwetenschap aan de ELTE Universiteit. Na een decennium als literair vertaler tussen het Hongaars, Duits en Engels, wendde ze zich tot het schrijven van eigen fictie. Haar romans vermengen Midden-Europese geschiedenis met psychologische spanning, vaak gesitueerd in grenssteden die twee culturen met elkaar verbinden. Ze stond driemaal op de shortlist voor het Hongaarse Boek van het Jaar en haar werk is breed vertaald en gewaardeerd in heel Europa."
+  },
+  {
+    "message_key": "b12fd697-fca2-4600-8577-ba1c697bf605",
+    "language": "de",
+    "message": "Finn Broekhuis ist ein niederländischer Autor und Wissenschaftsjournalist, dessen spekulative Fiktion die Kollision zwischen Technologie, Identität und Arbeit erforscht. In Amsterdam aufgewachsen, studierte er Physik an der Universität Amsterdam, bevor er zum Wissenschaftsjournalismus wechselte. Sein Debüt-Thriller „De Codekloof“ (The Code Divide) wurde 2023 für eine TV-Adaption lizenziert. Er engagiert sich leidenschaftlich für die WorldSkills-Bewegung und verfasste einen Sachbeitrag über den Wettbewerb 2022 für ein niederländisches Technikmagazin."
+  },
+  {
+    "message_key": "b12fd697-fca2-4600-8577-ba1c697bf605",
+    "language": "en",
+    "message": "Finn Broekhuis is a Dutch author and science journalist whose speculative fiction delves into the intersection of technology, identity, and labor. Raised in Amsterdam, he studied physics at the University of Amsterdam before transitioning into science communication. His debut thriller, *De Codekloof* (*The Code Divide*), was optioned for a television adaptation in 2023. A passionate advocate for the WorldSkills movement, he also penned a non-fiction feature on the 2022 competition for a leading Dutch tech magazine."
+  },
+  {
+    "message_key": "b12fd697-fca2-4600-8577-ba1c697bf605",
+    "language": "hu",
+    "message": "Finn Broekhuis holland szerző és tudományos újságíró, aki spekulatív fikciójában a technológia, az identitás és a munka ütközését vizsgálja. Amszteramban nőtt fel, az Amszterdami Egyetemen fizikát tanult, mielőtt a tudománynépszerűsítés felé fordult. Debütáló thrillerje, a *De Codekloof* (*The Code Divide*) 2023-ban televíziós adaptációra került. A WorldSkills mozgalom lelkes támogatója, és a 2022-es versenyről nem fikciós beszámolót is írt egy holland technológiai magazin számára."
+  },
+  {
+    "message_key": "b12fd697-fca2-4600-8577-ba1c697bf605",
+    "language": "nl",
+    "message": "Finn Broekhuis is een Nederlandse auteur en wetenschapsjournalist wiens speculatieve fictie de botsing tussen technologie, identiteit en arbeid verkent. Opgegroeid in Amsterdam, studeerde hij natuurkunde aan de Universiteit van Amsterdam voordat hij overstapte naar wetenschapscommunicatie. Zijn debuutthriller *De Codekloof* (*The Code Divide*) werd in 2023 geopteerd voor een televisiebewerking. Hij is gepassioneerd over de WorldSkills-beweging en schreef een non-fictie verslag over de competitie van 2022 voor een Nederlands technologietijdschrift."
+  },
+  {
+    "message_key": "7c25bd57-5d7a-4226-9732-d17659757686",
+    "language": "de",
+    "message": "Sarah McLintock ist eine schottische Autorin von literarischer Fiktion und historischen Romanen. Sie wuchs auf den Orkney-Inseln auf und studierte Geschichte an der University of St Andrews. Ihr Schreiben zeichnet sich durch eine tiefe Auseinandersetzung mit Ort und Erinnerung aus, insbesondere den Landschaften Nordbritanniens und Skandinaviens. Ihr Roman *The Tide Warden* stand auf der Longlist des Booker Prize und wurde in vierzehn Sprachen übersetzt. Sie lebt heute in Edinburgh und unterrichtet Teilzeit Kreatives Schreiben."
+  },
+  {
+    "message_key": "7c25bd57-5d7a-4226-9732-d17659757686",
+    "language": "en",
+    "message": "Sarah McLintock is a Scottish author known for her literary fiction and historical novels. Raised on the Orkney Islands, she studied history at the University of St Andrews. Her work is defined by a profound connection to place and memory, often drawing on the landscapes of northern Britain and Scandinavia. Her novel *The Tide Warden* was longlisted for the Booker Prize and has since been translated into fourteen languages. She currently resides in Edinburgh, where she also teaches creative writing part-time."
+  },
+  {
+    "message_key": "7c25bd57-5d7a-4226-9732-d17659757686",
+    "language": "hu",
+    "message": "Sarah McLintock skót szerző, aki irodalmi fikciót és történelmi regényeket ír. Az Orkney-szigeteken nőtt fel, és történelmet tanult a St Andrews-i Egyetemen. Írásait a helyhez és az emlékezethez való mély kötődés jellemzi, különösen Észak-Britannia és Skandinávia tájainak felhasználásával. *The Tide Warden* című regénye a Booker-díj hosszú listájára került, és tizennégy nyelvre lefordították. Jelenleg Edinburgh-ban él, és részmunkaidőben kreatív írást tanít."
+  },
+  {
+    "message_key": "7c25bd57-5d7a-4226-9732-d17659757686",
+    "language": "nl",
+    "message": "Sarah McLintock is een Schotse auteur van literaire fictie en historische romans. Ze groeide op op de Orkney-eilanden en studeerde geschiedenis aan de Universiteit van St Andrews. Haar schrijfstijl wordt gekenmerkt door een diepe betrokkenheid bij plaats en herinnering, met name de landschappen van Noord-Brittannië en Scandinavië. Haar roman *The Tide Warden* stond op de longlist voor de Booker Prize en is in veertien talen vertaald. Ze woont nu in Edinburgh en geeft deeltijds les in creatief schrijven."
+  },
+  {
+    "message_key": "07fcca45-8be8-4aae-a163-a21f5cf01c83",
+    "language": "de",
+    "message": "Tobias Wengler ist ein in Leipzig ansässiger Autor literarischer Fiktion mit fundiertem Wissen zur ostdeutschen Geschichte. Fünfzehn Jahre lang arbeitete er als Archivar im Leipziger Stadtarchiv, bevor sein Debütroman *Das Schweigen der Akten* ihn landesweit bekannt machte. Seine Romane untersuchen die nachwirkenden psychologischen Auswirkungen der DDR auf normale Familien und verbinden Archivrealismus mit tief persönlichen Erzählungen. Er ist regelmäßiger Gast im Literaturhaus Leipzig."
+  },
+  {
+    "message_key": "07fcca45-8be8-4aae-a163-a21f5cf01c83",
+    "language": "en",
+    "message": "Tobias Wengler is a Leipzig-based author of literary fiction with a strong foundation in East German history. After fifteen years as an archivist at the Leipzig City Archives, his debut novel *Das Schweigen der Akten* (*The Silence of the Files*) brought him to national prominence. His work explores the lingering psychological impact of the GDR on everyday families, blending archival realism with deeply personal narratives. He is a frequent contributor to the Literaturhaus Leipzig."
+  },
+  {
+    "message_key": "07fcca45-8be8-4aae-a163-a21f5cf01c83",
+    "language": "hu",
+    "message": "Tobias Wengler lipcsei szerző, aki irodalmi fikciót ír, és erős háttérrel rendelkezik a keletnémet történelem terén. Tizenöt évig dolgozott levéltárosként a lipcsei városi levéltárban, mielőtt debütáló regénye, a *Das Schweigen der Akten* (*The Silence of the Files*) országos ismertséget szerzett számára. Regényei a NDK pszichológiai hatásait vizsgálják a hétköznapi családokra, ötvözve az archív valóságot mélyen személyes elbeszélésekkel. Rendszeres közreműködője a lipcsei Literaturhausnak."
+  },
+  {
+    "message_key": "07fcca45-8be8-4aae-a163-a21f5cf01c83",
+    "language": "nl",
+    "message": "Tobias Wengler is een in Leipzig gevestigde auteur van literaire fictie met een sterke achtergrond in de Oost-Duitse geschiedenis. Na vijftien jaar als archiefmedewerker bij het Stadsarchief van Leipzig, bracht zijn debuutroman *Das Schweigen der Akten* (*The Silence of the Files*) hem landelijke bekendheid. Zijn romans onderzoeken de naweeën van de DDR op gewone gezinnen, waarbij archiefrealisme wordt vermengd met diep persoonlijke verhalen. Hij is een vaste bijdrager aan het Literaturhaus Leipzig."
+  },
+  {
+    "message_key": "b20898ac-9cda-4b32-a72d-82f6ee5a2d3b",
+    "language": "de",
+    "message": "Amara Diallo ist eine britisch-guineanische Autorin, deren Debütroman *Skills of Gold* nach einem viralen Durchbruch in der WorldSkills-Community internationale Beachtung fand. Der Roman spielt während eines fiktiven WorldSkills-Wettbewerbs und folgt fünf jungen Teilnehmern aus verschiedenen Ländern, deren Leben sich auf unerwartete Weise kreuzen. Diallo absolvierte eine Ausbildung zur Elektrikerin, bevor sie Kreatives Schreiben an Goldsmiths studierte. Ihr Insiderwissen aus der Berufswelt verleiht dem Roman eine Authentizität, die weltweit bei Lesern Anklang findet."
+  },
+  {
+    "message_key": "b20898ac-9cda-4b32-a72d-82f6ee5a2d3b",
+    "language": "en",
+    "message": "Amara Diallo is a British-Guinean author whose debut novel, *Skills of Gold*, became an international sensation after going viral within the WorldSkills community. Set against the backdrop of a fictional global skills competition, the story follows five young competitors from different countries whose paths unexpectedly cross. Diallo trained as an electrician before studying creative writing at Goldsmiths, and her firsthand knowledge of the vocational world lends the novel an authenticity that resonates with readers globally."
+  },
+  {
+    "message_key": "b20898ac-9cda-4b32-a72d-82f6ee5a2d3b",
+    "language": "hu",
+    "message": "Amara Diallo britániai-guineai szerző, akinek debütáló regénye, a *Skills of Gold* nemzetközi szenzációvá vált, miután viralissá vált a WorldSkills közösségben. Egy fiktív világverseny keretében játszódó történet öt fiatal versenyzőt követ különböző országokból, akik élete váratlanul keresztezi egymást. Diallo villanyszerelőként képezte magát, mielőtt a Goldsmiths-on kreatív írást tanult volna. Szakmai belátása a szakmunka világáról hitelességet ad a regénynek, amely világszerte hat az olvasókra."
+  },
+  {
+    "message_key": "b20898ac-9cda-4b32-a72d-82f6ee5a2d3b",
+    "language": "nl",
+    "message": "Amara Diallo is een Brits-Guinese auteur wiens debuutroman *Skills of Gold* een internationale sensatie werd na viral te gaan binnen de WorldSkills-community. Het verhaal speelt zich af tijdens een fictieve wereldwijde vaardighedencompetitie en volgt vijf jonge deelnemers uit verschillende landen wier levens op onverwachte wijze kruisen. Diallo volgde een opleiding tot elektricien voordat ze creatief schrijven studeerde aan Goldsmiths, en haar insiderkennis van de beroepswereld geeft de roman een authenticiteit die wereldwijd bij lezers aanslaat."
+  },
+  {
+    "message_key": "837dd5d0-a1a6-49b3-ac53-36690df658ab",
+    "language": "de",
+    "message": "Schatz der Welten: Untergang"
+  },
+  {
+    "message_key": "837dd5d0-a1a6-49b3-ac53-36690df658ab",
+    "language": "en",
+    "message": "Treasure of Worlds: Fall"
+  },
+  {
+    "message_key": "837dd5d0-a1a6-49b3-ac53-36690df658ab",
+    "language": "hu",
+    "message": "Világok Kincse: Végzet"
+  },
+  {
+    "message_key": "837dd5d0-a1a6-49b3-ac53-36690df658ab",
+    "language": "nl",
+    "message": "Schat der Werelden: Ondergang"
+  },
+  {
+    "message_key": "603b7eb2-f1a2-41a3-83b0-bc6fee5209a0",
+    "language": "de",
+    "message": "Schatz der Welten: Norskoms Rache"
+  },
+  {
+    "message_key": "603b7eb2-f1a2-41a3-83b0-bc6fee5209a0",
+    "language": "en",
+    "message": "Treasure of Worlds: Norskom's Revenge"
+  },
+  {
+    "message_key": "603b7eb2-f1a2-41a3-83b0-bc6fee5209a0",
+    "language": "hu",
+    "message": "Világok Kincse: Norskom bosszúja"
+  },
+  {
+    "message_key": "603b7eb2-f1a2-41a3-83b0-bc6fee5209a0",
+    "language": "nl",
+    "message": "Schat der Werelden: Norskoms Wraak"
+  },
+  {
+    "message_key": "95ec0d02-1bd0-41c1-8c70-e1ca961203bc",
+    "language": "de",
+    "message": "Schatz der Welten: Die gefallenen Elben"
+  },
+  {
+    "message_key": "95ec0d02-1bd0-41c1-8c70-e1ca961203bc",
+    "language": "en",
+    "message": "Treasure of Worlds: The Fallen Elves"
+  },
+  {
+    "message_key": "95ec0d02-1bd0-41c1-8c70-e1ca961203bc",
+    "language": "hu",
+    "message": "Világok Kincse: A elesett tündérek"
+  },
+  {
+    "message_key": "95ec0d02-1bd0-41c1-8c70-e1ca961203bc",
+    "language": "nl",
+    "message": "Schat der Werelden: De Gebroken Elfen"
+  },
+  {
+    "message_key": "0bed21c2-ce7f-495b-9080-cc7d438e34a2",
+    "language": "de",
+    "message": "Geheimcode WorldSkills"
+  },
+  {
+    "message_key": "0bed21c2-ce7f-495b-9080-cc7d438e34a2",
+    "language": "en",
+    "message": "WorldSkills Secret Code"
+  },
+  {
+    "message_key": "0bed21c2-ce7f-495b-9080-cc7d438e34a2",
+    "language": "hu",
+    "message": "WorldSkills titkos kódja"
+  },
+  {
+    "message_key": "0bed21c2-ce7f-495b-9080-cc7d438e34a2",
+    "language": "nl",
+    "message": "Geheimcode WorldSkills"
+  },
+  {
+    "message_key": "d8665441-edf7-4bd9-9046-7b14eb7f3b1a",
+    "language": "de",
+    "message": "Die Rache der Schwabenkinder"
+  },
+  {
+    "message_key": "d8665441-edf7-4bd9-9046-7b14eb7f3b1a",
+    "language": "en",
+    "message": "The Revenge of the Schwaben Children"
+  },
+  {
+    "message_key": "d8665441-edf7-4bd9-9046-7b14eb7f3b1a",
+    "language": "hu",
+    "message": "A sváb gyerekek bosszúja"
+  },
+  {
+    "message_key": "d8665441-edf7-4bd9-9046-7b14eb7f3b1a",
+    "language": "nl",
+    "message": "De Wraak van de Schwabenkinder"
+  },
+  {
+    "message_key": "da0663d4-cb43-448d-bcf4-45d111f0cdb0",
+    "language": "de",
+    "message": "Konstanz – Tod am See: Das Vermächtnis des Jan Hus"
+  },
+  {
+    "message_key": "da0663d4-cb43-448d-bcf4-45d111f0cdb0",
+    "language": "en",
+    "message": "Constance – Death on the Lake: The Legacy of Jan Hus"
+  },
+  {
+    "message_key": "da0663d4-cb43-448d-bcf4-45d111f0cdb0",
+    "language": "hu",
+    "message": "Konstanz – Halál a tónál: Jan Hus öröksége"
+  },
+  {
+    "message_key": "da0663d4-cb43-448d-bcf4-45d111f0cdb0",
+    "language": "nl",
+    "message": "Constance – Dood aan het Meer: Het Erfgoed van Jan Hus"
+  },
+  {
+    "message_key": "a13ffa38-8c0c-4709-b101-6af111aa9c51",
+    "language": "de",
+    "message": "Schwäbisches Gold"
+  },
+  {
+    "message_key": "a13ffa38-8c0c-4709-b101-6af111aa9c51",
+    "language": "en",
+    "message": "Swabian Gold"
+  },
+  {
+    "message_key": "a13ffa38-8c0c-4709-b101-6af111aa9c51",
+    "language": "hu",
+    "message": "Sváb arany"
+  },
+  {
+    "message_key": "a13ffa38-8c0c-4709-b101-6af111aa9c51",
+    "language": "nl",
+    "message": "Zwabisch Goud"
+  },
+  {
+    "message_key": "c3d45812-b704-4241-897f-1bde38553311",
+    "language": "de",
+    "message": "Ein letztes Bild"
+  },
+  {
+    "message_key": "c3d45812-b704-4241-897f-1bde38553311",
+    "language": "en",
+    "message": "A Final Image"
+  },
+  {
+    "message_key": "c3d45812-b704-4241-897f-1bde38553311",
+    "language": "hu",
+    "message": "Egy utolsó kép"
+  },
+  {
+    "message_key": "c3d45812-b704-4241-897f-1bde38553311",
+    "language": "nl",
+    "message": "Een Laatste Beeld"
+  },
+  {
+    "message_key": "a4247275-4c1f-44e4-a7b3-d5f89ffbfef7",
+    "language": "de",
+    "message": "Marcs Suche"
+  },
+  {
+    "message_key": "a4247275-4c1f-44e4-a7b3-d5f89ffbfef7",
+    "language": "en",
+    "message": "Marc's Search"
+  },
+  {
+    "message_key": "a4247275-4c1f-44e4-a7b3-d5f89ffbfef7",
+    "language": "hu",
+    "message": "Marc keresése"
+  },
+  {
+    "message_key": "a4247275-4c1f-44e4-a7b3-d5f89ffbfef7",
+    "language": "nl",
+    "message": "Marc's Zoektocht"
+  },
+  {
+    "message_key": "031bc0c0-bae0-48a2-99fb-f5d7106147be",
+    "language": "de",
+    "message": "Der Flug des Zitronenfalters: Die große Wende 2098"
+  },
+  {
+    "message_key": "031bc0c0-bae0-48a2-99fb-f5d7106147be",
+    "language": "en",
+    "message": "The Flight of the Lemon Butterfly: The Great Turn 2098"
+  },
+  {
+    "message_key": "031bc0c0-bae0-48a2-99fb-f5d7106147be",
+    "language": "hu",
+    "message": "A citromlepke repülése: A nagy fordulat 2098"
+  },
+  {
+    "message_key": "031bc0c0-bae0-48a2-99fb-f5d7106147be",
+    "language": "nl",
+    "message": "De Vlucht van de Citroenvlinder: De Grote Wendings 2098"
+  },
+  {
+    "message_key": "3b032e85-e9c6-4f6c-acb8-f890ec926b2d",
+    "language": "de",
+    "message": "Über die Grenze"
+  },
+  {
+    "message_key": "3b032e85-e9c6-4f6c-acb8-f890ec926b2d",
+    "language": "en",
+    "message": "Across the Border"
+  },
+  {
+    "message_key": "3b032e85-e9c6-4f6c-acb8-f890ec926b2d",
+    "language": "hu",
+    "message": "A határon át"
+  },
+  {
+    "message_key": "3b032e85-e9c6-4f6c-acb8-f890ec926b2d",
+    "language": "nl",
+    "message": "Over de Grens"
+  },
+  {
+    "message_key": "d0197f26-9738-4a98-a431-096dd179d4f7",
+    "language": "de",
+    "message": "Der Zeuge"
+  },
+  {
+    "message_key": "d0197f26-9738-4a98-a431-096dd179d4f7",
+    "language": "en",
+    "message": "The Witness"
+  },
+  {
+    "message_key": "d0197f26-9738-4a98-a431-096dd179d4f7",
+    "language": "hu",
+    "message": "A tanú"
+  },
+  {
+    "message_key": "d0197f26-9738-4a98-a431-096dd179d4f7",
+    "language": "nl",
+    "message": "De Getuige"
+  },
+  {
+    "message_key": "50775524-2e2b-4e67-827c-64d76b54553c",
+    "language": "de",
+    "message": "Der Code-Abgrund"
+  },
+  {
+    "message_key": "50775524-2e2b-4e67-827c-64d76b54553c",
+    "language": "en",
+    "message": "The Code Divide"
+  },
+  {
+    "message_key": "50775524-2e2b-4e67-827c-64d76b54553c",
+    "language": "hu",
+    "message": "A kód szakadék"
+  },
+  {
+    "message_key": "50775524-2e2b-4e67-827c-64d76b54553c",
+    "language": "nl",
+    "message": "De Codekloof"
+  },
+  {
+    "message_key": "d9e0e2b0-2b74-4654-b49b-e4bac7997de5",
+    "language": "de",
+    "message": "Die letzte Frequenz"
+  },
+  {
+    "message_key": "d9e0e2b0-2b74-4654-b49b-e4bac7997de5",
+    "language": "en",
+    "message": "The Last Frequency"
+  },
+  {
+    "message_key": "d9e0e2b0-2b74-4654-b49b-e4bac7997de5",
+    "language": "hu",
+    "message": "Az utolsó frekvencia"
+  },
+  {
+    "message_key": "d9e0e2b0-2b74-4654-b49b-e4bac7997de5",
+    "language": "nl",
+    "message": "De Laatste Frequentie"
+  },
+  {
+    "message_key": "fa684bdd-e412-480a-9b57-cb695457da39",
+    "language": "de",
+    "message": "Der Gezeitenwächter"
+  },
+  {
+    "message_key": "fa684bdd-e412-480a-9b57-cb695457da39",
+    "language": "en",
+    "message": "The Tide Warden"
+  },
+  {
+    "message_key": "fa684bdd-e412-480a-9b57-cb695457da39",
+    "language": "hu",
+    "message": "Az árapály őrzője"
+  },
+  {
+    "message_key": "fa684bdd-e412-480a-9b57-cb695457da39",
+    "language": "nl",
+    "message": "De Getijdenwachter"
+  },
+  {
+    "message_key": "0155542f-e1de-4c93-beb9-c60404bd2d92",
+    "language": "de",
+    "message": "Die Tochter des Fährmanns"
+  },
+  {
+    "message_key": "0155542f-e1de-4c93-beb9-c60404bd2d92",
+    "language": "en",
+    "message": "The Ferryman's Daughter"
+  },
+  {
+    "message_key": "0155542f-e1de-4c93-beb9-c60404bd2d92",
+    "language": "hu",
+    "message": "A kompsofőz lánya"
+  },
+  {
+    "message_key": "0155542f-e1de-4c93-beb9-c60404bd2d92",
+    "language": "nl",
+    "message": "De Dochter van de Veerman"
+  },
+  {
+    "message_key": "cde79d07-259d-49a7-b21b-dd6827a45917",
+    "language": "de",
+    "message": "Das Schweigen der Akten"
+  },
+  {
+    "message_key": "cde79d07-259d-49a7-b21b-dd6827a45917",
+    "language": "en",
+    "message": "The Silence of the Files"
+  },
+  {
+    "message_key": "cde79d07-259d-49a7-b21b-dd6827a45917",
+    "language": "hu",
+    "message": "Az iratok csendje"
+  },
+  {
+    "message_key": "cde79d07-259d-49a7-b21b-dd6827a45917",
+    "language": "nl",
+    "message": "De Stilte van de Dossier"
+  },
+  {
+    "message_key": "4e48caa1-8dc6-4d2c-ac0e-2205ccb12659",
+    "language": "de",
+    "message": "Die letzte Zeugin"
+  },
+  {
+    "message_key": "4e48caa1-8dc6-4d2c-ac0e-2205ccb12659",
+    "language": "en",
+    "message": "The Last Witness"
+  },
+  {
+    "message_key": "4e48caa1-8dc6-4d2c-ac0e-2205ccb12659",
+    "language": "hu",
+    "message": "Az utolsó tanú"
+  },
+  {
+    "message_key": "4e48caa1-8dc6-4d2c-ac0e-2205ccb12659",
+    "language": "nl",
+    "message": "De Laatste Getuige"
+  },
+  {
+    "message_key": "214fc667-cac5-448f-9f05-f4328a6c8046",
+    "language": "de",
+    "message": "Skills of Gold"
+  },
+  {
+    "message_key": "214fc667-cac5-448f-9f05-f4328a6c8046",
+    "language": "en",
+    "message": "Skills of Gold"
+  },
+  {
+    "message_key": "214fc667-cac5-448f-9f05-f4328a6c8046",
+    "language": "hu",
+    "message": "Arany készségek"
+  },
+  {
+    "message_key": "214fc667-cac5-448f-9f05-f4328a6c8046",
+    "language": "nl",
+    "message": "Skills of Gold"
+  },
+  {
+    "message_key": "e59e8987-4966-4611-bf49-b333d9adc53e",
+    "language": "de",
+    "message": "The Voltage Between Us"
+  },
+  {
+    "message_key": "e59e8987-4966-4611-bf49-b333d9adc53e",
+    "language": "en",
+    "message": "The Voltage Between Us"
+  },
+  {
+    "message_key": "e59e8987-4966-4611-bf49-b333d9adc53e",
+    "language": "hu",
+    "message": "A feszültség közöttünk"
+  },
+  {
+    "message_key": "e59e8987-4966-4611-bf49-b333d9adc53e",
+    "language": "nl",
+    "message": "De Spanning Tussen Ons"
+  },
+  {
+    "message_key": "2d1e9704-ce46-4986-a47e-f1db939b11d8",
+    "language": "de",
+    "message": "In einer Welt voller Geheimnisse und Magie begibt sich ein junger Abenteurer auf die Suche nach einem längst vergessenen Schatz im wilden Durabor. Doch schon bald stößt er auf magische Wunder und dämonische Gefahren, die aus der Unterwelt aufsteigen und das florierende Königreich Norskom bedrohen. Nur die kühnsten Erkunder können diese dunkle Bedrohung aufhalten und ihre mystische Welt beschützen. Untergang ist ein fesselnder Auftakt zu Joachim Schillers epischer Fantasy-Trilogie, geprägt von Mythen, Verrat und dem langen Schatten gefallener Reiche."
+  },
+  {
+    "message_key": "2d1e9704-ce46-4986-a47e-f1db939b11d8",
+    "language": "en",
+    "message": "In a realm shrouded in mystery and magic, a young adventurer embarks on a quest to uncover a long-lost treasure hidden deep within the Durabor wilderness. As he explores this fantastical world, he encounters both wondrous magic and lurking demonic threats. Just as he enters the vast forest, dark forces awaken from the underworld, endangering the prosperous kingdom of Norskom. Only the bravest explorers can stand against this looming darkness to protect their mystical home. Untergang is a gripping start to Joachim Schiller’s epic fantasy trilogy, brimming with myth, betrayal, and the lingering shadows of fallen empires."
+  },
+  {
+    "message_key": "2d1e9704-ce46-4986-a47e-f1db939b11d8",
+    "language": "hu",
+    "message": "Titkok és varázslat övezte világban egy fiatal kalandor veszi át a fonalat, hogy feltárja a rég elfeledett kincset a durabori vadon mélyén. Ahogy belemegy a fantasztikus birodalom rejtelmeibe, csodálatos mágikus jelenségekkel és alvilági démoni fenyegetésekkel is szembe kell néznie. Amint belép a hatalmas erdőbe, sötét erők ébrednek fel, amelyek veszélybe sodorják a virágzó Norskom királyságot. Csak a legbátrabb felfedezők állíthatják meg ezt a sötétséget, hogy megvédjék misztikus otthonukat. A Végzet Joachim Schiller epikus fantasy trilógia lenyűgöző kezdete, tele mítoszokkal, árulással és a bukott birodalmak árnyékával."
+  },
+  {
+    "message_key": "2d1e9704-ce46-4986-a47e-f1db939b11d8",
+    "language": "nl",
+    "message": "In een wereld omhuld door mysterie en magie gaat een jonge avonturier op zoek naar een lang vergeten schat in de wilde wildernis van Durabor. Terwijl hij deze fantastische realm verkent, stuit hij op wonderlijke magie en duistere dreigingen die uit de onderwereld opstijgen en het bloeiende koninkrijk Norskom in gevaar brengen. Alleen de dapperste verkenners kunnen deze dreigende duisternis tegenhouden en hun mystieke thuis beschermen. Ondergang is een meeslepend begin van Joachim Schillers epische fantasy-trilogie, rijk aan mythen, verraad en de lange schaduw van gevallen rijken."
+  },
+  {
+    "message_key": "4e729227-f504-408d-97dc-82c3e51d9c56",
+    "language": "de",
+    "message": "Das zweite Buch der Schatz-der-Welten-Trilogie. Nach der Vertreibung des Bösen aus dem Durabor sehnt sich das Königreich Norskom nach neuer Sicherheit. Doch die finsteren Pläne Mardoks, des Gottes des Krieges, stürzen die Welten erneut ins Chaos. Neue Gefahren aus der Unterwelt senden eine klare Botschaft: Die Dunkelheit ist noch nicht besiegt. Norskoms Rache steigert die Spannung der Trilogie auf atemberaubende Höhen und vertieft gleichzeitig die Mythologie der Welt."
+  },
+  {
+    "message_key": "4e729227-f504-408d-97dc-82c3e51d9c56",
+    "language": "en",
+    "message": "The second installment in the Treasure of Worlds trilogy. Having expelled the evil from the Durabor, the kingdom of Norskom longs for renewed safety. But the sinister designs of Mardok, god of war, plunge the realms back into chaos. New threats emerge from the underworld with a clear message: darkness has not been vanquished. Norskom's Revenge elevates the trilogy's stakes to breathtaking heights while deepening its mythological foundations."
+  },
+  {
+    "message_key": "4e729227-f504-408d-97dc-82c3e51d9c56",
+    "language": "hu",
+    "message": "A Világok Kincse trilógia második kötete. Miután kiűzték a rosszat a Duraborból, Norskom királyság új biztonságra vágyik. De Mardok, a háború istenének sötét tervei újra káoszba taszítják a világokat. Az alvilágból új veszélyek törnek elő, egyértelmű üzenettel: a sötétség még nem győzött le. Norskom bosszúja lenyűgöző magasságokba emeli a trilógia feszültségét, miközben mélyíti a világ mitológiáját."
+  },
+  {
+    "message_key": "4e729227-f504-408d-97dc-82c3e51d9c56",
+    "language": "nl",
+    "message": "Het tweede deel van de Schat der Werelden-trilogie. Na het verdrijven van het kwaad uit Durabor verlangt het koninkrijk Norskom naar nieuwe veiligheid. Maar de duistere plannen van Mardok, de god van de oorlog, storten de werelden opnieuw in chaos. Nieuwe gevaren rijzen op uit de onderwereld met een duidelijke boodschap: de duisternis is nog niet verslagen. Norskoms Wraak brengt de spanning van de trilogie naar adembenemende hoogtes terwijl het de mythologie van de wereld verdiept."
+  },
+  {
+    "message_key": "65493807-29f2-4784-b975-2b9758debb75",
+    "language": "de",
+    "message": "Der atemberaubende Abschluss von Joachim Schillers Schatz-der-Welten-Trilogie. Die Wahrheit über die gefallenen Elben – eine von dunkler Magie getriebene Zivilisation – wird endlich enthüllt. Gemeinsam mit der wahren Macht der Götter, die über das Schicksal des mystischen Durabor entscheiden, stehen die Abenteurer des menschlichen Königreichs Norskom zwischen inneren Kämpfen und den verheerenden Plänen Mardoks. Ein epischer, emotional ergreifender Finale, der jede Seite der Reise belohnt."
+  },
+  {
+    "message_key": "65493807-29f2-4784-b975-2b9758debb75",
+    "language": "en",
+    "message": "The stunning conclusion to Joachim Schiller's Treasure of Worlds trilogy. The truth behind the fallen elves – a civilization driven by dark magic – is finally revealed. Alongside the true power of the gods, who decide the fate of the mystical Durabor, the adventurers of the human kingdom of Norskom are caught between inner turmoil and the devastating plans of Mardok, god of war. An epic, emotionally devastating finale that rewards every page of the journey."
+  },
+  {
+    "message_key": "65493807-29f2-4784-b975-2b9758debb75",
+    "language": "hu",
+    "message": "Joachim Schiller Világok Kincse trilógiájának lenyűgöző befejezése. Véglegesen kiderül a sötét mágia által hajtott elveszett tündér civilizáció titka. A misztikus Durabor sorsát döntő istenek valódi hatalmával együtt a Norskom emberi királyság felfedezői belső küzdelmek és Mardok, a háború istenének pusztító tervei közé szorulnak. Egy epikus, érzelmi szempontból is megrendítő zárás, amely megjutalmazza az utazás minden oldalát."
+  },
+  {
+    "message_key": "65493807-29f2-4784-b975-2b9758debb75",
+    "language": "nl",
+    "message": "Het adembenemende einde van Joachim Schillers Schat der Werelden-trilogie. De waarheid over de gevallen elfen – een beschaving gedreven door donkere magie – wordt eindelijk onthuld. Samen met de ware macht van de goden, die het lot van het mystieke Durabor bepalen, staan de avonturiers van het menselijke koninkrijk Norskom tussen innerlijke strijd en de verwoestende plannen van Mardok, de god van de oorlog. Een episch, emotioneel ontroerend finale dat elke pagina van de reis beloont."
+  },
+  {
+    "message_key": "2d710e58-2612-4747-8326-88924c08d9c2",
+    "language": "de",
+    "message": "Als ein gestohlenes Prototyp-Modell kurz vor der Eröffnungszeremonie der WorldSkills-Weltmeisterschaft verschwindet, taucht Detektiv Steven Plodowski in eine Welt voller talentierter Handwerker, Industriespionage und internationaler Intrigen ein. Der Dieb befindet sich unter Tausenden von Teilnehmern, Experten und Offiziellen – und Plodowski hat nur siebzigzwei Stunden, bevor der Prototyp für etwas weitaus Gefährlicheres als eine Medaille genutzt wird. Ein rasantes Thriller-Abenteuer hinter den Kulissen der beruflichen Weltmeisterschaften."
+  },
+  {
+    "message_key": "2d710e58-2612-4747-8326-88924c08d9c2",
+    "language": "en",
+    "message": "When a stolen prototype vanishes from the WorldSkills competition venue on the eve of the opening ceremony, detective Steven Plodowski finds himself thrust into a world of gifted young craftspeople, corporate espionage, and international intrigue. The thief is somewhere among thousands of competitors, experts, and officials from across the globe – and Plodowski has seventy-two hours before the prototype is used for something far more dangerous than winning a medal. A fast-paced thriller that takes readers inside the breathtaking world of the world vocational championships."
+  },
+  {
+    "message_key": "2d710e58-2612-4747-8326-88924c08d9c2",
+    "language": "hu",
+    "message": "Amikor egy ellopott prototípus eltűnik a WorldSkills verseny helyszínéről az átadó ünnepség előestéjén, Steven Plodowski detektív egy tehetséges fiatal kézművesek, ipari kémkedés és nemzetközi intrikák világába kerül. A tolvaj a résztvevők, szakértők és hivatalnokok között rejtőzik – és Plodowskynak csak hetvenkét órája van, mielőtt a prototípust egy sokkal veszélyesebb célra használják fel. Egy pörgős thriller, amely a szakmai világbajnokságok izgalmas hátterét mutatja be."
+  },
+  {
+    "message_key": "2d710e58-2612-4747-8326-88924c08d9c2",
+    "language": "nl",
+    "message": "Wanneer een gestolen prototype verdwijnt van de WorldSkills-wedstrijdlocatie op de avond voor de openingsceremonie, belandt detective Steven Plodowski in een wereld van getalenteerde jonge ambachtslieden, bedrijfsinfiltratie en internationale intriges. De dief bevindt zich ergens tussen duizenden deelnemers, experts en functionarissen wereldwijd – en Plodowski heeft zevenenzestig uur voordat het prototype wordt gebruikt voor iets veel gevaarlijkers dan het winnen van een medaille. Een razendsnelle thriller die lezers meeneemt naar de adembenemende wereld van de wereldberoemde vakwedstrijden."
+  },
+  {
+    "message_key": "b38432b8-86a2-4ec4-bde5-0abf268aa4a8",
+    "language": "de",
+    "message": "Steven Plodowski ermittelt 2. Ein Geschichtslehrer wird tot in einem ländlichen schwäbischen Schulhaus aufgefunden – mit einem Dokument aus dem 17. Jahrhundert in der Hand, das die berüchtigten Schwabenkinder beschreibt. Als ein zweiter Tod folgt, ahnt Plodowski, dass jahrhundertealte Groll nicht mit den Geschichtsbüchern gestorben ist. Der zweite Plodowski-Roman ist düsterer und persönlicher als der erste und webt Geschichte in ein beunruhigendes modernes Geheimnis."
+  },
+  {
+    "message_key": "b38432b8-86a2-4ec4-bde5-0abf268aa4a8",
+    "language": "en",
+    "message": "Steven Plodowski Investigates 2. A history teacher is found dead in a rural Swabian schoolhouse, clutching a seventeenth-century document about the infamous Schwabenkinder – children sent from Vorarlberg and Tyrol to work as farmhands in Swabia each spring. When a second death follows, Plodowski begins to suspect that centuries-old grievances have not died with the history books. The second Plodowski novel is darker and more personal than the first, weaving history into an unsettling present-day mystery."
+  },
+  {
+    "message_key": "b38432b8-86a2-4ec4-bde5-0abf268aa4a8",
+    "language": "hu",
+    "message": "Steven Plodowski nyomoz 2. Egy történelemtanárt találnak holtan egy vidéki sváb iskolában – a kezében egy 17. százados dokumentummal, amely a hírhedt sváb gyerekekről szól. Amikor egy második haláleset követi, Plodowski gyanítja, hogy évszázados sérelmek nem haltak meg a történelemkönyvekkel együtt. A második Plodowski-regény sötétebb és személyesebb, mint az első, és a történelmet egy nyugtalanító modern rejtélybe sző."
+  },
+  {
+    "message_key": "b38432b8-86a2-4ec4-bde5-0abf268aa4a8",
+    "language": "nl",
+    "message": "Steven Plodowski Onderzoekt 2. Een geschiedenisleraar wordt dood aangetroffen in een landelijk Zwabisch schoolgebouw, met een zeventiende-eeuws document over de beruchte Schwabenkinder – kinderen uit Vorarlberg en Tirol die elk voorjaar als boerenknechten naar Zwaben werden gestuurd. Wanneer een tweede dood volgt, begint Plodowski te vermoeden dat eeuwenoude griezen niet met de geschiedenisboeken zijn gestorven. De tweede Plodowski-roman is donkerder en persoonlijker dan de eerste, en weeft geschiedenis in een verontrustend hedendaags mysterie."
+  },
+  {
+    "message_key": "95a26a88-05ee-42bd-9304-1f81422e936f",
+    "language": "de",
+    "message": "Steven Plodowski ermittelt 4. Ein Theologe wird aus dem Bodensee gezogen, der einen mittelalterlichen Brief bei sich trägt, der nie hätte auftauchen dürfen – ein Brief, der den Konzil von Konstanz in einen Vertuschungsskandal um die Hinrichtung von Jan Hus im Jahr 1415 verwickelt. Sechshundert Jahre später ist jemand bereit, erneut zu töten, um das Geheimnis zu begraben. Plodowskis historisch ambitioniertester Fall führt ihn an die atemberaubenden Ufer des Bodensees, wo die Vergangenheit noch nie so gefährlich war."
+  },
+  {
+    "message_key": "95a26a88-05ee-42bd-9304-1f81422e936f",
+    "language": "en",
+    "message": "Steven Plodowski Investigates 4. A theologian is pulled from Lake Constance carrying a medieval letter that was never supposed to surface – a letter that implicates the Council of Constance in a cover-up surrounding the execution of Jan Hus in 1415. Six hundred years later, someone is prepared to kill again to keep the secret buried. Plodowski's most historically ambitious case takes him to the stunning shores of Lake Constance, where the past has never been more dangerous."
+  },
+  {
+    "message_key": "95a26a88-05ee-42bd-9304-1f81422e936f",
+    "language": "hu",
+    "message": "Steven Plodowski nyomoz 4. Egy teológust emelnek ki a Boden-tóból, aki egy középkori levelet hordoz, amely soha nem kerülhetett volna elő – egy levél, amely a konstanzi zsinatot egy 1415-ös Jan Hus kivégzés körüli leplezésbe keveri. Hatvan évvel később valaki újra kész megölni, hogy a titkot a földbe temesse. Plodowski történelmileg legambiciózusabb esete lenyűgöző partokhoz vezeti a Boden-tónál, ahol a múlt soha nem volt ennyire veszélyes."
+  },
+  {
+    "message_key": "95a26a88-05ee-42bd-9304-1f81422e936f",
+    "language": "nl",
+    "message": "Steven Plodowski Onderzoekt 4. Een theoloog wordt uit het Bodenmeer gehaald met een middeleeuwse brief die nooit aan het licht had mogen komen – een brief die het Concilie van Konstanz betrekt bij een dekmantel rond de executie van Jan Hus in 1415. Zeshonderd jaar later is iemand bereid opnieuw te doden om het geheim begraven te houden. Plodowski's meest historische ambitieuze zaak leidt hem naar de adembenemende oevers van het Bodenmeer, waar het verleden nog nooit zo gevaarlijk is geweest."
+  },
+  {
+    "message_key": "ab821dff-139f-4c9c-a002-d31cc355737b",
+    "language": "de",
+    "message": "Steven Plodowski ermittelt 3. Eine Oldtimer-Werkstatt in der Schwäbischen Alb wird in Brand gesetzt – doch bevor es passiert, entfernt jemand, was sie jahrzehntelang heimlich lagerte. Die Spur führt Plodowski durch den Nachkriegsschwarzmarkt, ein Netzwerk alterndes Autoliebhaber und ein verstecktes Vermögen, dessen Besitzer nie damit rechneten, gefunden zu werden. Ein sonnenverwöhntes schwäbisches Sommer-Noir."
+  },
+  {
+    "message_key": "ab821dff-139f-4c9c-a002-d31cc355737b",
+    "language": "en",
+    "message": "Steven Plodowski Investigates 3. A vintage car restoration workshop in the Swabian Alb is destroyed by fire – but not before someone removes what it was secretly storing for decades. The trail leads Plodowski through the post-war black market, a network of ageing car enthusiasts, and a hidden fortune whose owners never expected to be found. A sun-drenched Swabian summer noir."
+  },
+  {
+    "message_key": "ab821dff-139f-4c9c-a002-d31cc355737b",
+    "language": "hu",
+    "message": "Steven Plodowski nyomoz 3. Egy régi autók restauráló műhelyt lángra gyújtanak a sváb Alpokban – de mielőtt megtörténne, valaki eltávolítja, amit évtizedekig titokban tárolt. A nyom Plodowskit a háború utáni fekete piacra, egy öregedő autószenvedélyesek hálózatához és egy rejtett vagyonhoz vezeti, amelynek tulajdonosai soha nem várták, hogy megtalálják őket. Egy napfényes sváb nyári noir."
+  },
+  {
+    "message_key": "ab821dff-139f-4c9c-a002-d31cc355737b",
+    "language": "nl",
+    "message": "Steven Plodowski Onderzoekt 3. Een restauratiewerkplaats voor klassieke auto's in de Zwabische Alb wordt in brand gestoken – maar niet voordat iemand heeft verwijderd wat decennialang geheim werd opgeslagen. De spoor leidt Plodowski door de naoorlogse zwarte markt, een netwerk van verouderende autoliefhebbers, en een verborgen fortuin waarvan de eigenaren nooit verwachtten gevonden te worden. Een zonovergoten Zwabische zomer noir."
+  },
+  {
+    "message_key": "5e53eb92-8202-4107-ae26-c5441bde9228",
+    "language": "de",
+    "message": "Eine pensionierte Kunstkonservatorin wird tot in ihrer Stuttgarter Wohnung aufgefunden, umgeben von Fotografien eines Gemäldes, das offiziell nicht existiert. Plodowskis Untersuchung deckt einen Diebstahl aus dem Krieg, eine gefälschte Provenienz und eine Familie auf, die seit achtzig Jahren eine Lüge beschützt. Ein letztes Bild ist Paul Steinbecks intimster Roman – eine Meditation über Kunst, Erinnerung und das Gewicht vererbter Schuld."
+  },
+  {
+    "message_key": "5e53eb92-8202-4107-ae26-c5441bde9228",
+    "language": "en",
+    "message": "A retired art conservator is found dead in her Stuttgart apartment, surrounded by photographs of a painting that officially doesn't exist. Plodowski's investigation unearths a wartime theft, a forged provenance, and a family that has protected a lie for eighty years. Ein letztes Bild is Paul Steinbeck's most intimate novel – a meditation on art, memory, and the weight of inherited guilt."
+  },
+  {
+    "message_key": "5e53eb92-8202-4107-ae26-c5441bde9228",
+    "language": "hu",
+    "message": "Egy nyugdíjas művészeti restaurátort találnak holtan Stuttgart-i lakásában, egy hivatalosan nem létező festmény fotóival körülvéve. Plodowski vizsgálata egy háborús rablást, egy hamis provenienciát és egy családot tár fel, amely nyolcvan éve véd egy hazugságot. Egy utolsó kép Paul Steinbeck legintimebb regénye – egy meditáció a művészetről, az emlékezetről és a örökölt bűntudat súlyáról."
+  },
+  {
+    "message_key": "5e53eb92-8202-4107-ae26-c5441bde9228",
+    "language": "nl",
+    "message": "Een gepensioneerde kunstschilderrestaurateur wordt dood aangetroffen in haar appartement in Stuttgart, omringd door foto's van een schilderij dat officieel niet bestaat. Plodowski's onderzoek onthult een diefstal uit de oorlog, een vervalste herkomst en een familie die al tachtig jaar een leugen beschermt. Ein letztes Bild is Paul Steinbecks meest intieme roman – een meditatie over kunst, herinnering en het gewicht van erfelijke schuld."
+  },
+  {
+    "message_key": "4ef8d973-4873-4d09-ab4e-896faebf3815",
+    "language": "de",
+    "message": "Vierzehnjähriger Marc hat einen Sommer Zeit, um herauszufinden, was wirklich mit seinem Großvater passiert ist – einem Mann, der aus jedem Familienfoto gelöscht wurde. Eine Coming-of-Age-Mystery, die Marc durch Dorfarchive, überwachsene Friedhöfe und die widerwilligen Erinnerungen sehr alter Menschen führt. Paul Steinbecks wärmste und hoffnungsvollste Geschichte."
+  },
+  {
+    "message_key": "4ef8d973-4873-4d09-ab4e-896faebf3815",
+    "language": "en",
+    "message": "Fourteen-year-old Marc has one summer to find out what really happened to his grandfather – a man erased from every family photograph. A coming-of-age mystery that takes Marc through village archives, overgrown cemeteries, and the reluctant memories of very old people. Paul Steinbeck's warmest and most hopeful book."
+  },
+  {
+    "message_key": "4ef8d973-4873-4d09-ab4e-896faebf3815",
+    "language": "hu",
+    "message": "Tizennégy éves Marcnak egy nyara van, hogy kiderítse, mi történt valójában a nagypapjával – egy emberrel, aki minden családi fotóból kitörölték. Egy felnőtté válás rejtély, amely Marcot falusi archívumokba, benőtt temetőkbe és nagyon idős emberek akaratlan emlékeibe visz. Paul Steinbeck legmelegebb és legreményteljesebb könyve."
+  },
+  {
+    "message_key": "4ef8d973-4873-4d09-ab4e-896faebf3815",
+    "language": "nl",
+    "message": "Veertienjarige Marc heeft één zomer om erachter te komen wat er echt met zijn grootvader is gebeurd – een man die uit elke familiefoto is gewist. Een coming-of-age mysterie dat Marc door dorpsarchieven, overwoekerde begraafplaatsen en de aarzelende herinneringen van zeer oude mensen leidt. Paul Steinbecks warmste en meest hoopvolle boek."
+  },
+  {
+    "message_key": "3a3f54f0-eba0-4019-870b-aa7621eeee69",
+    "language": "de",
+    "message": "2098. Deutschlands letztes funktionierendes Stromnetz ist gerade ausgefallen. In einer Stadt, die nur noch vom Know-how ihrer letzten Generation von Fachkräften zusammengehalten wird, weigert sich ein Ingenieur zu akzeptieren, dass die Zivilisation vorbei ist. Steinbecks seltener Ausflug in die spekulative Fiktion – und ein Liebesbrief an die Würde der handwerklichen Arbeit."
+  },
+  {
+    "message_key": "3a3f54f0-eba0-4019-870b-aa7621eeee69",
+    "language": "en",
+    "message": "2098. Germany's last functioning power grid has just gone dark. In a city held together by the expertise of its last generation of skilled tradespeople, one engineer refuses to accept that civilisation is over. A rare venture into speculative fiction from Steinbeck – and a love letter to the dignity of hands-on work."
+  },
+  {
+    "message_key": "3a3f54f0-eba0-4019-870b-aa7621eeee69",
+    "language": "hu",
+    "message": "2098. Németország utolsó működő áramhálózata éppen kikapcsolt. Egy városban, amelyet csak a szakemberek utolsó generációjának tudása tart össze, egy mérnök nem hajlandó elfogadni, hogy a civilizáció véget ért. Steinbeck ritka kitérője a spekulatív fikcióba – és egy szerelmeslevél a kézműves munka méltóságához."
+  },
+  {
+    "message_key": "3a3f54f0-eba0-4019-870b-aa7621eeee69",
+    "language": "nl",
+    "message": "2098. Duitslands laatste functionerende elektriciteitsnet is net uitgevallen. In een stad die alleen nog wordt samengehouden door de expertise van zijn laatste generatie vaklieden, weigert één ingenieur te accepteren dat de beschaving voorbij is. Steinbecks zeldzame uitstapje in speculatieve fictie – en een liefdesbrief aan de waardigheid van handwerk."
+  },
+  {
+    "message_key": "7e2d7851-0271-46ad-8fe0-24a2491f8e25",
+    "language": "de",
+    "message": "Zwei Geschwister, die 1956 durch den Eisernen Vorhang getrennt wurden, finden sich sechzig Jahre später wieder – doch die Frau, die die Tür öffnet, ist nicht die, die beide erwartet hatten. Ein leiser, zutiefst ergreifender Roman über Identität, Sprache und die Grenzen, die wir in uns tragen."
+  },
+  {
+    "message_key": "7e2d7851-0271-46ad-8fe0-24a2491f8e25",
+    "language": "en",
+    "message": "Two siblings separated by the Iron Curtain in 1956 find each other again sixty years later – but the woman who answers the door is not who either of them expected. A quiet, devastating novel about identity, language, and the borders we carry inside ourselves."
+  },
+  {
+    "message_key": "7e2d7851-0271-46ad-8fe0-24a2491f8e25",
+    "language": "hu",
+    "message": "Két testvér, akiket 1956-ban az Vasműves Függöny választott el, hatvan évvel később újra megtalálják egymást – de az ajtót nyitó nő nem az, akit mindketten vártak. Egy csendes, mélyen megrendítő regény az identitásról, a nyelvről és a határokról, amelyeket magunkban hordozunk."
+  },
+  {
+    "message_key": "7e2d7851-0271-46ad-8fe0-24a2491f8e25",
+    "language": "nl",
+    "message": "Twee broers en zussen die in 1956 door de IJzeren Gordijn werden gescheiden, vinden elkaar zestig jaar later weer – maar de vrouw die de deur opent is niet wie ze beiden verwachtten. Een stille, ontroerende roman over identiteit, taal en de grenzen die we in onszelf dragen."
+  },
+  {
+    "message_key": "8bb2beab-4886-4bae-ae24-c8250489eba8",
+    "language": "de",
+    "message": "Eine gefeierte Architektin wird gebeten, vor einem Kriegsverbrechertribunal auszusagen über ein Gebäude, das sie entworfen hat – ein Gebäude, das später für Zwecke genutzt wurde, die sie nie beabsichtigt hatte. In vier Sprachen und vier Zeitleinen erzählt, ist A Tanú ein formgewagter Roman über Mitverantwortung, Schönheit und die Frage, ob eine Struktur für die Taten schuldig sein kann, die in ihr begangen werden."
+  },
+  {
+    "message_key": "8bb2beab-4886-4bae-ae24-c8250489eba8",
+    "language": "en",
+    "message": "A celebrated architect is asked to testify at a war crimes tribunal about a building she designed – a building that was later used for purposes she claims she never intended. Told in four languages across four timelines, A Tanú is a formally daring novel about complicity, beauty, and whether a structure can be guilty of the acts committed inside it."
+  },
+  {
+    "message_key": "8bb2beab-4886-4bae-ae24-c8250489eba8",
+    "language": "hu",
+    "message": "Egy elismert építésznőt arra kérnek, hogy vallomást tegyen egy háborús bűnök bírósága előtt egy általa tervezett épületről – egy épületről, amelyet később olyan célokra használtak, amelyeket soha nem szánt. Négy nyelven és négy idővonalon keresztül mesélve, A Tanú egy formailag merész regény a bűnrészességről, a szépségről és arról, hogy egy szerkezet bűnös lehet-e a benne elkövetett cselekedetekért."
+  },
+  {
+    "message_key": "8bb2beab-4886-4bae-ae24-c8250489eba8",
+    "language": "nl",
+    "message": "Een gevierde architect wordt gevraagd om uit te komen in een oorlogsmisdaden tribunal over een gebouw dat ze ontwierp – een gebouw dat later werd gebruikt voor doeleinden die ze nooit had beoogd. Verteld in vier talen over vier tijdlijnen, is A Tanú een formeel gedurfde roman over medeplichtigheid, schoonheid en de vraag of een structuur schuldig kan zijn aan de daden die erin worden gepleegd."
+  },
+  {
+    "message_key": "4dedfc71-91cf-486b-b0d2-cb640773f096",
+    "language": "de",
+    "message": "Als ein Whistleblower Beweise veröffentlicht, dass eine KI-Trainingsplattform, die an europäischen Berufskollegs eingesetzt wird, systematisch Bewerber aus Arbeitermilieus benachteiligt, eilen eine junge Datenjournalistin und ein entehrter Software-Ingenieur zusammen, um die Wahrheit ans Licht zu bringen, bevor die Ersteller das System endgültig begraben. Ein scharfer Tech-Thriller, der fragt, wer entscheidet, welche Fähigkeiten die Zukunft wertschätzen darf."
+  },
+  {
+    "message_key": "4dedfc71-91cf-486b-b0d2-cb640773f096",
+    "language": "en",
+    "message": "When a whistleblower leaks evidence that an AI training platform used at vocational colleges across Europe has been systematically discriminating against applicants from working-class backgrounds, a young data journalist and a disgraced software engineer race to expose the truth before the system's creators bury it permanently. A razor-sharp tech thriller that asks who decides which skills the future is allowed to value."
+  },
+  {
+    "message_key": "4dedfc71-91cf-486b-b0d2-cb640773f096",
+    "language": "hu",
+    "message": "Amikor egy leleplező nyilvánosságra hozza a bizonyítékokat, hogy egy európai szakiskolákban használt MI-képzési platform rendszeresen hátrányos megkülönböztetésben részesíti a munkásosztályból származó jelentkezőket, egy fiatal adatújságíró és egy meggyalázott szoftvermérnök versenyt futnak az igazság feltárásáért, mielőtt a rendszer alkotói végleg eltemetik. Egy éles tech-thriller, amely azt kérdezi, ki dönti el, mely készségeket szabad a jövőnek értékelnie."
+  },
+  {
+    "message_key": "4dedfc71-91cf-486b-b0d2-cb640773f096",
+    "language": "nl",
+    "message": "Wanneer een klokkenluider bewijzen lekt dat een AI-trainingsplatform dat aan Europese beroepskolleges wordt gebruikt, systematisch discrimineert tegen sollicitanten uit arbeidersmilieus, rennen een jonge datajournalist en een geschorste software-engineer samen om de waarheid aan het licht te brengen voordat de makers van het systeem het permanent begraven. Een scherp tech-thriller die vraagt wie beslist welke vaardigheden de toekomst mag waarderen."
+  },
+  {
+    "message_key": "a5de3d76-6deb-4d6b-89f5-39ea4b028af4",
+    "language": "de",
+    "message": "Ein Radioteleskop in den niederländischen Poldern fängt ein Signal auf, das weder natürlich noch künstlich sein kann. Der Physiker, der damit beauftragt ist, es zu analysieren, beginnt zu vermuten, dass das Signal nicht aus dem Weltraum, sondern aus der tiefen Vergangenheit stammt. Eine faszinierende Mischung aus harter Wissenschaft und philosophischem Rätsel, die fragt, was wir tun würden, wenn wir eine Nachricht von einer Zivilisation erhielten, die nicht mehr existiert."
+  },
+  {
+    "message_key": "a5de3d76-6deb-4d6b-89f5-39ea4b028af4",
+    "language": "en",
+    "message": "A radio telescope in the Dutch polders picks up a signal that cannot be natural – and cannot, according to every expert consulted, be artificial either. The physicist tasked with analysing it begins to suspect the signal is not from space but from the deep past. A mesmerising blend of hard science and philosophical mystery, The Last Frequency asks what we would do if we received a message from a civilisation that no longer existed."
+  },
+  {
+    "message_key": "a5de3d76-6deb-4d6b-89f5-39ea4b028af4",
+    "language": "hu",
+    "message": "Egy rádiótávcső a holland polderekben egy jelet fog, amely sem természetes, sem mesterséges nem lehet. A fizikus, aki elemzésére kapott megbízást, gyanítani kezdi, hogy a jel nem az űrből, hanem a mélt múltból származik. Egy lenyűgöző keverék a szigorú tudományból és a filozófiai rejtélyből, amely azt kérdezi, mit tennénk, ha üzenetet kapnánk egy már nem létező civilizációtól."
+  },
+  {
+    "message_key": "a5de3d76-6deb-4d6b-89f5-39ea4b028af4",
+    "language": "nl",
+    "message": "Een radiotelescoop in de Nederlandse polders vangt een signaal op dat noch natuurlijk noch kunstmatig kan zijn. De natuurkundige die ermee belast is het te analyseren, begint te vermoeden dat het signaal niet uit de ruimte komt, maar uit het diepe verleden. Een betoverende mix van harde wetenschap en filosofisch mysterie, De Laatste Frequentie vraagt wat we zouden doen als we een bericht ontvingen van een beschaving die niet langer bestond."
+  },
+  {
+    "message_key": "64eca97d-b535-47a3-93fc-5467168c3c23",
+    "language": "de",
+    "message": "Auf der abgelegenen Insel Haafey erbt eine junge Frau die Rolle ihrer Großmutter als Hüterin der Gezeitenaufzeichnungen – Aufzeichnungen, die seit zweihundert Jahren lückenlos geführt werden. Als die neuesten Einträge etwas Unmögliches offenbaren, muss sie zwischen der Sicherheit des Bekannten und der Wahrheit am Rande des Meeres wählen. Longlisted für den Booker Prize, ist Der Gezeitenwächter ein Roman leiser Verwüstung."
+  },
+  {
+    "message_key": "64eca97d-b535-47a3-93fc-5467168c3c23",
+    "language": "en",
+    "message": "On the remote island of Haafey, a young woman inherits her grandmother's role as keeper of the tidal records – ledgers that have been kept continuously for two hundred years. When the most recent entries reveal something impossible, she must choose between the safety of the known and the truth waiting at the edge of the sea. Longlisted for the Booker Prize, The Tide Warden is a novel of quiet devastation."
+  },
+  {
+    "message_key": "64eca97d-b535-47a3-93fc-5467168c3c23",
+    "language": "hu",
+    "message": "A távoli Haafey szigeten egy fiatal nő örökli nagymamája szerepét az árapály feljegyzések őrzőjeként – naplók, amelyeket két évszázadig folyamatosan vezettek. Amikor a legfrissebb bejegyzések valamit lehetetlent tárnak fel, választania kell a biztonságos ismert és a tenger szélén váró igazság között. A Booker-díj hosszú listájára került, Az árapály őrzője egy csendes pusztítás regénye."
+  },
+  {
+    "message_key": "64eca97d-b535-47a3-93fc-5467168c3c23",
+    "language": "nl",
+    "message": "Op het afgelegen eiland Haafey erft een jonge vrouw de rol van haar grootmoeder als bewaarder van de getijdenregisters – registers die twee eeuwen lang onafgebroken zijn bijgehouden. Wanneer de meest recente invoer iets onmogelijks onthult, moet ze kiezen tussen de veiligheid van het bekende en de waarheid die wacht aan de rand van de zee. Lang genomineerd voor de Booker Prize, is De Getijdenwachter een roman van stille verwoesting."
+  },
+  {
+    "message_key": "c192348e-9313-41a3-bc5c-85df79568916",
+    "language": "de",
+    "message": "In einer kleinen schottischen Küstenstadt im Jahr 1972 beobachtet die Tochter des Fährmanns etwas, das sie nicht erklären kann – und verbringt die nächsten fünfzig Jahre damit, es zu versuchen. In abwechselnden Zeitleinen erzählt, ist Die Tochter des Fährmanns eine unheimliche Untersuchung darüber, wie ein einziger Moment ein ganzes Leben neu formen kann, und wie lange eine Gemeinschaft ein gemeinsames Schweigen schützen kann."
+  },
+  {
+    "message_key": "c192348e-9313-41a3-bc5c-85df79568916",
+    "language": "en",
+    "message": "In a small Scottish coastal town in 1972, the ferryman's daughter witnesses something she can't explain – and spends the next fifty years trying to. Told in alternating timelines, The Ferryman's Daughter is a haunting investigation into how a single moment can reshape an entire life, and how long a community can protect a shared silence."
+  },
+  {
+    "message_key": "c192348e-9313-41a3-bc5c-85df79568916",
+    "language": "hu",
+    "message": "Egy kis skót tengerparti városban 1972-ben a kompsofőz lánya tanúja lesz valami magyarázhatatlannak – és a következő ötven évét azzal tölti, hogy megpróbálja megérteni. Váltakozó idővonalakon keresztül mesélve, A kompsofőz lánya egy ijesztő vizsgálat arról, hogyan formálhat át egyetlen pillanat egy egész életet, és meddig tud egy közösség megőrizni egy közös csendet."
+  },
+  {
+    "message_key": "c192348e-9313-41a3-bc5c-85df79568916",
+    "language": "nl",
+    "message": "In een klein Schots kuststadje in 1972 is de dochter van de veerman getuige van iets wat ze niet kan verklaren – en brengt de volgende vijftig jaar damit door het te proberen. Verteld in wisselende tijdlijnen, is De Dochter van de Veerman een indringend onderzoek naar hoe een enkel moment een heel leven kan hervormen, en hoe lang een gemeenschap een gedeelde stilte kan beschermen."
+  },
+  {
+    "message_key": "12724c5b-8640-4861-9a51-ce9baf288de9",
+    "language": "de",
+    "message": "Ein Leipziger Archivar entdeckt, dass eine Datei, die seine eigene Familie betrifft, aus den Stasi-Akten entfernt wurde – nicht nach der Wiedervereinigung, sondern sechs Jahre vor dem Mauerfall. Sein Versuch, den Inhalt der Datei zu rekonstruieren, führt ihn in ein Netz von Informanten, Verrat und einer Liebesgeschichte, die der Staat mit aller Kraft zu zerstören versuchte. Ein Debüt von außergewöhnlicher Zurückhaltung und Kraft."
+  },
+  {
+    "message_key": "12724c5b-8640-4861-9a51-ce9baf288de9",
+    "language": "en",
+    "message": "A Leipzig archivist discovers that a file relating to his own family has been removed from the Stasi records – removed not after reunification, but six years before the Wall fell. His attempt to reconstruct what the file contained leads him into a web of informants, betrayals, and a love story that the state tried very hard to destroy. A debut of extraordinary restraint and power."
+  },
+  {
+    "message_key": "12724c5b-8640-4861-9a51-ce9baf288de9",
+    "language": "hu",
+    "message": "Egy lipcsei levéltáros felfedezi, hogy egy saját családjára vonatkozó iratot eltávolítottak a Stasi nyilvántartásokból – nem az újraegyesítés után, hanem hat évvel a fal leomlása előtt. Az irat tartalmának rekonstruálására tett kísérlete informátorok, árulások és egy szerelmi történet hálójába vezeti, amelyet az állam minden erővel megsemmisíteni próbált. Kivételes visszafogottságot és erőt mutató debütálás."
+  },
+  {
+    "message_key": "12724c5b-8640-4861-9a51-ce9baf288de9",
+    "language": "nl",
+    "message": "Een archiefmedewerker in Leipzig ontdekt dat een dossier over zijn eigen familie is verwijderd uit de Stasi-archieven – niet na de hereniging, maar zes jaar voordat de Muur viel. Zijn poging om te reconstrueren wat het dossier bevatte, leidt hem in een web van informanten, verraad en een liefdesverhaal dat de staat met alle kracht probeerde te vernietigen. Een debuut van buitengewone beheersing en kracht."
+  },
+  {
+    "message_key": "55cbb541-6a7e-4797-b85f-6a4d53091654",
+    "language": "de",
+    "message": "Sie ist neunundneunzig Jahre alt und hat nie über das gesprochen, was sie im Oktober 1989 in Leipzig gesehen hat. Jetzt will ein Dokumentarfilmer ihre Geschichte erzählen, und sie muss entscheiden, welche Wahrheit der Geschichte schuldet – und was den Toten gehört. Wenglers emotional ergreifendster Roman ist auch sein kürzester und bester."
+  },
+  {
+    "message_key": "55cbb541-6a7e-4797-b85f-6a4d53091654",
+    "language": "en",
+    "message": "She is ninety-one years old and has never spoken about what she saw in Leipzig in October 1989. Now a documentary filmmaker wants her story, and she must decide what truth is owed to history – and what belongs to the dead. Wengler's most emotionally devastating novel is also his shortest, and his best."
+  },
+  {
+    "message_key": "55cbb541-6a7e-4797-b85f-6a4d53091654",
+    "language": "hu",
+    "message": "Kilencvenegy éves, és soha nem beszélt arról, amit 1989 októberében Lipcsében látott. Most egy dokumentumfilmes rendező szeretné a történetét, és döntenie kell, milyen igazságot tartozik a történelemnek – és mi a halottaké. Wengler legérzelmi szempontból megrendítő regénye egyben a legrövidebb és legjobb is."
+  },
+  {
+    "message_key": "55cbb541-6a7e-4797-b85f-6a4d53091654",
+    "language": "nl",
+    "message": "Ze is eenendertig jaar oud en heeft nooit gesproken over wat ze in Leipzig in oktober 1989 zag. Nu wil een documentairemaker haar verhaal vertellen, en ze moet beslissen welke waarheid aan de geschiedenis verschuldigd is – en wat toebehoort aan de doden. Wenglers meest emotioneel verwoestende roman is ook zijn kortste en beste."
+  },
+  {
+    "message_key": "2969a2d8-f566-4667-8c6e-14169b265002",
+    "language": "de",
+    "message": "Fünf Wettbewerber. Fünf Länder. Ein Wettbewerb, der sie alle für immer verändern wird. Skills of Gold folgt einem jungen Elektriker aus London, einem Schreiner aus dem ländlichen Japan, einem Klempner aus Lagos, einer Konditorin aus Lyon und einem Mechatronik-Spezialisten aus São Paulo, als sie auf einem WorldSkills-Wettbewerb zusammenkommen – und entdecken, dass die getesteten Fähigkeiten nicht immer die sind, die am meisten zählen. Ein freudiger, dringender Roman über Exzellenz, Zugehörigkeit und was es bedeutet, das Beste in etwas zu sein, was die Welt vergessen hat zu schätzen."
+  },
+  {
+    "message_key": "2969a2d8-f566-4667-8c6e-14169b265002",
+    "language": "en",
+    "message": "Five competitors. Five countries. One competition that will change all of them forever. Skills of Gold follows a young electrician from London, a carpenter from rural Japan, a plumber from Lagos, a pastry chef from Lyon, and a mechatronics specialist from São Paulo as they converge on a WorldSkills competition – and discover that the skills being tested are not always the ones that matter most. A joyful, urgent novel about excellence, belonging, and what it means to be the best at something the world has forgotten to value."
+  },
+  {
+    "message_key": "2969a2d8-f566-4667-8c6e-14169b265002",
+    "language": "hu",
+    "message": "Öt versenyző. Öt ország. Egy verseny, amely mindet örökre megváltoztatja. Az Arany készségek egy fiatal londoni villanyszerelőt, egy vidéki japán asztalosnőt, egy lagosi vízszerelőt, egy lyoni cukrászt és egy são paulói mechatronikai szakembert követ, ahogy egy WorldSkills versenyre gyűlnek össze – és felfedezik, hogy a tesztelt készségek nem mindig azok, amelyek a legfontosabbak. Egy örömteli, sürgető regény a kiválóságról, a hovatartozásról és arról, mit jelent a legjobb lenni valamiben, amit a világ elfelejtett értékelni."
+  },
+  {
+    "message_key": "2969a2d8-f566-4667-8c6e-14169b265002",
+    "language": "nl",
+    "message": "Vijf deelnemers. Vijf landen. Eén wedstrijd die hen allemaal voor altijd zal veranderen. Skills of Gold volgt een jonge elektricien uit Londen, een timmerman uit landelijk Japan, een loodgieter uit Lagos, een patissier uit Lyon en een mechatronica-specialist uit São Paulo terwijl ze samenkomen op een WorldSkills-wedstrijd – en ontdekken dat de geteste vaardigheden niet altijd de meest belangrijke zijn. Een vrolijke, dringende roman over excellentie, thuisbehoren en wat het betekent om het beste te zijn in iets wat de wereld vergeten is te waarderen."
+  },
+  {
+    "message_key": "4b0ce1f2-fe90-4985-8fc8-c9df3ff6630a",
+    "language": "de",
+    "message": "Zara ist zurück – nun als Expertin und Richterin bei WorldSkills, die die nächste Generation mit einer Mischung aus Stolz und Unbehagen beobachtet. Als ein Teilnehmer aus einem Land am Rande des Bürgerkriegs in der Nacht vor dem Finale verschwindet, muss Zara entscheiden, wie weit sie außerhalb ihres Zuständigkeitsbereichs gehen will. Ein spannender und zutiefst humaner Fortsetzung zu Skills of Gold."
+  },
+  {
+    "message_key": "4b0ce1f2-fe90-4985-8fc8-c9df3ff6630a",
+    "language": "en",
+    "message": "Zara is back – now a WorldSkills expert judge, watching the next generation compete with a mixture of pride and unease. When a competitor from a country on the brink of civil war goes missing the night before the finals, Zara must decide how far outside her remit she is willing to go. A thrilling and deeply humane sequel to Skills of Gold."
+  },
+  {
+    "message_key": "4b0ce1f2-fe90-4985-8fc8-c9df3ff6630a",
+    "language": "hu",
+    "message": "Zara visszatér – most már WorldSkills szakértő bíróként, aki a következő generációt büszkeség és szorongás keverékével figyeli. Amikor egy résztvevő egy polgárháború szélén álló országból eltűnik a döntő előesti éjszakán, Zarának döntenie kell, milyen messzire merészkedik a hatáskörén kívül. Egy izgalmas és mélyen humanista folytatás az Arany készségekhez."
+  },
+  {
+    "message_key": "4b0ce1f2-fe90-4985-8fc8-c9df3ff6630a",
+    "language": "nl",
+    "message": "Zara is terug – nu een WorldSkills expert-jurylid, die de volgende generatie bekijkt met een mengeling van trots en onbehagen. Wanneer een deelnemer uit een land op de rand van een burgeroorlog vermist raakt in de nacht voor de finale, moet Zara beslissen hoe ver ze buiten haar bevoegdheid wil gaan. Een spannende en diep humanistische vervolg op Skills of Gold."
+  },
+  {
+    "message_key": "c981a949-3cd9-4528-8041-e22c72bd5274",
+    "language": "de",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "c981a949-3cd9-4528-8041-e22c72bd5274",
+    "language": "en",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "c981a949-3cd9-4528-8041-e22c72bd5274",
+    "language": "hu",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "c981a949-3cd9-4528-8041-e22c72bd5274",
+    "language": "nl",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "ba2c89de-a79d-4f58-9139-023fd557de21",
+    "language": "de",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "ba2c89de-a79d-4f58-9139-023fd557de21",
+    "language": "en",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "ba2c89de-a79d-4f58-9139-023fd557de21",
+    "language": "hu",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "ba2c89de-a79d-4f58-9139-023fd557de21",
+    "language": "nl",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "78756fb1-7a2e-4357-9443-b0b00ceeea18",
+    "language": "de",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "78756fb1-7a2e-4357-9443-b0b00ceeea18",
+    "language": "en",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "78756fb1-7a2e-4357-9443-b0b00ceeea18",
+    "language": "hu",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "78756fb1-7a2e-4357-9443-b0b00ceeea18",
+    "language": "nl",
+    "message": "Fantasy"
+  },
+  {
+    "message_key": "48592439-63d8-4c9c-8cb4-898353766da9",
+    "language": "de",
+    "message": "Krimi"
+  },
+  {
+    "message_key": "48592439-63d8-4c9c-8cb4-898353766da9",
+    "language": "en",
+    "message": "Crime"
+  },
+  {
+    "message_key": "48592439-63d8-4c9c-8cb4-898353766da9",
+    "language": "hu",
+    "message": "Bűnügyi"
+  },
+  {
+    "message_key": "48592439-63d8-4c9c-8cb4-898353766da9",
+    "language": "nl",
+    "message": "Misdaad"
+  },
+  {
+    "message_key": "aa1dc996-981b-4cc8-bbf7-0c701e40f852",
+    "language": "de",
+    "message": "Krimi"
+  },
+  {
+    "message_key": "aa1dc996-981b-4cc8-bbf7-0c701e40f852",
+    "language": "en",
+    "message": "Crime"
+  },
+  {
+    "message_key": "aa1dc996-981b-4cc8-bbf7-0c701e40f852",
+    "language": "hu",
+    "message": "Bűnügyi"
+  },
+  {
+    "message_key": "aa1dc996-981b-4cc8-bbf7-0c701e40f852",
+    "language": "nl",
+    "message": "Misdaad"
+  },
+  {
+    "message_key": "02a4c0af-155d-4f58-9fb4-a16bbe7ab6e5",
+    "language": "de",
+    "message": "Krimi"
+  },
+  {
+    "message_key": "02a4c0af-155d-4f58-9fb4-a16bbe7ab6e5",
+    "language": "en",
+    "message": "Crime"
+  },
+  {
+    "message_key": "02a4c0af-155d-4f58-9fb4-a16bbe7ab6e5",
+    "language": "hu",
+    "message": "Bűnügyi"
+  },
+  {
+    "message_key": "02a4c0af-155d-4f58-9fb4-a16bbe7ab6e5",
+    "language": "nl",
+    "message": "Misdaad"
+  },
+  {
+    "message_key": "2809dc0a-3463-436d-a7c9-260ff0bc4e4c",
+    "language": "de",
+    "message": "Krimi"
+  },
+  {
+    "message_key": "2809dc0a-3463-436d-a7c9-260ff0bc4e4c",
+    "language": "en",
+    "message": "Crime"
+  },
+  {
+    "message_key": "2809dc0a-3463-436d-a7c9-260ff0bc4e4c",
+    "language": "hu",
+    "message": "Bűnügyi"
+  },
+  {
+    "message_key": "2809dc0a-3463-436d-a7c9-260ff0bc4e4c",
+    "language": "nl",
+    "message": "Misdaad"
+  },
+  {
+    "message_key": "d580d506-ea38-431a-9a7f-42c0defe5779",
+    "language": "de",
+    "message": "Krimi"
+  },
+  {
+    "message_key": "d580d506-ea38-431a-9a7f-42c0defe5779",
+    "language": "en",
+    "message": "Crime"
+  },
+  {
+    "message_key": "d580d506-ea38-431a-9a7f-42c0defe5779",
+    "language": "hu",
+    "message": "Bűnügyi"
+  },
+  {
+    "message_key": "d580d506-ea38-431a-9a7f-42c0defe5779",
+    "language": "nl",
+    "message": "Misdaad"
+  },
+  {
+    "message_key": "3a0cde63-759a-450a-bb1b-ab493b2ba8d3",
+    "language": "de",
+    "message": "Kinder- und Jugendliteratur"
+  },
+  {
+    "message_key": "3a0cde63-759a-450a-bb1b-ab493b2ba8d3",
+    "language": "en",
+    "message": "Children's and Young Adult Literature"
+  },
+  {
+    "message_key": "3a0cde63-759a-450a-bb1b-ab493b2ba8d3",
+    "language": "hu",
+    "message": "Gyermek- és ifjúsági irodalom"
+  },
+  {
+    "message_key": "3a0cde63-759a-450a-bb1b-ab493b2ba8d3",
+    "language": "nl",
+    "message": "Kinder- en jeugdliteratuur"
+  },
+  {
+    "message_key": "af6d4178-6a28-4152-9337-0cb68dae9314",
+    "language": "de",
+    "message": "Science-Fiction"
+  },
+  {
+    "message_key": "af6d4178-6a28-4152-9337-0cb68dae9314",
+    "language": "en",
+    "message": "Science Fiction"
+  },
+  {
+    "message_key": "af6d4178-6a28-4152-9337-0cb68dae9314",
+    "language": "hu",
+    "message": "Tudományos-fantasztikus"
+  },
+  {
+    "message_key": "af6d4178-6a28-4152-9337-0cb68dae9314",
+    "language": "nl",
+    "message": "Sciencefiction"
+  },
+  {
+    "message_key": "c65a578c-5d71-4762-8575-66785f972239",
+    "language": "de",
+    "message": "Literarischer Roman"
+  },
+  {
+    "message_key": "c65a578c-5d71-4762-8575-66785f972239",
+    "language": "en",
+    "message": "Literary Novel"
+  },
+  {
+    "message_key": "c65a578c-5d71-4762-8575-66785f972239",
+    "language": "hu",
+    "message": "Irodalmi regény"
+  },
+  {
+    "message_key": "c65a578c-5d71-4762-8575-66785f972239",
+    "language": "nl",
+    "message": "Literaire roman"
+  },
+  {
+    "message_key": "da2afffc-33ba-4c35-a286-7023492712e7",
+    "language": "de",
+    "message": "Literarischer Roman"
+  },
+  {
+    "message_key": "da2afffc-33ba-4c35-a286-7023492712e7",
+    "language": "en",
+    "message": "Literary Novel"
+  },
+  {
+    "message_key": "da2afffc-33ba-4c35-a286-7023492712e7",
+    "language": "hu",
+    "message": "Irodalmi regény"
+  },
+  {
+    "message_key": "da2afffc-33ba-4c35-a286-7023492712e7",
+    "language": "nl",
+    "message": "Literaire roman"
+  },
+  {
+    "message_key": "158e5179-3832-4aa8-a1d9-1cc74e8332af",
+    "language": "de",
+    "message": "Thriller"
+  },
+  {
+    "message_key": "158e5179-3832-4aa8-a1d9-1cc74e8332af",
+    "language": "en",
+    "message": "Thriller"
+  },
+  {
+    "message_key": "158e5179-3832-4aa8-a1d9-1cc74e8332af",
+    "language": "hu",
+    "message": "Thriller"
+  },
+  {
+    "message_key": "158e5179-3832-4aa8-a1d9-1cc74e8332af",
+    "language": "nl",
+    "message": "Thriller"
+  },
+  {
+    "message_key": "15da288f-c9a7-4f0b-9bed-93c839f83f4d",
+    "language": "de",
+    "message": "Science-Fiction"
+  },
+  {
+    "message_key": "15da288f-c9a7-4f0b-9bed-93c839f83f4d",
+    "language": "en",
+    "message": "Science Fiction"
+  },
+  {
+    "message_key": "15da288f-c9a7-4f0b-9bed-93c839f83f4d",
+    "language": "hu",
+    "message": "Tudományos-fantasztikus"
+  },
+  {
+    "message_key": "15da288f-c9a7-4f0b-9bed-93c839f83f4d",
+    "language": "nl",
+    "message": "Sciencefiction"
+  },
+  {
+    "message_key": "178777a0-50bf-4fc3-80c3-263112f495f0",
+    "language": "de",
+    "message": "Literarischer Roman"
+  },
+  {
+    "message_key": "178777a0-50bf-4fc3-80c3-263112f495f0",
+    "language": "en",
+    "message": "Literary Novel"
+  },
+  {
+    "message_key": "178777a0-50bf-4fc3-80c3-263112f495f0",
+    "language": "hu",
+    "message": "Irodalmi regény"
+  },
+  {
+    "message_key": "178777a0-50bf-4fc3-80c3-263112f495f0",
+    "language": "nl",
+    "message": "Literaire roman"
+  },
+  {
+    "message_key": "1dd65af0-6f92-4c0d-a883-533eb9146376",
+    "language": "de",
+    "message": "Literarischer Roman"
+  },
+  {
+    "message_key": "1dd65af0-6f92-4c0d-a883-533eb9146376",
+    "language": "en",
+    "message": "Literary Novel"
+  },
+  {
+    "message_key": "1dd65af0-6f92-4c0d-a883-533eb9146376",
+    "language": "hu",
+    "message": "Irodalmi regény"
+  },
+  {
+    "message_key": "1dd65af0-6f92-4c0d-a883-533eb9146376",
+    "language": "nl",
+    "message": "Literaire roman"
+  },
+  {
+    "message_key": "113dcb63-2a18-441e-a628-319fe689965e",
+    "language": "de",
+    "message": "Literarischer Roman"
+  },
+  {
+    "message_key": "113dcb63-2a18-441e-a628-319fe689965e",
+    "language": "en",
+    "message": "Literary Novel"
+  },
+  {
+    "message_key": "113dcb63-2a18-441e-a628-319fe689965e",
+    "language": "hu",
+    "message": "Irodalmi regény"
+  },
+  {
+    "message_key": "113dcb63-2a18-441e-a628-319fe689965e",
+    "language": "nl",
+    "message": "Literaire roman"
+  },
+  {
+    "message_key": "c19bbb4a-f5c5-41c2-a959-b1563a7d0aca",
+    "language": "de",
+    "message": "Literarischer Roman"
+  },
+  {
+    "message_key": "c19bbb4a-f5c5-41c2-a959-b1563a7d0aca",
+    "language": "en",
+    "message": "Literary Novel"
+  },
+  {
+    "message_key": "c19bbb4a-f5c5-41c2-a959-b1563a7d0aca",
+    "language": "hu",
+    "message": "Irodalmi regény"
+  },
+  {
+    "message_key": "c19bbb4a-f5c5-41c2-a959-b1563a7d0aca",
+    "language": "nl",
+    "message": "Literaire roman"
+  },
+  {
+    "message_key": "608706a6-2b26-45eb-82a7-cddfc2db7399",
+    "language": "de",
+    "message": "Literarischer Roman"
+  },
+  {
+    "message_key": "608706a6-2b26-45eb-82a7-cddfc2db7399",
+    "language": "en",
+    "message": "Literary Novel"
+  },
+  {
+    "message_key": "608706a6-2b26-45eb-82a7-cddfc2db7399",
+    "language": "hu",
+    "message": "Irodalmi regény"
+  },
+  {
+    "message_key": "608706a6-2b26-45eb-82a7-cddfc2db7399",
+    "language": "nl",
+    "message": "Literaire roman"
+  },
+  {
+    "message_key": "9286e83e-76aa-40ae-9629-fd2c8ed922e6",
+    "language": "de",
+    "message": "Thriller"
+  },
+  {
+    "message_key": "9286e83e-76aa-40ae-9629-fd2c8ed922e6",
+    "language": "en",
+    "message": "Thriller"
+  },
+  {
+    "message_key": "9286e83e-76aa-40ae-9629-fd2c8ed922e6",
+    "language": "hu",
+    "message": "Thriller"
+  },
+  {
+    "message_key": "9286e83e-76aa-40ae-9629-fd2c8ed922e6",
+    "language": "nl",
+    "message": "Thriller"
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "description": "single-term queries",
+    "query": "schatz",
+    "ast": {
+      "type": "TERM",
+      "value": "schatz"
+    }
+  },
+  {
+    "description": "single-term queries",
+    "query": "fantasy",
+    "ast": {
+      "type": "TERM",
+      "value": "fantasy"
+    }
+  },
+  {
+    "description": "multi-word queries",
+    "query": "paul fantasy",
+    "ast": {
+      "type": "TERM",
+      "value": "paul fantasy"
+    }
+  },
+  {
+    "description": "multi-word queries",
+    "query": "bei schatz",
+    "ast": {
+      "type": "TERM",
+      "value": "bei schatz"
+    }
+  },
+  {
+    "description": "AND-operator queries",
+    "query": "magic AND paul",
+    "ast": {
+      "type": "AND",
+      "left": {
+        "type": "TERM",
+        "value": "magic"
+      },
+      "right": {
+        "type": "TERM",
+        "value": "paul"
+      }
+    }
+  },
+  {
+    "description": "AND-operator queries",
+    "query": "bei AND horror",
+    "ast": {
+      "type": "AND",
+      "left": {
+        "type": "TERM",
+        "value": "bei"
+      },
+      "right": {
+        "type": "TERM",
+        "value": "horror"
+      }
+    }
+  },
+  {
+    "description": "OR-operator queries",
+    "query": "comedy OR science",
+    "ast": {
+      "type": "OR",
+      "left": {
+        "type": "TERM",
+        "value": "comedy"
+      },
+      "right": {
+        "type": "TERM",
+        "value": "science"
+      }
+    }
+  },
+  {
+    "description": "OR-operator queries",
+    "query": "magic OR paul",
+    "ast": {
+      "type": "OR",
+      "left": {
+        "type": "TERM",
+        "value": "magic"
+      },
+      "right": {
+        "type": "TERM",
+        "value": "paul"
+      }
+    }
+  },
+  {
+    "description": "mixed-operator queries respecting AND precedence",
+    "query": "dragon OR horror AND paul",
+    "ast": {
+      "type": "OR",
+      "left": {
+        "type": "TERM",
+        "value": "dragon"
+      },
+      "right": {
+        "type": "AND",
+        "left": {
+          "type": "TERM",
+          "value": "horror"
+        },
+        "right": {
+          "type": "TERM",
+          "value": "paul"
+        }
+      }
+    }
+  },
+  {
+    "description": "mixed-operator queries respecting AND precedence",
+    "query": "schatz OR horror AND comedy",
+    "ast": {
+      "type": "OR",
+      "left": {
+        "type": "TERM",
+        "value": "schatz"
+      },
+      "right": {
+        "type": "AND",
+        "left": {
+          "type": "TERM",
+          "value": "horror"
+        },
+        "right": {
+          "type": "TERM",
+          "value": "comedy"
+        }
+      }
+    }
+  },
+  {
+    "description": "parentheses-overriding precedence queries",
+    "query": "(paul OR horror) AND science",
+    "ast": {
+      "type": "AND",
+      "left": {
+        "type": "OR",
+        "left": {
+          "type": "TERM",
+          "value": "paul"
+        },
+        "right": {
+          "type": "TERM",
+          "value": "horror"
+        }
+      },
+      "right": {
+        "type": "TERM",
+        "value": "science"
+      }
+    }
+  },
+  {
+    "description": "parentheses-overriding precedence queries",
+    "query": "(comedy OR horror) AND science",
+    "ast": {
+      "type": "AND",
+      "left": {
+        "type": "OR",
+        "left": {
+          "type": "TERM",
+          "value": "comedy"
+        },
+        "right": {
+          "type": "TERM",
+          "value": "horror"
+        }
+      },
+      "right": {
+        "type": "TERM",
+        "value": "science"
+      }
+    }
+  },
+  {
+    "description": "nested-parentheses queries",
+    "query": "(magic OR (magic AND mystery)) AND fantasy",
+    "ast": {
+      "type": "AND",
+      "left": {
+        "type": "OR",
+        "left": {
+          "type": "TERM",
+          "value": "magic"
+        },
+        "right": {
+          "type": "AND",
+          "left": {
+            "type": "TERM",
+            "value": "magic"
+          },
+          "right": {
+            "type": "TERM",
+            "value": "mystery"
+          }
+        }
+      },
+      "right": {
+        "type": "TERM",
+        "value": "fantasy"
+      }
+    }
+  },
+  {
+    "description": "nested-parentheses queries",
+    "query": "(horror OR (bei AND thriller)) AND bei",
+    "ast": {
+      "type": "AND",
+      "left": {
+        "type": "OR",
+        "left": {
+          "type": "TERM",
+          "value": "horror"
+        },
+        "right": {
+          "type": "AND",
+          "left": {
+            "type": "TERM",
+            "value": "bei"
+          },
+          "right": {
+            "type": "TERM",
+            "value": "thriller"
+          }
+        }
+      },
+      "right": {
+        "type": "TERM",
+        "value": "bei"
+      }
+    }
+  }
+]

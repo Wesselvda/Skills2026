@@ -1,0 +1,8 @@
+services:
+    api:
+        build: .
+        restart: always
+        ports:
+            - "80:80"
+        environment:
+            APP_URL: "http://cX-s3-api.17.skills.local"
