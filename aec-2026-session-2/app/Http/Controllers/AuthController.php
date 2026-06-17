@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\ApplicationUser;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules\Password;
 
@@ -26,8 +25,9 @@ class AuthController extends Controller
 
         if ($user && Hash::check($credentials['password'], $user->password)) {
             $request->session()->put('user_id', $user->id);
+            $request->session()->regenerate();
 
-            return redirect('/');
+            return redirect()->intended(route('home'));
         }
 
         return redirect()->back()->withErrors(['username' => 'Invalid credentials.']);
@@ -57,7 +57,8 @@ class AuthController extends Controller
 
     public function logout(Request $request)
     {
-        $request->session()->forget('user_id');
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
 
         return redirect('/login');
     }

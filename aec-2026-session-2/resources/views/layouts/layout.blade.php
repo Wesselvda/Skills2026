@@ -18,7 +18,11 @@
             <nav>
                 <a {{ request()->routeIs('home') ? 'class="active"' : '' }} href="{{ route('home') }}">Home</a>
                 @if(session()->has('user_id'))
-                    <a href="{{ route('logout') }}">Logout</a>
+                    <a {{ request()->routeIs('submissions.*') ? 'class="active"' : '' }} href="{{ route('submissions.index') }}">Submissions</a>
+                    <form class="logout-form" method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <button type="submit">Logout</button>
+                    </form>
                 @else
                     <a {{ request()->routeIs('login') ? 'class="active"' : '' }} href="{{ route('login') }}">Login</a>
                     <a {{ request()->routeIs('register') ? 'class="active"' : '' }} href="{{ route('register') }}">Register</a>
@@ -34,6 +38,11 @@
             </div>
         @endif
 
+        @if($errors->has('submission') || $errors->has('credits'))
+            <div class="error-box">
+                {{ $errors->first('submission') ?: $errors->first('credits') }}
+            </div>
+        @endif
 
         @yield('content')
     </main>

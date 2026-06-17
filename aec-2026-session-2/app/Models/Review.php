@@ -15,12 +15,12 @@ class Review extends Model
         'comment',
     ];
 
-    public function user() : BelongsTo
+    public function user(): BelongsTo
     {
         return $this->belongsTo(ApplicationUser::class, 'user_id');
     }
 
-    public function submission() : BelongsTo
+    public function submission(): BelongsTo
     {
         return $this->belongsTo(Submission::class, 'submission_id');
     }

@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
+use App\Models\Category;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\File;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,11 +16,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        $categoryFile = storage_path('app/private/categories.txt');
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        if (File::exists($categoryFile)) {
+            collect(File::lines($categoryFile))
+                ->map(fn (string $category): string => trim($category))
+                ->filter()
+                ->each(fn (string $category): Category => Category::firstOrCreate(['name' => $category]));
+        }
     }
 }

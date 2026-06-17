@@ -15,10 +15,10 @@ class is_authenticated
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (!$request->session()->has('user_id')) {
-            return redirect()->route('login');
+        if (! $request->session()->has('user_id')) {
+            return redirect()->guest(route('login'));
         }
-        
+
         return $next($request);
     }
 }

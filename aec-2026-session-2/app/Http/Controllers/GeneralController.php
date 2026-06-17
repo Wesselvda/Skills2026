@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 class GeneralController extends Controller
 {
     public function index()
     {
-        return view('home');
+        if (session()->has('user_id')) {
+            return redirect()->route('submissions.index');
+        }
+
+        return redirect()->route('login');
     }
 }

@@ -863,3 +863,131 @@ nav a.active {
     background-color: var(--panel-bg);
     border: 1px solid var(--line-color);
 }
+
+.logout-form {
+    display: inline;
+}
+
+.logout-form button {
+    background: transparent;
+    border: 1px solid transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    padding: .5rem .75rem;
+}
+
+.logout-form button:hover {
+    background: var(--panel-bg);
+    border-color: var(--line-color);
+}
+
+.error-box {
+    background: #ffecec;
+    border: 1px solid #c62828;
+    color: #8b1a1a;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+
+.page-header {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.simple-panel,
+.form-panel {
+    background: var(--panel-bg);
+    border: 1px solid var(--line-color);
+    padding: 1.5rem;
+}
+
+.form-panel {
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.form-panel form {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-field select {
+    background: var(--background-color);
+    border: 1px solid var(--line-color);
+    color: var(--text-color);
+    font: inherit;
+    padding: .75rem;
+    width: 100%;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+}
+
+.item-list,
+.review-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.list-item {
+    align-items: center;
+    background: var(--panel-bg);
+    border: 1px solid var(--line-color);
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr auto auto;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.list-item:hover {
+    border-color: var(--primary);
+}
+
+.list-item small {
+    color: var(--muted-color);
+    display: block;
+}
+
+.detail-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.meta-list {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.meta-list dt {
+    color: var(--muted-color);
+    font-weight: 700;
+}
+
+.action-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+.review-list article {
+    border-top: 1px solid var(--line-color);
+    padding-top: 1rem;
+}
+
+@media (max-width: 800px) {
+    .page-header,
+    .list-item,
+    .detail-grid {
+        align-items: stretch;
+        grid-template-columns: 1fr;
+    }
+}

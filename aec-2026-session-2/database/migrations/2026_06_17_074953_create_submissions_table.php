@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('title', 255);
             $table->string('file_path', 255);
             $table->enum('status', ['under_review', 'approved', 'rejected', 'submitted'])->default('under_review');
+            $table->timestamp('submitted_at')->nullable();
             $table->timestamps();
         });
     }

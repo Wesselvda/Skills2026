@@ -14,19 +14,27 @@ class Submission extends Model
         'title',
         'file_path',
         'status',
+        'submitted_at',
     ];
 
-    public function user() : BelongsTo
+    protected function casts(): array
+    {
+        return [
+            'submitted_at' => 'datetime',
+        ];
+    }
+
+    public function user(): BelongsTo
     {
         return $this->belongsTo(ApplicationUser::class, 'user_id');
     }
 
-    public function category() : BelongsTo
+    public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class, 'category_id');
     }
 
-    public function reviews() : HasMany
+    public function reviews(): HasMany
     {
         return $this->hasMany(Review::class, 'submission_id');
     }

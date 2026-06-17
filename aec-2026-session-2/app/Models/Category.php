@@ -11,7 +11,7 @@ class Category extends Model
         'name',
     ];
 
-    public function submissions() : HasMany
+    public function submissions(): HasMany
     {
         return $this->hasMany(Submission::class, 'category_id');
     }

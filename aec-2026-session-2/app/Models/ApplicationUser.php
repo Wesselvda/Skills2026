@@ -15,12 +15,12 @@ class ApplicationUser extends Model
         'reputation',
     ];
 
-    public function submissions() : HasMany
+    public function submissions(): HasMany
     {
         return $this->hasMany(Submission::class, 'user_id');
     }
 
-    public function reviews() : HasMany
+    public function reviews(): HasMany
     {
         return $this->hasMany(Review::class, 'user_id');
     }
