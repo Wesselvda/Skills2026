@@ -1,0 +1,1425 @@
+openapi: 3.0.3
+info:
+  title: "NeubrandenBook API Documentation"
+  description: "API services for the NeubrandenBook Storefront. This API provides endpoints for authors, books and shopping carts that the storefront frontend must consume."
+  version: 1.0.0
+servers:
+  - url: "{{ config('app.url') }}"
+tags:
+  - name: Authors
+    description: "Author management endpoints"
+  - name: Books
+    description: "Book management endpoints"
+  - name: Cart
+    description: "Shopping cart management endpoints"
+  - name: Health
+    description: ""
+paths:
+  /api/authors:
+    get:
+      summary: "List all authors"
+      operationId: listAllAuthors
+      description: "Retrieves a list of all authors."
+      parameters: []
+      responses:
+        200:
+          description: "Authors list"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      example: 1
+                    forename:
+                      type: string
+                      example: John
+                    surname:
+                      type: string
+                      example: Doe
+                example:
+                  - id: 1
+                    forename: John
+                    surname: Doe
+      tags:
+        - Authors
+      security: []
+  "/api/authors/{id}":
+    get:
+      summary: "Get author details"
+      operationId: getAuthorDetails
+      description: "Retrieves detailed information about a specific author including biography and books."
+      parameters:
+        - in: header
+          name: Accept-Language
+          description: ""
+          example: en
+          schema:
+            type: string
+      responses:
+        200:
+          description: "Author details retrieved"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 1
+                  forename: John
+                  surname: Doe
+                  date_of_birth: "1970-01-15T00:00:00+00:00"
+                  location:
+                    value: "New York"
+                    fallback: false
+                  biography:
+                    value: "John Doe is a renowned author..."
+                    fallback: false
+                  books:
+                    - id: 1
+                      title:
+                        value: "The Great Adventure"
+                        fallback: false
+                      cover: "https://example.com/covers/book1.jpg"
+                      year: 2020
+                  original_language: de
+                  translated_language: en
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  forename:
+                    type: string
+                    example: John
+                  surname:
+                    type: string
+                    example: Doe
+                  date_of_birth:
+                    type: string
+                    example: "1970-01-15T00:00:00+00:00"
+                  location:
+                    type: object
+                    properties:
+                      value:
+                        type: string
+                        example: "New York"
+                      fallback:
+                        type: boolean
+                        example: false
+                  biography:
+                    type: object
+                    properties:
+                      value:
+                        type: string
+                        example: "John Doe is a renowned author..."
+                      fallback:
+                        type: boolean
+                        example: false
+                  books:
+                    type: array
+                    example:
+                      - id: 1
+                        title:
+                          value: "The Great Adventure"
+                          fallback: false
+                        cover: "https://example.com/covers/book1.jpg"
+                        year: 2020
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        title:
+                          type: object
+                          properties:
+                            value:
+                              type: string
+                              example: "The Great Adventure"
+                            fallback:
+                              type: boolean
+                              example: false
+                        cover:
+                          type: string
+                          example: "https://example.com/covers/book1.jpg"
+                        year:
+                          type: integer
+                          example: 2020
+                  original_language:
+                    type: string
+                    example: de
+                  translated_language:
+                    type: string
+                    example: en
+        404:
+          description: "Author not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Author not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Author not found"
+      tags:
+        - Authors
+      security: []
+    parameters:
+      - in: path
+        name: id
+        description: "The ID of the author"
+        example: 16
+        required: true
+        schema:
+          type: integer
+  /api/books:
+    get:
+      summary: "List all books"
+      operationId: listAllBooks
+      description: "Retrieves a list of all books with optional query filtering."
+      parameters:
+        - in: query
+          name: query
+          description: "Optional search query. Supports AND/OR operators and brackets."
+          example: "fantasy AND magic"
+          required: false
+          schema:
+            type: string
+            description: "Optional search query. Supports AND/OR operators and brackets."
+            example: "fantasy AND magic"
+        - in: query
+          name: debug
+          description: 'Set to "true" to include the parsed AST in the response'
+          example: false
+          required: false
+          schema:
+            type: boolean
+            description: 'Set to "true" to include the parsed AST in the response'
+            example: false
+        - in: header
+          name: Accept-Language
+          description: ""
+          example: en
+          schema:
+            type: string
+      responses:
+        200:
+          description: "Successful response"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  books:
+                    - id: 1
+                      title:
+                        value: "The Great Adventure"
+                        fallback: false
+                      cover: "https://example.com/covers/book1.jpg"
+                      author:
+                        id: 1
+                        forename: John
+                        surname: Doe
+                      year: 2020
+                      original_language: de
+                      translated_language: en
+                  ast:
+                    - type: TERM
+                      value: science
+                properties:
+                  books:
+                    type: array
+                    example:
+                      - id: 1
+                        title:
+                          value: "The Great Adventure"
+                          fallback: false
+                        cover: "https://example.com/covers/book1.jpg"
+                        author:
+                          id: 1
+                          forename: John
+                          surname: Doe
+                        year: 2020
+                        original_language: de
+                        translated_language: en
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        title:
+                          type: object
+                          properties:
+                            value:
+                              type: string
+                              example: "The Great Adventure"
+                            fallback:
+                              type: boolean
+                              example: false
+                        cover:
+                          type: string
+                          example: "https://example.com/covers/book1.jpg"
+                        author:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 1
+                            forename:
+                              type: string
+                              example: John
+                            surname:
+                              type: string
+                              example: Doe
+                        year:
+                          type: integer
+                          example: 2020
+                        original_language:
+                          type: string
+                          example: de
+                        translated_language:
+                          type: string
+                          example: en
+                  ast:
+                    type: array
+                    example:
+                      - type: TERM
+                        value: science
+                    items:
+                      type: object
+                      properties:
+                        type:
+                          type: string
+                          example: TERM
+                        value:
+                          type: string
+                          example: science
+        400:
+          description: "Malformed query"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Invalid query"
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid query"
+      tags:
+        - Books
+      security: []
+  /api/books/latest:
+    get:
+      summary: "Get latest books"
+      operationId: getLatestBooks
+      description: "Retrieves the 4 most recently released books."
+      parameters:
+        - in: header
+          name: Accept-Language
+          description: ""
+          example: en
+          schema:
+            type: string
+      responses:
+        200:
+          description: "Latest books list"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    id:
+                      type: integer
+                      example: 1
+                    title:
+                      type: object
+                      properties:
+                        value:
+                          type: string
+                          example: "The Great Adventure"
+                        fallback:
+                          type: boolean
+                          example: false
+                    cover:
+                      type: string
+                      example: "https://example.com/covers/book1.jpg"
+                    author:
+                      type: object
+                      properties:
+                        id:
+                          type: integer
+                          example: 1
+                        forename:
+                          type: string
+                          example: John
+                        surname:
+                          type: string
+                          example: Doe
+                    year:
+                      type: integer
+                      example: 2020
+                    original_language:
+                      type: string
+                      example: de
+                    translated_language:
+                      type: string
+                      example: en
+                example:
+                  - id: 1
+                    title:
+                      value: "The Great Adventure"
+                      fallback: false
+                    cover: "https://example.com/covers/book1.jpg"
+                    author:
+                      id: 1
+                      forename: John
+                      surname: Doe
+                    year: 2020
+                    original_language: de
+                    translated_language: en
+      tags:
+        - Books
+      security: []
+  "/api/books/{id}":
+    get:
+      summary: "Get book details"
+      operationId: getBookDetails
+      description: "Retrieves detailed information about a specific book including translations, reviews, and stock information."
+      parameters:
+        - in: header
+          name: Accept-Language
+          description: ""
+          example: en
+          schema:
+            type: string
+      responses:
+        200:
+          description: "Book details retrieved"
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "{\n  \"id\": 1,\n  \"title\": {\n    \"value\": \"The Great Adventure\",\n    \"fallback\": false\n  },\n  \"cover\": \"https://example.com/covers/book1.jpg\",\n  \"author\": {\n    \"id\": 1,\n    \"forename\": \"John\",\n    \"surname\": \"Doe\"\n  },\n  \"year\": 2020,\n  \"price\": 19.99,\n  \"rating\": 4.5,\n  \"reviews\": [\n    {\n      \"rating\": 4,\n      \"text\": \"A good book\",\n    }\n  ],\n  \"category\": {\n    \"value\": \"Fiction\",\n    \"fallback\": false\n  },\n  \"abstract\": {\n    \"value\": \"An exciting adventure story...\",\n    \"fallback\": false\n  },\n  \"stock\": 50,\n  \"original_language\": \"de\",\n  \"translated_language\": \"en\"\n}"
+        404:
+          description: "Book not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Book not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Book not found"
+      tags:
+        - Books
+      security: []
+    parameters:
+      - in: path
+        name: id
+        description: "The ID of the book"
+        example: 16
+        required: true
+        schema:
+          type: integer
+  "/api/books/{id}/stock":
+    patch:
+      summary: "Update book stock"
+      operationId: updateBookStock
+      description: "Updates the total stock quantity for a book. The stock cannot be lower than the current reservation count."
+      parameters: []
+      responses:
+        200:
+          description: "Stock updated successfully"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 1
+                  total_stock: 100
+                  stock: 50
+                properties:
+                  id:
+                    type: integer
+                    example: 1
+                  total_stock:
+                    type: integer
+                    example: 100
+                  stock:
+                    type: integer
+                    example: 50
+        404:
+          description: "Book not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Book not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Book not found"
+        422:
+          description: "Validation error"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Validation error"
+                  errors:
+                    stock:
+                      - "Stock cannot be lower than the reservation count"
+                properties:
+                  message:
+                    type: string
+                    example: "Validation error"
+                  errors:
+                    type: object
+                    properties:
+                      stock:
+                        type: array
+                        example:
+                          - "Stock cannot be lower than the reservation count"
+                        items:
+                          type: string
+      tags:
+        - Books
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                stock:
+                  type: integer
+                  description: "The new total stock quantity"
+                  example: 16
+              required:
+                - stock
+      security: []
+    parameters:
+      - in: path
+        name: id
+        description: "The ID of the book"
+        example: 16
+        required: true
+        schema:
+          type: integer
+  "/api/books/{id}/availability":
+    get:
+      summary: "Get book availability in stores"
+      operationId: getBookAvailabilityInStores
+      description: "Streams real-time availability information for a book across physical stores.\nReturns Server-Sent Events (SSE) with store information and inventory levels."
+      parameters: []
+      responses:
+        200:
+          description: ""
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - description: "stores event"
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        store_id:
+                          type: integer
+                          example: 1
+                        name:
+                          type: string
+                          example: McPencil
+                    example:
+                      - store_id: 1
+                        name: McPencil
+                  - description: "availability event"
+                    type: object
+                    example:
+                      store_id: 1
+                      availability: high
+                      inventory: 45
+                    properties:
+                      store_id:
+                        type: integer
+                        example: 1
+                      availability:
+                        type: string
+                        example: high
+                      inventory:
+                        type: integer
+                        example: 45
+        404:
+          description: "Book not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Book not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Book not found"
+      tags:
+        - Books
+      security: []
+    parameters:
+      - in: path
+        name: id
+        description: "The ID of the book"
+        example: 16
+        required: true
+        schema:
+          type: integer
+  "/api/books/{id}/review":
+    post:
+      summary: "Add a review to a book"
+      operationId: addAReviewToABook
+      description: "Submits a new review for a specific book with a rating and text."
+      parameters: []
+      responses:
+        200:
+          description: "Review created successfully"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  book_id: 1
+                  rating: 5
+                  text: "Excellent book!"
+                properties:
+                  id:
+                    type: string
+                    example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  book_id:
+                    type: integer
+                    example: 1
+                  rating:
+                    type: integer
+                    example: 5
+                  text:
+                    type: string
+                    example: "Excellent book!"
+        404:
+          description: "Book not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Book not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Book not found"
+        422:
+          description: "Validation error"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Validation error"
+                  errors:
+                    rating:
+                      - "The rating must be between 1 and 5"
+                    text:
+                      - "The text field is required"
+                properties:
+                  message:
+                    type: string
+                    example: "Validation error"
+                  errors:
+                    type: object
+                    properties:
+                      rating:
+                        type: array
+                        example:
+                          - "The rating must be between 1 and 5"
+                        items:
+                          type: string
+                      text:
+                        type: array
+                        example:
+                          - "The text field is required"
+                        items:
+                          type: string
+      tags:
+        - Books
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                rating:
+                  type: integer
+                  description: "Rating from 1 to 5"
+                  example: 16
+                text:
+                  type: string
+                  description: "Review text (max 1000 characters)"
+                  example: "Some text"
+              required:
+                - rating
+                - text
+      security: []
+    parameters:
+      - in: path
+        name: id
+        description: "The ID of the book"
+        example: 16
+        required: true
+        schema:
+          type: integer
+  /api/cart:
+    post:
+      summary: "Create a new shopping cart"
+      operationId: createANewShoppingCart
+      description: "Creates a new shopping cart with an optional expiration time."
+      parameters: []
+      responses:
+        200:
+          description: "Cart created successfully"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  expires_at: "2024-01-15T11:00:00+00:00"
+                properties:
+                  id:
+                    type: string
+                    example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  expires_at:
+                    type: string
+                    example: "2024-01-15T11:00:00+00:00"
+        422:
+          description: "Validation error"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Validation error"
+                  errors:
+                    expires_in:
+                      - "The expires in must be between 0 and 300"
+                properties:
+                  message:
+                    type: string
+                    example: "Validation error"
+                  errors:
+                    type: object
+                    properties:
+                      expires_in:
+                        type: array
+                        example:
+                          - "The expires in must be between 0 and 300"
+                        items:
+                          type: string
+      tags:
+        - Cart
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                expires_in:
+                  type: integer
+                  description: "Number of seconds until the cart expires (0-300). Default: 300"
+                  example: 180
+                  nullable: true
+      security: []
+  "/api/cart/{id}":
+    get:
+      summary: "Get cart details"
+      operationId: getCartDetails
+      description: "Retrieves a shopping cart with all its items, totals, and applied discounts."
+      parameters:
+        - in: header
+          name: Accept-Language
+          description: ""
+          example: en
+          schema:
+            type: string
+      responses:
+        200:
+          description: "Cart details retrieved"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  expires_at: "2024-01-15T11:00:00+00:00"
+                  expired: false
+                  items:
+                    - id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                      book_id: 1
+                      title:
+                        value: "The Great Adventure"
+                        fallback: false
+                      cover: "https://example.com/covers/book1.jpg"
+                      unit_price: 19.99
+                      quantity: 2
+                      total_price: 39.98
+                      stock: 13
+                      original_language: de
+                      translated_language: en
+                  total: 39.98
+                  discounted: 35.98
+                  total_items: 2
+                  applied_discounts:
+                    - id: VOLUME001
+                      name: "Volume Discount Tier 1"
+                properties:
+                  id:
+                    type: string
+                    example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  expires_at:
+                    type: string
+                    example: "2024-01-15T11:00:00+00:00"
+                  expired:
+                    type: boolean
+                    example: false
+                  items:
+                    type: array
+                    example:
+                      - id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                        book_id: 1
+                        title:
+                          value: "The Great Adventure"
+                          fallback: false
+                        cover: "https://example.com/covers/book1.jpg"
+                        unit_price: 19.99
+                        quantity: 2
+                        total_price: 39.98
+                        stock: 13
+                        original_language: de
+                        translated_language: en
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                        book_id:
+                          type: integer
+                          example: 1
+                        title:
+                          type: object
+                          properties:
+                            value:
+                              type: string
+                              example: "The Great Adventure"
+                            fallback:
+                              type: boolean
+                              example: false
+                        cover:
+                          type: string
+                          example: "https://example.com/covers/book1.jpg"
+                        unit_price:
+                          type: number
+                          example: 19.99
+                        quantity:
+                          type: integer
+                          example: 2
+                        total_price:
+                          type: number
+                          example: 39.98
+                        stock:
+                          type: integer
+                          example: 13
+                        original_language:
+                          type: string
+                          example: de
+                        translated_language:
+                          type: string
+                          example: en
+                  total:
+                    type: number
+                    example: 39.98
+                  discounted:
+                    type: number
+                    example: 35.98
+                  total_items:
+                    type: integer
+                    example: 2
+                  applied_discounts:
+                    type: array
+                    example:
+                      - id: VOLUME001
+                        name: "Volume Discount Tier 1"
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: VOLUME001
+                        name:
+                          type: string
+                          example: "Volume Discount Tier 1"
+        404:
+          description: "Cart not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Cart not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Cart not found"
+      tags:
+        - Cart
+      security: []
+    parameters:
+      - in: path
+        name: id
+        description: "The ID of the cart"
+        example: e4b06896-9fb3-467c-90e6-22f537871f2b
+        required: true
+        schema:
+          type: string
+  "/api/cart/{id}/items":
+    post:
+      summary: "Add item to cart"
+      operationId: addItemToCart
+      description: "Adds a book to the shopping cart or increments its quantity if already present."
+      parameters: []
+      responses:
+        200:
+          description: "Item added to cart"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  cart_id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  book_id: 1
+                  quantity: 2
+                  cart_expires_at: "2024-01-15T11:00:00+00:00"
+                properties:
+                  id:
+                    type: string
+                    example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  cart_id:
+                    type: string
+                    example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  book_id:
+                    type: integer
+                    example: 1
+                  quantity:
+                    type: integer
+                    example: 2
+                  cart_expires_at:
+                    type: string
+                    example: "2024-01-15T11:00:00+00:00"
+        404:
+          description: "Cart not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Cart not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Cart not found"
+        409:
+          description: "Cart is expired"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Cart is expired"
+                properties:
+                  message:
+                    type: string
+                    example: "Cart is expired"
+        422:
+          description: "Validation error"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Validation error"
+                  errors:
+                    book_id:
+                      - "The book id field is required"
+                    quantity:
+                      - "The quantity must be at least 1"
+                properties:
+                  message:
+                    type: string
+                    example: "Validation error"
+                  errors:
+                    type: object
+                    properties:
+                      book_id:
+                        type: array
+                        example:
+                          - "The book id field is required"
+                        items:
+                          type: string
+                      quantity:
+                        type: array
+                        example:
+                          - "The quantity must be at least 1"
+                        items:
+                          type: string
+      tags:
+        - Cart
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                book_id:
+                  type: integer
+                  description: "The ID of the book to add"
+                  example: 16
+                quantity:
+                  type: integer
+                  description: "Quantity to add (minimum: 1, max: remaining stock)"
+                  example: 16
+                expires_in:
+                  type: integer
+                  description: "Number of seconds until the cart expires (0-300). Default: 300"
+                  example: 180
+                  nullable: true
+              required:
+                - book_id
+                - quantity
+      security: []
+    parameters:
+      - in: path
+        name: id
+        description: "The ID of the cart"
+        example: e4b06896-9fb3-467c-90e6-22f537871f2b
+        required: true
+        schema:
+          type: string
+  "/api/cart/{id}/items/{itemId}":
+    patch:
+      summary: "Update cart item quantity"
+      operationId: updateCartItemQuantity
+      description: "Updates the quantity of an existing item in the shopping cart."
+      parameters: []
+      responses:
+        200:
+          description: "Item updated"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  cart_id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  book_id: 1
+                  quantity: 3
+                  cart_expires_at: "2024-01-15T11:00:00+00:00"
+                properties:
+                  id:
+                    type: string
+                    example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  cart_id:
+                    type: string
+                    example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  book_id:
+                    type: integer
+                    example: 1
+                  quantity:
+                    type: integer
+                    example: 3
+                  cart_expires_at:
+                    type: string
+                    example: "2024-01-15T11:00:00+00:00"
+        404:
+          description: "Cart not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Cart not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Cart not found"
+        409:
+          description: "Cart is expired"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Cart is expired"
+                properties:
+                  message:
+                    type: string
+                    example: "Cart is expired"
+        422:
+          description: "Validation error"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Validation error"
+                  errors:
+                    quantity:
+                      - "The quantity must be at least 1"
+                properties:
+                  message:
+                    type: string
+                    example: "Validation error"
+                  errors:
+                    type: object
+                    properties:
+                      quantity:
+                        type: array
+                        example:
+                          - "The quantity must be at least 1"
+                        items:
+                          type: string
+      tags:
+        - Cart
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                quantity:
+                  type: integer
+                  description: "New quantity (minimum: 1, max: remaining stock)"
+                  example: 16
+                expires_in:
+                  type: integer
+                  description: "Number of seconds until the cart expires (0-300). Default: 300"
+                  example: 180
+                  nullable: true
+              required:
+                - quantity
+      security: []
+    delete:
+      summary: "Remove item from cart"
+      operationId: removeItemFromCart
+      description: "Removes an item from the shopping cart."
+      parameters: []
+      responses:
+        200:
+          description: "Item removed from cart"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  cart_id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  book_id: 1
+                  cart_expires_at: "2024-01-15T11:00:00+00:00"
+                properties:
+                  id:
+                    type: string
+                    example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  cart_id:
+                    type: string
+                    example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  book_id:
+                    type: integer
+                    example: 1
+                  cart_expires_at:
+                    type: string
+                    example: "2024-01-15T11:00:00+00:00"
+        404:
+          description: "Cart not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Cart not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Cart not found"
+        409:
+          description: "Cart is expired"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Cart is expired"
+                properties:
+                  message:
+                    type: string
+                    example: "Cart is expired"
+      tags:
+        - Cart
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                expires_in:
+                  type: integer
+                  description: "Number of seconds until the cart expires (0-300). Default: 300"
+                  example: 180
+                  nullable: true
+      security: []
+    parameters:
+      - in: path
+        name: id
+        description: "The ID of the cart"
+        example: e4b06896-9fb3-467c-90e6-22f537871f2b
+        required: true
+        schema:
+          type: string
+      - in: path
+        name: itemId
+        description: "The ID of the cart item"
+        example: e4b06896-9fb3-467c-90e6-22f537871f2b
+        required: true
+        schema:
+          type: string
+  "/api/cart/{id}/checkout/start":
+    post:
+      summary: "Start checkout process"
+      operationId: startCheckoutProcess
+      description: "Initiates the checkout process for a cart and returns a payment URL. Returns the same payment session for a cart as long as it is pending. Creates a new one if the existing session failed."
+      parameters: []
+      responses:
+        200:
+          description: "Checkout initiated"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  cart_id: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  payment_url: "https://payment-portal.com/payment/1"
+                properties:
+                  cart_id:
+                    type: string
+                    example: 5c4a4909-ce2a-456c-a8e7-4b07d30596e6
+                  payment_url:
+                    type: string
+                    example: "https://payment-portal.com/payment/1"
+        404:
+          description: "Cart not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Cart not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Cart not found"
+        409:
+          description: "Cart is expired"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Cart is expired"
+                properties:
+                  message:
+                    type: string
+                    example: "Cart is expired"
+        422:
+          description: "Validation error"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Validation error"
+                  errors:
+                    callbackUrl:
+                      - "The callback url field is required"
+                properties:
+                  message:
+                    type: string
+                    example: "Validation error"
+                  errors:
+                    type: object
+                    properties:
+                      callbackUrl:
+                        type: array
+                        example:
+                          - "The callback url field is required"
+                        items:
+                          type: string
+      tags:
+        - Cart
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                callbackUrl:
+                  type: string
+                  description: "URL to redirect to after payment completion"
+                  example: "https://my-site.com/payment-completed"
+              required:
+                - callbackUrl
+      security: []
+    parameters:
+      - in: path
+        name: id
+        description: "The ID of the cart"
+        example: e4b06896-9fb3-467c-90e6-22f537871f2b
+        required: true
+        schema:
+          type: string
+  "/api/cart/{id}/checkout/complete":
+    post:
+      summary: "Complete checkout process"
+      operationId: completeCheckoutProcess
+      description: "Completes the checkout process after payment has been processed.\nThis endpoint should be called after the payment provider redirects back to your callback URL."
+      parameters: []
+      responses:
+        200:
+          description: "Checkout completed successfully"
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "{\n  \"paid_at\": \"2024-01-15T11:30:00+00:00\",\n  \"cart_id\": \"5c4a4909-ce2a-456c-a8e7-4b07d30596e6\",\n}"
+        404:
+          description: "Cart not found"
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: "Cart not found"
+                properties:
+                  message:
+                    type: string
+                    example: "Cart not found"
+        409:
+          description: ""
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - description: "Payment failed"
+                    type: object
+                    example:
+                      message: "Payment failed"
+                      error: INSUFFICIENT_FUNDS
+                    properties:
+                      message:
+                        type: string
+                        example: "Payment failed"
+                      error:
+                        type: string
+                        example: INSUFFICIENT_FUNDS
+                  - description: "Cart is expired"
+                    type: object
+                    example:
+                      message: "Cart is expired"
+                      error: EXPIRED
+                    properties:
+                      message:
+                        type: string
+                        example: "Cart is expired"
+                      error:
+                        type: string
+                        example: EXPIRED
+                  - description: "Checkout not started"
+                    type: object
+                    example:
+                      message: "Checkout has not been started"
+                      error: NO_SESSION
+                    properties:
+                      message:
+                        type: string
+                        example: "Checkout has not been started"
+                      error:
+                        type: string
+                        example: NO_SESSION
+                  - description: "Payment not completed"
+                    type: object
+                    example:
+                      message: "Payment has not been completed"
+                      error: PENDING
+                    properties:
+                      message:
+                        type: string
+                        example: "Payment has not been completed"
+                      error:
+                        type: string
+                        example: PENDING
+      tags:
+        - Cart
+      security: []
+    parameters:
+      - in: path
+        name: id
+        description: "The ID of the cart"
+        example: e4b06896-9fb3-467c-90e6-22f537871f2b
+        required: true
+        schema:
+          type: string
+  /api/health:
+    get:
+      summary: "Health Check"
+      operationId: healthCheck
+      description: ""
+      parameters: []
+      responses:
+        200:
+          description: ""
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  status: up
+                properties:
+                  status:
+                    type: string
+                    example: up
+      tags:
+        - Health
+      security: []

@@ -1,0 +1,115 @@
+@extends('layouts.layout')
+
+@section('content')
+    <section class="hero">
+        <div class="container-inner hero-grid">
+            <div>
+                <h1>Your Story Deserves a Home, Not Just a Shelf.</h1>
+                <p>At NeubrandenBook, we believe that every manuscript holds a heartbeat. As a small, independent publisher
+                    rooted in our local community, we offer the personal attention of a boutique house with the passion of a
+                    literary lover.</p>
+                <a class="button" href="contact.html">Contact us</a>
+            </div>
+            <div class="hero-panel">
+                <h2>Why choose NeubrandenBook?</h2>
+                <ul>
+                    <li>Personal Partnership: You work directly with our editors, not an algorithm.</li>
+                    <li>Local Roots, Global Reach: We champion regional voices while distributing to bookstores nationwide.
+                    </li>
+                    <li>Fair &amp; Transparent: No hidden clauses. We believe in fair royalties and clear contracts.</li>
+                    <li>Quality Over Quantity: We publish fewer books, but we pour our hearts into every cover, font, and
+                        page.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container-inner">
+        <p class="small-title">Featured</p>
+        <h2 id="featured-title">Der Schatz der Welten: Untergang</h2>
+        <div class="book-wrap">
+            <article class="book-card" tabindex="0">
+                <div class="book-page">
+                    <h3>Norskom's Revenge</h3>
+                    <p>The mountain realm of Norskom longs for a semblance of peace. But as the brave heroes return to their
+                        homeland, the true destruction left behind by evil is revealed: dangerous creatures still roam the
+                        Durabor, soon separating the adventurers from one another. Yet, far more menacing is the flaring
+                        thirst for revenge among men.</p>
+                    <h3>The Fallen Elves</h3>
+                    <p>With the ruins of the Underworld before them, the gods hope for a newfound security. But their
+                        struggle is far from over, for new dangers rise from the unleashed darkness to threaten the realm of
+                        the elves. The people of the Fallen Elves appear more powerful than ever.</p>
+                    <a class="button" href="featured-book.html">Der Schatz der Welten: Untergang</a>
+                </div>
+
+                <div class="book-cover">
+                    <div class="book-front">
+                        <img src="assets/catalogue/book-schiller-untergang.png" alt="Cover image">
+                        <h3>Der Schatz der Welten: Untergang</h3>
+                        <p>by Joachim Schiller</p>
+                    </div>
+                    <div class="book-back">
+                        <div class="book-back-text">
+                            <h3>Downfall</h3>
+                            <p>The Durabor is overtaken by its past. Dark powers, which hid in the shadows for decades,
+                                return to the world with renewed strength, seeking to seize everything for themselves. The
+                                plans of the mage Ephnies soon bring devastation upon the Great Forest and greedily stretch
+                                into the neighboring realm of Norskom, which must face both its own internal struggles and
+                                the approaching storm.</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="section container-inner">
+        <h2 id="testimonial-title">Testimonials</h2>
+        <div class="testimonial-grid">
+            <details class="testimonial-card">
+                <summary>
+                    <img src="assets/author-pictures/author-amara-diallo.png" alt="Amara Diallo">
+                    <span>
+                        <strong>Amara Diallo</strong>
+                        <em>"They treated my manuscript like a family heirloom."</em>
+                    </span>
+                </summary>
+                <p>"When I first approached NeubrandenBook, I was nervous about handing over my life's work to a small team.
+                    Instead of feeling like just another number, I was guided through every step of the editing process with
+                    patience and expertise. Their marketing team truly understood the heart of my story and helped me
+                    connect with readers who cared. It is rare to find a publisher that balances professional standards with
+                    genuine personal care. I am proud to call NeubrandenBook my publishing home."</p>
+            </details>
+
+            <details class="testimonial-card">
+                <summary>
+                    <img src="assets/author-pictures/author-joachim-schiller.png" alt="Finn Broekhuis">
+                    <span>
+                        <strong>Finn Broekhuis</strong>
+                        <em>"More than a publisher, they are a partner."</em>
+                    </span>
+                </summary>
+                <p>"I sometimes worry that my work is too niche for the commercial market. NeubrandenBook saw the value in
+                    my collection and championed it with unwavering enthusiasm. They organized local readings that
+                    introduced my work to neighbors I had never met before. This community-focused approach made the launch
+                    feel like a celebration rather than a transaction. I cannot recommend them highly enough for any writer
+                    seeking a supportive environment."</p>
+            </details>
+
+            <details class="testimonial-card">
+                <summary>
+                    <img src="assets/author-pictures/author-sarah-mclintock.png" alt="Sarah McLintock">
+                    <span>
+                        <strong>Sarah McLintock</strong>
+                        <em>"Professionalism meets passion."</em>
+                    </span>
+                </summary>
+                <p>"Publishing a historical non-fiction book requires a level of accuracy and respect that is hard to find.
+                    The editorial team at NeubrandenBook was meticulous about fact-checking while respecting my voice. The
+                    design of the final book is stunning and reflects the gravity of the subject matter perfectly. They
+                    handled distribution to local libraries and museums with a professionalism that exceeded my
+                    expectations. Working with them was the best decision I made for my career."</p>
+            </details>
+        </div>
+    </section>
+@endsection

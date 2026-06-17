@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "forename": "Joachim",
+    "surname": "Schiller",
+    "date_of_birth": "2001-11-05",
+    "original_language": "de",
+    "location": "Neubrandenburg, Mecklenburg-Vorpommern, Deutschland",
+    "biography": "Joachim Schiller, Jahrgang 2001, begann im Alter von 14 Jahren mit dem Schreiben kurzer Texte, die sich allmählich zu einer durchgehenden Geschichte verbanden. Getrieben von einer wachsenden Leidenschaft für das Schreiben – und ermutigt durch Freunde, die seine Begeisterung teilten – entwickelte sich diese Idee-Sammlung schnell zu einem Buchprojekt, das im Laufe der Zeit immer konkretere Formen annahm. Sein Ziel ist doppelt: Er möchte eine möglichst fesselnde Geschichte erzählen und gleichzeitig zum Nachdenken anregen. Die Erzählung soll die Leser dazu anregen, in der weitläufigen Welt um die Figuren herum nach Lösungen zu suchen und die verschiedenen Perspektiven der Charaktere besser zu verstehen."
+  },
+  {
+    "id": 2,
+    "forename": "Paul",
+    "surname": "Steinbeck",
+    "date_of_birth": "1967-03-03",
+    "original_language": "de",
+    "location": "Kirchheim unter Teck, Baden-Württemberg, Deutschland",
+    "biography": "Steinbeck betrachtet literarisches Schreiben als Kunstform. Der Maßstab für Erfolg ist dabei nicht die verkaufte Auflage, sondern wie gut ein Werk die Kernaussage seiner Erzählung trifft und wie tief es emotional beim Zielpublikum ankommt. Daher müssen Rechtschreib-, Grammatik- und Wortbildungsregeln innerhalb vernünftiger Grenzen der künstlerischen Intention untergeordnet sein; diese dient als leitendes Prinzip. Für Steinbeck tragen Autoren eine gesellschaftliche Verantwortung: Ihre Werke sollen der Gesellschaft einen Spiegel vorhalten und zur Selbstreflexion anregen. Sie müssen Themen aufgreifen, die im Alltag der Leser verankert sind, um Reflexions- und Veränderungsprozesse anzuregen – alles vermittelt in einem fesselnden und unterhaltsamen Erzählstil. Steinbeck ist Mitglied im Deutschen Journalistenverband und im Selfpublisher-Verband."
+  },
+  {
+    "id": 3,
+    "forename": "Eléna",
+    "surname": "Vásárhelyi",
+    "date_of_birth": "1985-06-21",
+    "original_language": "hu",
+    "location": "Budapest, Magyarország",
+    "biography": "Vásárhelyi Eléna Budapesten született, és az ELTE Egyetemen összehasonlító irodalomtudományt tanult. Tíz évnyi irodalmi fordítói munka (magyar–német–angol) után saját fikciós művek írására adta a fejét. Regényei a közép-európai történelmet pszichológiai feszültséggel ötvözik, gyakran olyan határvárosokban játszva, amelyek két kultúra között helyezkednek el. Háromszor is szerepelt az Év Magyar Könyve díj rövidlistáján, és műveit széles körben lefordították Európában."
+  },
+  {
+    "id": 4,
+    "forename": "Finn",
+    "surname": "Broekhuis",
+    "date_of_birth": "1990-11-03",
+    "original_language": "nl",
+    "location": "Amsterdam, Noord-Holland, Nederland",
+    "biography": "Finn Broekhuis is een Nederlandse auteur en wetenschapsjournalist wiens speculatieve fictie de botsing tussen technologie, identiteit en arbeid verkent. Opgegroeid in Amsterdam, studeerde hij natuurkunde aan de Universiteit van Amsterdam voordat hij overstapte naar wetenschapscommunicatie. Zijn debuutthriller *De Codekloof* (*The Code Divide*) werd in 2023 geopteerd voor een televisiebewerking. Hij is gepassioneerd over de WorldSkills-beweging en schreef een non-fictie verslag over de competitie van 2022 voor een Nederlands technologietijdschrift."
+  },
+  {
+    "id": 5,
+    "forename": "Sarah",
+    "surname": "McLintock",
+    "date_of_birth": "1983-02-17",
+    "original_language": "en",
+    "location": "Edinburgh, Scotland, United Kingdom",
+    "biography": "Sarah McLintock is a Scottish author known for her literary fiction and historical novels. Raised on the Orkney Islands, she studied history at the University of St Andrews. Her work is defined by a profound connection to place and memory, often drawing on the landscapes of northern Britain and Scandinavia. Her novel *The Tide Warden* was longlisted for the Booker Prize and has since been translated into fourteen languages. She currently resides in Edinburgh, where she also teaches creative writing part-time."
+  },
+  {
+    "id": 6,
+    "forename": "Tobias",
+    "surname": "Wengler",
+    "date_of_birth": "1976-07-29",
+    "original_language": "de",
+    "location": "Leipzig, Sachsen, Deutschland",
+    "biography": "Tobias Wengler ist ein in Leipzig ansässiger Autor literarischer Fiktion mit fundiertem Wissen zur ostdeutschen Geschichte. Fünfzehn Jahre lang arbeitete er als Archivar im Leipziger Stadtarchiv, bevor sein Debütroman *Das Schweigen der Akten* ihn landesweit bekannt machte. Seine Romane untersuchen die nachwirkenden psychologischen Auswirkungen der DDR auf normale Familien und verbinden Archivrealismus mit tief persönlichen Erzählungen. Er ist regelmäßiger Gast im Literaturhaus Leipzig."
+  },
+  {
+    "id": 7,
+    "forename": "Amara",
+    "surname": "Diallo",
+    "date_of_birth": "1992-04-10",
+    "original_language": "en",
+    "location": "London, England, United Kingdom",
+    "biography": "Amara Diallo is a British-Guinean author whose debut novel, *Skills of Gold*, became an international sensation after going viral within the WorldSkills community. Set against the backdrop of a fictional global skills competition, the story follows five young competitors from different countries whose paths unexpectedly cross. Diallo trained as an electrician before studying creative writing at Goldsmiths, and her firsthand knowledge of the vocational world lends the novel an authenticity that resonates with readers globally."
+  }
+]
