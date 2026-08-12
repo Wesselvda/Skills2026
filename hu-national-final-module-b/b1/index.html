@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture in Picture</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      video {
+        width: 600px;
+        max-width: 90vw;
+        background-color: #000;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <video id="video" src="video.mp4" controls></video>
+    <button id="toggle">Toggle Picture in Picture</button>
+
+    <script>
+      const video = document.getElementById("video");
+      const toggle = document.getElementById("toggle");
+
+      toggle.addEventListener("click", async () => {
+        if (document.pictureInPictureElement) {
+          await document.exitPictureInPicture();
+        } else {
+          await video.requestPictureInPicture();
+          video.play();
+        }
+      });
+    </script>
+  </body>
+</html>
