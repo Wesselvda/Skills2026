@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Follow the cursor</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+        overflow: hidden;
+        background-color: #fafafa;
+      }
+
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+      const canvas = document.getElementById("canvas");
+      const context = canvas.getContext("2d");
+
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      let mouseX = canvas.width / 2;
+      let mouseY = canvas.height / 2;
+
+      function draw() {
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        context.strokeStyle = "#000";
+        context.lineWidth = 1;
+
+        context.beginPath();
+        context.moveTo(centerX, centerY);
+        context.lineTo(mouseX, mouseY);
+        context.stroke();
+
+        context.beginPath();
+        context.arc(centerX, centerY, 40, 0, Math.PI * 2);
+        context.fillStyle = "#fff";
+        context.fill();
+        context.stroke();
+      }
+
+      document.addEventListener("mousemove", (event) => {
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+        draw();
+      });
+
+      window.addEventListener("resize", () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        draw();
+      });
+
+      draw();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rubik's Cube</title>
+
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1b1b1f;
+        perspective: 1000px;
+      }
+
+      .cube {
+        position: relative;
+        width: 240px;
+        height: 240px;
+        transform-style: preserve-3d;
+        animation: spin 12s linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotateX(-20deg) rotateY(0deg);
+        }
+        to {
+          transform: rotateX(-20deg) rotateY(360deg);
+        }
+      }
+
+      .face {
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 4px;
+        padding: 4px;
+        background-color: #111;
+        border-radius: 6px;
+      }
+
+      .face div {
+        border-radius: 4px;
+      }
+
+      .front {
+        transform: translateZ(120px);
+      }
+      .back {
+        transform: rotateY(180deg) translateZ(120px);
+      }
+      .left {
+        transform: rotateY(-90deg) translateZ(120px);
+      }
+      .right {
+        transform: rotateY(90deg) translateZ(120px);
+      }
+      .top {
+        transform: rotateX(90deg) translateZ(120px);
+      }
+      .bottom {
+        transform: rotateX(-90deg) translateZ(120px);
+      }
+
+      .front div {
+        background-color: #d40000;
+      }
+      .back div {
+        background-color: #ff6f00;
+      }
+      .left div {
+        background-color: #009b48;
+      }
+      .right div {
+        background-color: #0045ad;
+      }
+      .top div {
+        background-color: #ffffff;
+      }
+      .bottom div {
+        background-color: #ffd500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cube">
+      <div class="face front">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="face back">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="face left">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="face right">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="face top">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="face bottom">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
