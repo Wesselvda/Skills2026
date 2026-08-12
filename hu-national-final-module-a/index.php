@@ -1,1 +1,0 @@
-A simple vanilla project using PHP is working!

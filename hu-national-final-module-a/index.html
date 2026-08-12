@@ -1,1 +1,165 @@
-A simple vanilla project is working!
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Snake</title>
+        <script src="assets/js/Game.js" type="module"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/styles/style.css" />
+    </head>
+    <body>
+        <header class="header-main">
+            <div class="logo">
+                <img
+                    src="assets/style-guide/ssa-logo.svg"
+                    alt="SkillShare Academy"
+                />
+            </div>
+            <p class="small-text">The developers learning path</p>
+        </header>
+        <main class="main-content">
+            <section class="statistics">
+                <div class="statistic">
+                    <div class="label">Certificates earned</div>
+                    <div class="value" id="certificates-earned">0</div>
+                    <div class="hint">1 per IT Skill collected this run</div>
+                </div>
+                <div class="statistic">
+                    <div class="label">Developer level</div>
+                    <div class="value" id="developer-level">1</div>
+                    <div class="hint">+1 level every 2 certificates</div>
+                </div>
+                <div class="statistic">
+                    <div class="label">Best run</div>
+                    <div class="value" id="best-run">0</div>
+                    <div class="hint">Most certificates in a single run</div>
+                </div>
+            </section>
+            <section class="game-wrapper">
+                <div class="game-inner-wrapper">
+                    <div id="game-grid"></div>
+                    <div class="modal-backdrop">
+                        <div class="modal" id="modal-start-screen">
+                            <h1>
+                                The Developer's Learning Path
+                                <span class="modal-subtitle"
+                                    >SkillShare Academy</span
+                                >
+                            </h1>
+                            <p>
+                                Guide the <strong>Student</strong> across the
+                                board. <strong>IT Skills</strong> are the
+                                technologies you pick up. each one collected
+                                earns a certificate and grows your
+                                <strong>Knowledge Base</strong>.
+                            </p>
+                            <p>
+                                Avoid <strong>burnout</strong> (walls) and
+                                <strong>spaghetti code</strong> (your own
+                                trail).
+                            </p>
+                            <ul>
+                                <li>
+                                    Move:
+                                    <span class="key-indicator"
+                                        >Arrow keys</span
+                                    >
+                                    or <span class="key-indicator">WASD</span>
+                                </li>
+                                <li>
+                                    Pause:
+                                    <span class="key-indicator">Space</span>
+                                </li>
+                            </ul>
+                            <div class="buttons">
+                                <button
+                                    class="btn btn-success start-game-button"
+                                >
+                                    Start Learning Path
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal modal-danger hidden" id="modal-burnout">
+                            <h1>Burnout</h1>
+                            <p>
+                                You hit the walls of the sprint - pace yourself
+                                and try again.
+                            </p>
+                            <p class="certificates-earned-modal-value">
+                                Certificates earned this run:
+                                <span id="modal-burnout-certificate-count"
+                                    >0</span
+                                >
+                            </p>
+                            <p class="certificates-earned-modal-value">
+                                Developer level reached:
+                                <span id="modal-burnout-level-count">1</span>
+                            </p>
+                            <div class="buttons">
+                                <button
+                                    class="btn btn-success start-game-button"
+                                >
+                                    Start new learning path
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal modal-danger hidden" id="modal-spaghetti-code">
+                            <h1>Spaghetti code</h1>
+                            <p>
+                                You crossed your own knowledge trail - refactor
+                                your path (avoid reversing into your stack).
+                            </p>
+                            <p class="certificates-earned-modal-value">
+                                Certificates earned this run:
+                                <span id="modal-spaghetti-certificate-count"
+                                    >0</span
+                                >
+                            </p>
+                            <p class="certificates-earned-modal-value">
+                                Developer level reached:
+                                <span id="modal-spaghetti-level-count">1</span>
+                            </p>
+                            <div class="buttons">
+                                <button
+                                    class="btn btn-success start-game-button"
+                                >
+                                    Start new learning path
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal hidden" id="modal-paused">
+                            <h1>Paused</h1>
+                            <p>
+                                The game is paused. Nothing moves until you
+                                resume. your certificates and level are kept.
+                            </p>
+                            <ul>
+                                <li>
+                                    Resume:
+                                    <span class="key-indicator">Space</span>
+                                </li>
+                            </ul>
+                            <div class="buttons">
+                                <button
+                                    class="btn btn-success start-game-button"
+                                    id="resume-game-button"
+                                >
+                                    Resume
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-main">
+            <div id="footer-text">Press Start to begin</div>
+        </footer>
+    </body>
+</html>
