@@ -1,6 +1,3 @@
-import { Skills } from "./Skills.js";
-import Modal from "./Modal.js";
-
 // Modals
 const modalStartScreen = new Modal(document.getElementById("modal-start-screen"));
 const modalSpaghettiCode = new Modal(document.getElementById("modal-spaghetti-code"));

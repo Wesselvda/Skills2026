@@ -1,4 +1,4 @@
-export default class Modal {
+class Modal {
     constructor(_element) {
         this.element = _element;
     }

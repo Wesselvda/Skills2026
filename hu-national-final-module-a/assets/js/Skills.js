@@ -1,4 +1,4 @@
-export const Skills = [
+const Skills = [
   {
     id: "html",
     label: "HTML5",
