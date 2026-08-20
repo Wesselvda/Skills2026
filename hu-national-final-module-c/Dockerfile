@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         git unzip libzip-dev libicu-dev libonig-dev libxml2-dev libsqlite3-dev \
         libpng-dev libjpeg-dev libfreetype6-dev \
     && docker-php-ext-configure gd --with-jpeg --with-freetype \
-    && docker-php-ext-install -j"$(nproc)" intl pdo_sqlite zip bcmath gd exif pcntl sockets mbstring dom xml \
+    && docker-php-ext-install -j"$(nproc)" intl pdo_mysql zip bcmath gd exif pcntl sockets mbstring dom xml \
     && rm -rf /var/lib/apt/lists/*
 WORKDIR /app
 COPY composer.json composer.lock ./
