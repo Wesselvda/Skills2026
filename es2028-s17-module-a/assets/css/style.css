@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100dvh;
+    overflow-x: hidden;
+}
+
+main {
+    display: grid;
+}
+
+section {
+    padding: 1rem;
+}
+
+#checkboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.easingfunction-label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.easingfunction-label input {
+    display: none;
+}
+
+.easingfunction-label::before {
+    transition: background-color .3s;
+    left: .25rem;
+    top: .1rem;
+    content: '';
+    display: block;
+    position: absolute;
+    height: .8rem;
+    width: .8rem;
+    border: 1px solid #bbb;
+    background-color: red;
+}
+
+.easingfunction-label:has(input:checked)::before {
+    background-color: green;
+}
+
+.formula-hover {
+    padding: 0 .5rem;
+    border-radius: 5px;
+    background-color: #eee;
+    width: fit-content;
+    transition: height .3s, padding .3s;
+    height: 0px;
+    overflow: hidden;
+    font-size: .8rem;
+}
+
+.easingfunction-label:hover .formula-hover {
+    height: 2rem;
+    padding: .5rem .5rem;
+}
+
+#asidecheckbox {
+    display: none;
+}
+
+aside {
+    transition: right .3s, top .3s;
+    position: fixed;
+    height: calc(100% - 3rem);
+    background-color: #eee;
+    width: 100%;
+    top: 100%;
+    right: 0%;
+    padding: 1rem;
+}
+
+body:has(#asidecheckbox:checked) aside {
+    right: 0;
+    top: 3rem;
+}
+
+header {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#about-btn {
+    transition: filter .3s;
+    font: inherit;
+    font-size: 1rem;
+    background: none;
+    border: 1px solid #bbb;
+    border-radius: 500px;
+    padding: .5rem;
+    aspect-ratio: 1 / 1;
+    height: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+}
+
+#about-btn:hover {
+    filter: brightness(.6);
+}
+
+#about-btn::before {
+    content: 'i';
+}
+
+#canvas {
+    aspect-ratio: 1 / 1;
+    max-height: 80%;
+    width: 80%;
+    border: 1px solid #bbb;
+}
+
+#animate-button, .back-to-top a {
+    transition: filter .3s;
+    border: 1px solid #bbb;
+    background: none;
+    font: inherit;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.back-to-top a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    margin-top: .5rem;
+}
+
+#animate-button:hover, .back-to-top a:hover {
+    filter: brightness(.6)
+}
+
+
+@media screen and (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    #about-btn {
+        aspect-ratio: unset;
+        border-radius: 5px;
+        padding: .5rem 1rem;
+    }
+
+    #about-btn::before {
+        content: 'About';
+    }
+
+    aside {
+        width: 50%;
+        top: 3rem;
+        right: -50%;
+    }
+}

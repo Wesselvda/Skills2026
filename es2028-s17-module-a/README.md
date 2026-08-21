@@ -1,0 +1,1 @@
+Er is niet aangegeven op welke breakpoint er van mobile naar desktop moet worden geswitcht dus ik heb 600px gekozen.
