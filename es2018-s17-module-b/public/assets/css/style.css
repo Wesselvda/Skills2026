@@ -388,4 +388,42 @@ button:hover, input[type=submit]:hover, .btn:hover {
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 0.25rem;
+}
+
+.logout-form .link-button {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font: inherit;
+  font-weight: bold;
+}
+.logout-form .link-button:hover {
+  text-decoration: underline;
+}
+
+.sortable-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  max-width: 500px;
+}
+.sortable-list .sortable-item {
+  background-color: #f0f0f0;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  cursor: grab;
+  transition: border-color 0.3s;
+}
+.sortable-list .sortable-item:hover {
+  border-color: royalblue;
+}
+.sortable-list .sortable-item .sortable-label {
+  font-weight: bold;
+}
+
+.save-order-button {
+  font-size: 1.1rem;
 }/*# sourceMappingURL=style.css.map */
