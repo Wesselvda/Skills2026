@@ -1,2 +1,6 @@
 *
 !.gitignore
+!design_symbols
+!product_images
+!design_symbols/*
+!product_images/*

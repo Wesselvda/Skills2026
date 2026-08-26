@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('designs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('product_color_id')->constrained()->onDelete('cascade');
             $table->string('name');
             $table->string('image_filename');
             $table->boolean('is_active')->default(true);

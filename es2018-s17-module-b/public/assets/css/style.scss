@@ -1,0 +1,274 @@
+$fontFamily: sans-serif;
+$primary: royalblue;
+$text: #000;
+$textInverted: #fff;
+$layerOne: #f0f0f0;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    font-family: $fontFamily;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-bottom: 0.5rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+header {
+    padding: 1rem;
+    background-color: $primary;
+
+    nav {
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: $textInverted;
+                    font-weight: bold;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: .25rem 1rem;
+
+    .inner {
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+main {
+    padding: 1rem;
+    flex: 1;
+
+    .container {
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.design-selection-form {
+    fieldset {
+        border: none;
+
+        legend {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .design-symbols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            @media (min-width: 600px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            @media (min-width: 900px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            @media (min-width: 1200px) {
+                grid-template-columns: repeat(6, 1fr);
+            }
+
+            gap: 1rem;
+
+            .design-symbol {
+                background-color: $layerOne;
+                transition: border-color 0.3s;
+                aspect-ratio: 1 / 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                padding: 0.5rem;
+                border: 2px solid transparent;
+                border-radius: 1rem;
+
+                &:hover {
+                    border-color: $primary;
+                }
+
+                img {
+                    max-width: 80px;
+                    max-height: 80px;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+
+            .product {
+                background-color: $layerOne;
+                transition: border-color 0.3s;
+                aspect-ratio: 1 / 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                padding: 0.5rem;
+                border: 2px solid transparent;
+                border-radius: 1rem;
+
+                img {
+                    max-width: 80%;
+                    max-height: 80%;
+                }
+
+                &:hover {
+                    border-color: $primary;
+                }
+            }
+        }
+    }
+
+    .color-selection-fieldset {
+        .color-selection {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+
+            @media (min-width: 700px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .preview {
+                background-color: $layerOne;
+                border-radius: 1rem;
+                aspect-ratio: 1 / 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+
+                .preview-image-stack {
+                    position: relative;
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: fit-content;
+                    height: fit-content;
+                }
+
+                img {
+                    display: block;
+                }
+
+                .preview-product-image {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+
+                .preview-design-image {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 35%;
+                    height: 35%;
+                    object-fit: contain;
+                }
+            }
+
+            .color-options {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1rem;
+                align-content: start;
+
+                .color-option {
+                    background-color: $layerOne;
+                    transition: border-color 0.3s;
+                    aspect-ratio: 1 / 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    padding: 0.5rem;
+                    border: 2px solid transparent;
+                    border-radius: 1rem;
+
+                    img {
+                        max-width: 80%;
+                        max-height: 80%;
+                    }
+
+                    &:hover {
+                        border-color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    // Logic
+
+
+    .products-fieldset,
+    .color-selection-fieldset {
+        display: none;
+    }
+
+    &:has(.design-symbols-fieldset input[type="radio"]:checked) {
+        .products-fieldset {
+            display: block;
+        }
+
+        .design-symbols-fieldset {
+            display: none;
+        }
+    }
+
+    &:has(.products-fieldset input[type="radio"]:checked) {
+        .color-selection-fieldset {
+            display: block;
+        }
+
+        .products-fieldset {
+            display: none;
+        }
+    }
+}
