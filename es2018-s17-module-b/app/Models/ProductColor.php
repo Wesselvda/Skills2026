@@ -10,12 +10,7 @@ class ProductColor extends Model
     protected $fillable = [
         'product_id',
         'name',
-        'is_active',
         'image_filename'
-    ];
-
-    protected $casts = [
-        'is_active' => 'boolean',
     ];
 
     public function product() : BelongsTo

@@ -22,4 +22,9 @@ class Order extends Model
     {
         return $this->hasMany(OrderItem::class);
     }
+
+    public function statusTransitions() : HasMany
+    {
+        return $this->hasMany(OrderStatusTransition::class);
+    }
 }

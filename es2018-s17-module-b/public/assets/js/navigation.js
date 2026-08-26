@@ -26,8 +26,24 @@ function populateNavigationItems(data) {
         a.textContent = item.name;
         li.appendChild(a);
 
+        if (item.link === '/cart') {
+            const badge = document.createElement('span');
+            badge.className = 'cart-badge hidden';
+            a.appendChild(badge);
+            fetchCartCount(badge);
+        }
+
         return li;
     }));
+}
+
+function fetchCartCount(badge) {
+    fetch('/api/cart-count').then(response => response.json()).then(data => {
+        if (data.count > 0) {
+            badge.textContent = data.count;
+            badge.classList.remove('hidden');
+        }
+    });
 }
 
 fetchNavigationItems();

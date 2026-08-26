@@ -49,7 +49,18 @@ class CartController extends Controller
 
     public function viewCheckout()
     {
+        if (empty(session('cart', []))) {
+            return redirect()->route('cart')->with('error', 'Your cart is empty.');
+        }
+
         return view('checkout');
+    }
+
+    public function cartCount()
+    {
+        return response()->json([
+            'count' => count(session('cart', [])),
+        ]);
     }
 
     public function placeOrder(Request $request)
