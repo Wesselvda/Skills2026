@@ -30,7 +30,10 @@
                             <img src="" alt="" class="preview-design-image" id="preview-design-image">
                         </div>
                     </div>
-                    <div class="color-options" id="color-options"></div>
+                    <div class="color-options-wrapper">
+                        <div class="color-options" id="color-options"></div>
+                        <input type="submit" value="Add to Cart" class="add-to-cart-button">
+                    </div>
                 </div>
             </fieldset>
         </form>

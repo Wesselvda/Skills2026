@@ -229,4 +229,120 @@ main .container {
 }
 .design-selection-form:has(.products-fieldset input[type=radio]:checked) .products-fieldset {
   display: none;
+}
+.design-selection-form .add-to-cart-button {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}
+
+button, input[type=submit] {
+  transition: opacity 0.3s;
+  background-color: royalblue;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+button:hover, input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+.cart-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 600px) {
+  .cart-wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+.cart-wrapper .checkout-box {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.cart-wrapper .checkout-box .total-price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.cart-wrapper .checkout-box button {
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-table th, .cart-table td {
+  padding: 0.5rem;
+  text-align: left;
+}
+.cart-table th {
+  background-color: #f0f0f0;
+}
+.cart-table .cart-description {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cart-table .cart-description .cart-item-preview {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.cart-table .cart-description .cart-item-preview .preview-image-stack {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.cart-table .cart-description .cart-item-preview img {
+  display: block;
+}
+.cart-table .cart-description .cart-item-preview .cart-product-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.cart-table .cart-description .cart-item-preview .cart-design-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 35%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cart-table .preview-image-stack {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.cart-table img {
+  display: block;
+}
+.cart-table .preview-product-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+.cart-table .preview-design-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 35%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=style.css.map */
