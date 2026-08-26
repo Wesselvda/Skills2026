@@ -34,7 +34,7 @@
                 <div class="checkout-box">
                     <form>
                         <p class="total-price">Total: ${{ number_format($totalPrice, 2) }}</p>
-                        <button type="submit">Proceed to Checkout</button>
+                        <a href="/checkout" class="btn">Proceed to Checkout</a>
                     </form>
                 </div>
             </div>

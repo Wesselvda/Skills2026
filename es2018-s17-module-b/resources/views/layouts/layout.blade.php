@@ -17,6 +17,20 @@
         </nav>
     </header>
     <main>
+        @if (session('success'))
+            <div class="container">
+                <div class="success-message">
+                    {{ session('success') }}
+                </div>
+            </div>
+        @endif
+        @if (session('error'))
+            <div class="container">
+                <div class="error-message">
+                    {{ session('error') }}
+                </div>
+            </div>
+        @endif
         @yield('content')
     </main>
     <footer>

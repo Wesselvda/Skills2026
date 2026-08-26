@@ -279,7 +279,8 @@ main {
     }
 }
 
-button, input[type="submit"] {
+button, input[type="submit"], .btn {
+    text-decoration: none;
     transition: opacity .3s;
     background-color: $primary;
     color: $textInverted;
@@ -291,6 +292,23 @@ button, input[type="submit"] {
     &:hover {
         opacity: 0.8;
     }
+}
+
+.success-message, .error-message {
+    background-color: $layerOne;
+    color: $text;
+    border: 2px solid;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.success-message {
+    border-color: green;
+}
+
+.error-message {
+    border-color: red;
 }
 
 
@@ -399,5 +417,32 @@ button, input[type="submit"] {
         width: 35%;
         height: 35%;
         object-fit: contain;
+    }
+}
+
+.checkout-form {
+    h1 {
+        text-align: center;
+    }
+
+    background-color: $layerOne;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    input {
+        padding: .5rem;
+        border: 1px solid #ccc;
+        border-radius: .25rem;
     }
 }

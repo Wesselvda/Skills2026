@@ -236,7 +236,8 @@ main .container {
   font-size: 1.25rem;
 }
 
-button, input[type=submit] {
+button, input[type=submit], .btn {
+  text-decoration: none;
   transition: opacity 0.3s;
   background-color: royalblue;
   color: #fff;
@@ -245,8 +246,25 @@ button, input[type=submit] {
   border-radius: 0.25rem;
   cursor: pointer;
 }
-button:hover, input[type=submit]:hover {
+button:hover, input[type=submit]:hover, .btn:hover {
   opacity: 0.8;
+}
+
+.success-message, .error-message {
+  background-color: #f0f0f0;
+  color: #000;
+  border: 2px solid;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.success-message {
+  border-color: green;
+}
+
+.error-message {
+  border-color: red;
 }
 
 .cart-wrapper {
@@ -345,4 +363,29 @@ button:hover, input[type=submit]:hover {
   height: 35%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.checkout-form h1 {
+  text-align: center;
+}
+.checkout-form {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.input-wrapper input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
 }/*# sourceMappingURL=style.css.map */
