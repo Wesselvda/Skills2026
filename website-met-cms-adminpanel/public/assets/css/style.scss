@@ -1,0 +1,274 @@
+$primary: #b13737;
+$layerOne: #f0f0f0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding-bottom: 0.5rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+header {
+    background-color: $primary;
+}
+
+.container,
+header nav {
+    max-width: 80%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.input-wrapper {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+
+    label {
+        margin-bottom: 0.5rem;
+    }
+
+    input,
+    textarea {
+        padding: 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #000;
+        font: inherit;
+    }
+
+    .error {
+        color: #f00;
+    }
+}
+
+.thumbnail {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+button,
+.btn {
+    text-decoration: none;
+    transition: filter 0.3s;
+    background-color: $primary;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font: inherit;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(0.8);
+    }
+}
+
+.stat-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    .stat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: $layerOne;
+        border-radius: 5px;
+        padding: 1rem;
+        aspect-ratio: 3 / 2;
+
+        .label {
+            font-size: 1.5rem;
+        }
+
+        .value {
+            font-size: 4rem;
+        }
+    }
+}
+
+.pages-list {
+    table {
+        border-spacing: 0;
+
+        th {
+            text-align: start;
+        }
+
+        th,
+        td {
+            padding: 1rem;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid #999;
+            margin-top: 0.5rem;
+            margin-top: 0.5rem;
+        }
+    }
+}
+
+.big-form {
+    .input-wrapper {
+        max-width: 400px;
+    }
+}
+
+.filters {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: $layerOne;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        align-items: center;
+    }
+}
+
+
+.builds-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    .build {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: $layerOne;
+
+        &.inactive {
+            opacity: 0.5;
+        }
+
+        img {
+            max-width: 400px;
+            max-height: 400px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 5px;
+        }
+    }
+}
+
+.max-size {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.competitions-list {
+    display: grid;
+    gap: 1rem;
+
+    .competition {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: $layerOne;
+
+        &.inactive {
+            opacity: 0.5;
+        }
+
+        img {
+            width: 200px;
+            height: 120px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 5px;
+        }
+
+        .position {
+            display: inline-block;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .position-1 {
+            background-color: #EFBF04;
+        }
+
+        .position-2 {
+            background-color: #C0C0C0;
+        }
+
+        .position-3 {
+            background-color: #CD7F32;
+        }
+    }
+}
+
+.error {
+    color: #f00;
+}
+
+
+
+nav[aria-label="Pagination Navigation"] {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .hidden {
+        display: none;
+    }
+}
+
+.delete-btn {
+    margin-top: 1rem;
+}

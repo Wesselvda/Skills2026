@@ -1,2 +1,12 @@
 *
 !.gitignore
+!build-background-images/
+!build-background-images/**
+!build-signature-images/
+!build-signature-images/**
+!build-thumbnail-images/
+!build-thumbnail-images/**
+!competition-images/
+!competition-images/**
+!page-images/
+!page-images/**
