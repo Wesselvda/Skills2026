@@ -1,10 +1,5 @@
 @extends('layouts.app')
 
-{{-- The page contains a list of adverts and filters by status, 
-category, and text. The text filter must search across the title, 
-advert text, category name, and author name. The adverts list must 
-show a label for connected paid services, if any. --}}
-
 @section('content')
     <section class="container">
         <h1>Adverts</h1>
@@ -36,6 +31,7 @@ show a label for connected paid services, if any. --}}
             </div>
 
             <button type="submit">Filter</button>
+            <button type="submit" formaction="{{ route('adverts.export') }}">Export</button>
         </form>
         <div class="advert-wrapper">
             @foreach ($adverts as $advert)

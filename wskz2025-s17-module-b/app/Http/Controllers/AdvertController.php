@@ -72,32 +72,9 @@ class AdvertController extends Controller
     // Adverts
 
     public function showAdverts(Request $request) {
-        $query = Advert::query();
-
-        if ($request->has('status') && !empty($request->input('status')) && $request->input('status') !== '') {
-            $query->where('status', $request->input('status'));
-        }
-
-        if ($request->has('category') && !empty($request->input('category')) && $request->input('category') !== '') {
-            $query->where('category_id', $request->input('category'));
-        }
-
-        if ($request->has('search') && !empty($request->input('search')) && $request->input('search') !== '') {
-            $searchTerm = strtolower($request->input('search'));
-
-            $query->where(function ($q) use ($searchTerm) {
-                $q->whereRaw('LOWER(title) LIKE ?', ['%' . $searchTerm . '%'])
-                    ->orWhereRaw('LOWER(text) LIKE ?', ['%' . $searchTerm . '%'])
-                    ->orWhereHas('category', function ($q2) use ($searchTerm) {
-                        $q2->whereRaw('LOWER(name) LIKE ?', ['%' . $searchTerm . '%']);
-                    })
-                    ->orWhereHas('author', function ($q3) use ($searchTerm) {
-                        $q3->whereRaw('LOWER(name) LIKE ?', ['%' . $searchTerm . '%']);
-                    });
-            });
-        }
-
-        $adverts = $query->with(['category', 'author', 'paidServices'])->get();
+        $adverts = $this->filteredAdvertsQuery($request)
+            ->with(['category', 'author', 'paidServices'])
+            ->get();
 
         $categories = Category::all();
 
@@ -135,5 +112,70 @@ class AdvertController extends Controller
         $paidService->update(['is_enabled' => ! $paidService->is_enabled]);
 
         return back()->with('success', "{$paidService->type} service " . ($paidService->is_enabled ? 'enabled.' : 'disabled.'));
+    }
+
+    public function exportAdverts(Request $request) {
+        $adverts = $this->filteredAdvertsQuery($request)
+            ->with(['category', 'author'])
+            ->get();
+
+        $csvHeader = ['ID', 'Title', 'Category Name', 'Price', 'Author Phone number', 'Author Email', 'Text', 'Publication Date'];
+        $csvData = [];
+
+        foreach ($adverts as $advert) {
+            $csvData[] = [
+                $advert->id,
+                $advert->title,
+                $advert->category->name ?? '',
+                $advert->price,
+                $advert->author->phone ?? '',
+                $advert->author->email ?? '',
+                $advert->text,
+                $advert->created_at->format('Y-m-d H:i:s'),
+            ];
+        }
+
+        $filepath = storage_path("export_adverts.csv");
+
+        $file = fopen($filepath, 'w');
+        fputcsv($file, $csvHeader);
+
+        foreach ($csvData as $row) {
+            fputcsv($file, $row);
+        }
+
+        fclose($file);
+
+        return response()->download($filepath)->deleteFileAfterSend(true);
+    }
+
+    private function filteredAdvertsQuery(Request $request)
+    {
+        $query = Advert::query();
+
+        if ($request->filled('status')) {
+            $query->where('status', $request->input('status'));
+        }
+
+        if ($request->filled('category')) {
+            $query->where('category_id', $request->input('category'));
+        }
+
+        if ($request->filled('search')) {
+            $searchTerm = strtolower($request->input('search'));
+
+            $query->where(function ($query) use ($searchTerm) {
+                $query->whereRaw('LOWER(title) LIKE ?', ['%' . $searchTerm . '%'])
+                    ->orWhereRaw('LOWER(text) LIKE ?', ['%' . $searchTerm . '%'])
+                    ->orWhereHas('category', function ($categoryQuery) use ($searchTerm) {
+                        $categoryQuery->whereRaw('LOWER(name) LIKE ?', ['%' . $searchTerm . '%']);
+                    })
+                    ->orWhereHas('author', function ($authorQuery) use ($searchTerm) {
+                        $authorQuery->whereRaw('LOWER(name) LIKE ?', ['%' . $searchTerm . '%']);
+                    });
+            });
+        }
+
+        return $query;
     }
 }

@@ -204,10 +204,11 @@ a.btn {
         margin-bottom: 0;
     }
 
-    button {
+    button, .btn {
         align-self: flex-end;
         font: inherit;
         border: 1px solid $primary-color;
+        margin-bottom: 0;
     }
 }
 

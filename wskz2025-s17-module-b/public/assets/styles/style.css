@@ -181,10 +181,11 @@ a.btn {
 .filter-form .input-wrapper {
   margin-bottom: 0;
 }
-.filter-form button {
+.filter-form button, .filter-form .btn {
   align-self: flex-end;
   font: inherit;
   border: 1px solid #4169e1;
+  margin-bottom: 0;
 }
 
 .advert-wrapper .advert {
