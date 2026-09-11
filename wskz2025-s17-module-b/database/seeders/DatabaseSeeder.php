@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Advert;
 use App\Models\Category;
+use App\Models\PaidService;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -63,7 +64,7 @@ class DatabaseSeeder extends Seeder
                 continue;
             }
 
-            Advert::create([
+            $advert = Advert::create([
                 'title' => $row[0],
                 'text' => $row[1],
                 'status' => $row[2],
@@ -72,8 +73,16 @@ class DatabaseSeeder extends Seeder
                 'category_id' => $row[5],
                 'author_email' => $row[6],
                 'photos' => $this->decodeJsonArray($row[7], 'photos'),
-                'paid_services' => $this->decodeJsonArray($row[8], 'paid_services'),
             ]);
+
+            foreach ($this->decodeJsonArray($row[8], 'paid_services') as $type) {
+                PaidService::create([
+                    'advert_id' => $advert->id,
+                    'type' => $type,
+                    'activated_at' => $type === 'top' ? now()->subDays(8) : now()->subDay(),
+                    'validity_days' => $type === 'top' ? 7 : 30,
+                ]);
+            }
         }
 
         fclose($advertsFile);

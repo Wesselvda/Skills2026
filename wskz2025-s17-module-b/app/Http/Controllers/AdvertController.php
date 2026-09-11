@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Advert;
+use App\Models\PaidService;
 use Illuminate\Http\Request;
 
 class AdvertController extends Controller
@@ -96,16 +97,43 @@ class AdvertController extends Controller
             });
         }
 
-        $adverts = $query->get();
+        $adverts = $query->with(['category', 'author', 'paidServices'])->get();
 
         $categories = Category::all();
 
         return view('adverts', compact('adverts', 'categories'));
     }
 
-    public function showAdvertDetail($id) {
-        $advert = Advert::findOrFail($id);
+    public function showAdvertDetail(Advert $advert) {
+        $advert->load(['category', 'author', 'paidServices']);
 
         return view('advert_detail', compact('advert'));
+    }
+
+    public function updateStatus(Request $request, Advert $advert) {
+        $validated = $request->validate([
+            'status' => ['required', 'in:published,declined'],
+        ]);
+
+        $allowedTransitions = [
+            'moderation' => ['published', 'declined'],
+            'published' => ['declined'],
+        ];
+
+        if (! in_array($validated['status'], $allowedTransitions[$advert->status] ?? [], true)) {
+            return back()->with('error', "The advert cannot move from {$advert->status} to {$validated['status']}.");
+        }
+
+        $advert->update(['status' => $validated['status']]);
+
+        return back()->with('success', 'Advert status updated successfully.');
+    }
+
+    public function togglePaidService(Advert $advert, PaidService $paidService) {
+        abort_unless($paidService->advert_id === $advert->id, 404);
+
+        $paidService->update(['is_enabled' => ! $paidService->is_enabled]);
+
+        return back()->with('success', "{$paidService->type} service " . ($paidService->is_enabled ? 'enabled.' : 'disabled.'));
     }
 }

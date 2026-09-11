@@ -44,10 +44,10 @@ show a label for connected paid services, if any. --}}
                     <p>{{ $advert->text }}</p>
                     <p>Category: {{ $advert->category->name }}</p>
                     <p>Author: {{ $advert->author->name }}</p>
-                    @if (count($advert->paid_services) > 0)
+                    @if ($advert->paidServices->isNotEmpty())
                         <p>Paid Services: 
-                            @foreach ($advert->paid_services as $service)
-                                <span class="paid-service">{{ $service }}</span>
+                            @foreach ($advert->paidServices as $service)
+                                <span class="paid-service">{{ $service->type }}</span>
                             @endforeach
                         </p>
                     @endif

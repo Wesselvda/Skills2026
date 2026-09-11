@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        // title,text,status,price,views_count,category,author,photos,paid_services
+        // title,text,status,price,views_count,category,author,photos
         Schema::create('adverts', function (Blueprint $table) {
             $table->id();
             $table->string('title');
@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('category_id');
             $table->string('author_email');
             $table->json('photos')->nullable();
-            $table->json('paid_services')->nullable();
             $table->timestamps();
 
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');

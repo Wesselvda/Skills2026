@@ -15,12 +15,10 @@ class Advert extends Model
         'category_id',
         'author_email',
         'photos',
-        'paid_services'
     ];
 
     protected $casts = [
         'photos' => 'array',
-        'paid_services' => 'array',
     ];
 
     public function author()
@@ -31,5 +29,10 @@ class Advert extends Model
     public function category()
     {
         return $this->belongsTo(Category::class, 'category_id', 'id');
+    }
+
+    public function paidServices()
+    {
+        return $this->hasMany(PaidService::class);
     }
 }
