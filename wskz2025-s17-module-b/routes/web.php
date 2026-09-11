@@ -17,5 +17,7 @@ Route::middleware('auth')->group(function () {
     Route::put('/categories/{id}', [AdvertController::class, 'updateCategory'])->name('categories.update');
     Route::delete('/categories/{id}', [AdvertController::class, 'destroyCategory'])->name('categories.destroy');
 
+    Route::get('/users', [AuthController::class, 'showUserPage'])->name('users.index');
+
     Route::get('/logout', [AuthController::class, 'logout']);
 });

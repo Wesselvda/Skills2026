@@ -40,4 +40,23 @@ class AuthController extends Controller
 
         return redirect('/login')->with('success', 'Logged out successfully');
     }
+
+
+
+    public function showUserPage(Request $request) {
+        $users = User::query();
+
+        if ($request->has('search') && $request->input('search') !== '') {
+            $searchTerm = strToLower($request->input('search'));
+
+            $users = $users
+                ->where('id', 'like', '%' . $searchTerm . '%')
+                ->orWhere('phone', 'like', '%' . $searchTerm . '%')
+                ->orWhere('email', 'like', '%' . $searchTerm . '%');
+        }
+
+        $users = $users->get();
+
+        return view('users', compact('users'));
+    }
 }
