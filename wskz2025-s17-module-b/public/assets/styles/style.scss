@@ -168,3 +168,29 @@ section.container {
         }
     }
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+
+    th, td {
+        padding: 0.5rem;
+        border: 1px solid $background-color-secondary;
+        text-align: left;
+    }
+
+    th {
+        background-color: $background-color-secondary;
+    }
+}
+
+.delete-form {
+    display: inline;
+    margin-left: 0.5rem;
+}
+
+a.btn {
+    display: inline-block;
+    margin-bottom: .5rem;
+}

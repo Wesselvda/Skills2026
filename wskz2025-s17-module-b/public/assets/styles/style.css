@@ -147,4 +147,28 @@ section.container {
 }
 .adverts-list > div p {
   margin-bottom: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+table th, table td {
+  padding: 0.5rem;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+table th {
+  background-color: #e0e0e0;
+}
+
+.delete-form {
+  display: inline;
+  margin-left: 0.5rem;
+}
+
+a.btn {
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
