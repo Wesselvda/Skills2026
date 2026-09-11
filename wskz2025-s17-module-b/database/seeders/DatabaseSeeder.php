@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
+use JsonException;
 
 class DatabaseSeeder extends Seeder
 {
@@ -70,8 +71,8 @@ class DatabaseSeeder extends Seeder
                 'views_count' => $row[4],
                 'category_id' => $row[5],
                 'author_email' => $row[6],
-                'photos' => json_decode($row[7], true),
-                'paid_services' => json_decode($row[8], true),
+                'photos' => $this->decodeJsonArray($row[7], 'photos'),
+                'paid_services' => $this->decodeJsonArray($row[8], 'paid_services'),
             ]);
         }
 
@@ -86,5 +87,23 @@ class DatabaseSeeder extends Seeder
         }
 
         return Hash::make($password);
+    }
+
+    /**
+     * Decode an array value from the CSV before Eloquent applies its JSON cast.
+     */
+    private function decodeJsonArray(string $value, string $column): array
+    {
+        try {
+            $decoded = json_decode(str_replace('\\"', '"', $value), true, 512, JSON_THROW_ON_ERROR);
+        } catch (JsonException $exception) {
+            throw new \RuntimeException("Invalid JSON in adverts CSV column [{$column}].", previous: $exception);
+        }
+
+        if (! is_array($decoded)) {
+            throw new \RuntimeException("Expected a JSON array in adverts CSV column [{$column}].");
+        }
+
+        return $decoded;
     }
 }

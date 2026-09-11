@@ -91,7 +91,7 @@ button:hover {
 .input-wrapper label {
   margin-bottom: 0.5rem;
 }
-.input-wrapper input {
+.input-wrapper input, .input-wrapper select {
   padding: 0.5rem;
   font: inherit;
   background-color: #fff;
@@ -171,4 +171,58 @@ table th {
 a.btn {
   display: inline-block;
   margin-bottom: 0.5rem;
+}
+
+.filter-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.filter-form .input-wrapper {
+  margin-bottom: 0;
+}
+.filter-form button {
+  align-self: flex-end;
+  font: inherit;
+  border: 1px solid #4169e1;
+}
+
+.advert-wrapper .advert {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.advert-wrapper .advert:hover {
+  text-decoration: none;
+}
+.advert-wrapper .advert .paid-service {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  background-color: #4169e1;
+  color: #f0f0f0;
+  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+}
+.advert-wrapper .advert p {
+  margin-bottom: 0;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.photo-grid .photo-tile {
+  height: 200px;
+}
+.photo-grid .photo-tile img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

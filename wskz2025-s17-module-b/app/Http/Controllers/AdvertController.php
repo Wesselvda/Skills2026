@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 class AdvertController extends Controller
 {
+    // Categories
+
     public function showCategories() {
         $categories = Category::all();
 
@@ -63,5 +65,47 @@ class AdvertController extends Controller
         ]);
 
         return redirect()->route('categories.index')->with('success', 'Category added successfully.');
+    }
+
+
+    // Adverts
+
+    public function showAdverts(Request $request) {
+        $query = Advert::query();
+
+        if ($request->has('status') && !empty($request->input('status')) && $request->input('status') !== '') {
+            $query->where('status', $request->input('status'));
+        }
+
+        if ($request->has('category') && !empty($request->input('category')) && $request->input('category') !== '') {
+            $query->where('category_id', $request->input('category'));
+        }
+
+        if ($request->has('search') && !empty($request->input('search')) && $request->input('search') !== '') {
+            $searchTerm = strtolower($request->input('search'));
+
+            $query->where(function ($q) use ($searchTerm) {
+                $q->whereRaw('LOWER(title) LIKE ?', ['%' . $searchTerm . '%'])
+                    ->orWhereRaw('LOWER(text) LIKE ?', ['%' . $searchTerm . '%'])
+                    ->orWhereHas('category', function ($q2) use ($searchTerm) {
+                        $q2->whereRaw('LOWER(name) LIKE ?', ['%' . $searchTerm . '%']);
+                    })
+                    ->orWhereHas('author', function ($q3) use ($searchTerm) {
+                        $q3->whereRaw('LOWER(name) LIKE ?', ['%' . $searchTerm . '%']);
+                    });
+            });
+        }
+
+        $adverts = $query->get();
+
+        $categories = Category::all();
+
+        return view('adverts', compact('adverts', 'categories'));
+    }
+
+    public function showAdvertDetail($id) {
+        $advert = Advert::findOrFail($id);
+
+        return view('advert_detail', compact('advert'));
     }
 }

@@ -50,9 +50,9 @@ class AuthController extends Controller
             $searchTerm = strToLower($request->input('search'));
 
             $users = $users
-                ->where('id', 'like', '%' . $searchTerm . '%')
-                ->orWhere('phone', 'like', '%' . $searchTerm . '%')
-                ->orWhere('email', 'like', '%' . $searchTerm . '%');
+                ->whereRaw('LOWER(id) LIKE ?', ['%' . $searchTerm . '%'])
+                ->orWhereRaw('LOWER(phone) LIKE ?', ['%' . $searchTerm . '%'])
+                ->orWhereRaw('LOWER(email) LIKE ?', ['%' . $searchTerm . '%']);
         }
 
         $users = $users->get();
