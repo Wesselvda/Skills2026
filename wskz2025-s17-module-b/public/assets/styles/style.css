@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+header {
+  background-color: #4169e1;
+  color: #f0f0f0;
+}
+header .inner {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+header nav a {
+  color: inherit;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  color: #4169e1;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.btn,
+button {
+  transition: filter 0.3s;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #4169e1;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+.btn:hover,
+button:hover {
+  filter: brightness(80%);
+}
+
+.centered-form {
+  padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+.centered-form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.input-wrapper label {
+  margin-bottom: 0.5rem;
+}
+.input-wrapper input {
+  padding: 0.5rem;
+  font: inherit;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+  color: #333;
+  max-width: 200px;
+}
+
+.error {
+  color: #a91e1e;
+}
+
+.success {
+  color: #20a720;
+}
+
+.alert {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+section.container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.stats {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.stats .stat {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  text-align: center;
+}
+.stats .stat .value {
+  font-size: 2.5rem;
+}
+
+.adverts-list > div {
+  background-color: #e0e0e0;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+.adverts-list > div p {
+  margin-bottom: 0;
+}/*# sourceMappingURL=style.css.map */
